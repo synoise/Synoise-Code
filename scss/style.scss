@@ -1,0 +1,273 @@
+@import 'vars';
+
+//Default styles
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 2;
+	color: $color-text;
+	background: url('https://demo.buddy.works/images/' + $background-image) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 0 16px;
+
+	@each $name, $data in $alternative-layouts {
+		&.#{$name} {
+			@if map_get($data, background-image) == none {
+				background-color: map_get($data, background-color);
+				color: map_get($data, color-text);
+				background-image: none;
+			}
+			@else {
+				background-image: url('https://demo.buddy.works/images/' + map_get($data, background-image));
+				color: map_get($data, color-text);
+			}
+		}
+	}
+}
+
+.clearfix {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+//Typography
+h1 {
+	font-size: 42px;
+	font-weight: 900;
+
+	@media all and (min-width: 996px) {
+		font-size: 56px;
+	}
+}
+
+h2 {
+	font-size: 22px;
+	margin-bottom: 32px;
+}
+
+h3 {
+	color: $color-secondary;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+h1,
+h2 {
+	color: $color-primary;
+
+	@each $name, $data in $alternative-layouts {
+		body.#{$name} & {
+			color: map_get($data, color-primary);
+		}
+	}
+}
+
+p {
+	margin-bottom: 32px;
+}
+
+.demo-description {
+	padding-bottom: 32px;
+}
+
+
+
+//Main container
+.container {
+	max-width: 696px;
+	margin: 32px auto;
+	background: #ffffff;
+	border-radius: 4px;
+	box-shadow: 0 10px 42px rgba(#00112d, .64);
+
+	@media all and (min-width: 996px) {
+		margin: 96px auto;
+	}
+}
+
+//Footer
+.bottom-info {
+	background: $color-footer;
+	border-radius: 0 0 4px 4px;
+	text-align: center;
+	padding: 12px 0;
+	line-height: (24/13);
+	font-size: 13px;
+	color: rgba(#fff, .64);
+
+	@each $name, $data in $alternative-layouts {
+		body.#{$name} & {
+			background: map_get($data, color-footer);
+		}
+	}
+}
+
+//Buttons
+.button {
+	display: inline-block;
+	font-size: 15px;
+	background: #ffffff;
+	color: $color-secondary;
+	border: 2px solid $color-secondary;
+	border-radius: 40px;
+	line-height: 36px;
+	height: 40px;
+	padding: 0 24px;
+	font-weight: bold;
+	transition: .3s all;
+	cursor: pointer;
+
+	&:hover {
+		background: lighten($color-secondary, 3%);
+		color: #ffffff;
+	}
+}
+
+//Steps
+.steps {
+	@extend .clearfix;
+	position: relative;
+	margin: 0 16px;
+
+	@media all and (min-width: 640px) {
+		margin: 0 64px 0 96px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			background: $color-secondary;
+			width: 2px;
+			top: 0;
+			left: -38px;
+			bottom: 0;
+
+			@each $name, $data in $alternative-layouts {
+				body.#{$name} & {
+					background: map_get($data, color-footer);
+				}
+			}
+		}
+	}
+}
+
+//Timeline
+.timeline {
+	list-style: none;
+	margin: 0;
+
+	&.mp-gif {
+		line-height: 0;
+	}
+
+	> li {
+		padding: 24px;
+		border-radius: 3px;
+		box-shadow: 0 6px 18px rgba(#00112d, .24);
+		background: #ffffff;
+		margin-bottom: 16px;
+		position: relative;
+
+		@media all and (min-width: 640px) {
+			margin-bottom: 56px;
+		}
+
+	}
+}
+
+//Info
+.info {
+	margin: 0 16px;
+
+	@media all and (min-width: 640px) {
+		margin: 0 64px 32px;
+	}
+
+	@media all and (min-width: 996px) {
+		margin: 0 112px 32px 112px;
+	}
+}
+
+.gif-image {
+	width: 100%;
+	height: auto;
+
+	@media all and (min-width: 640px) {
+		width: auto;
+		margin: 16px auto;
+		display: block;
+	}
+
+}
+
+//Timeline images
+.how-to-change,
+.edit-source,
+.release-changes {
+	position: relative;
+}
+
+.step-icon {
+	@media all and (min-width: 640px) {
+		position: absolute;
+		top: -2px;
+		left: -61px;
+		width: 48px;
+		height: 48px;
+		background: #ffffff no-repeat center;
+
+		.edit-source &,
+		.release-changes & {
+			top: 12px;
+		}
+
+		svg {
+			width: 34px;
+			height: 34px;
+			margin: 8px;
+
+			path,
+			line,
+			polyline {
+				fill: #fff;
+				stroke-linejoin: round;
+				stroke-linecap: round;
+				stroke-width: 2;
+			}
+
+			.color-primary {
+				stroke: $color-icon-primary;
+			}
+
+			.color-secondary {
+				stroke: $color-icon-secondary;
+			}
+
+			@each $name, $data in $alternative-layouts {
+				body.#{$name} & .color-primary {
+					stroke: map_get($data, color-icon-primary);
+				}
+
+				body.#{$name} & .color-secondary {
+					stroke: map_get($data, color-icon-secondary);
+				}
+			}
+		}
+	}
+}

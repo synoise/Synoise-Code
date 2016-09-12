@@ -1,0 +1,52 @@
+//Color definitions
+$color-primary: #505a78;
+$color-secondary: #5f93e7;
+$color-text: #445d95;
+$color-footer: #5f93e7;
+
+//Icon colors
+$color-icon-primary: #5f93e7;
+$color-icon-secondary: #ffc44a;
+
+//Page background
+$background-image: 'background-v1.jpg';
+//Page custom layouts
+$alternative-layouts: (
+
+		v0: (
+				background-image: none,
+				background-color: #fff,
+				color-text: #3c374b,
+				color-primary: #442f72,
+				color-footer: #442f72,
+				color-icon-primary: #442f72,
+				color-icon-secondary: #5f93e7
+		),
+
+		v2: (
+				background-image: 'background-v2.jpg',
+				color-text: #3c374b,
+				color-primary: #442f72,
+				color-footer: #442f72,
+				color-icon-primary: #442f72,
+				color-icon-secondary: #5f93e7
+		),
+
+		v3: (
+				background-image: 'background-v3.jpg',
+				color-text: #3c374b,
+				color-primary: #3c374b,
+				color-footer: #505a78,
+				color-icon-primary: #505a78,
+				color-icon-secondary: #5f93e7
+		),
+
+		v4: (
+				background-image: 'background-v4.jpg',
+				color-text: #3c374b,
+				color-primary: #3c374b,
+				color-footer: #505a78,
+				color-icon-primary: #505a78,
+				color-icon-secondary: #5f93e7
+		),
+);
