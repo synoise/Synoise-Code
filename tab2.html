@@ -1,0 +1,157 @@
+
+                                            <div class="panel panel-default">
+                                                <div class="info_summary"><img
+                                                        src="./Order Management EasyDCIM - Complete Solution For Data Center Management_files/blue.png"
+                                                        data-evernote-hover-show="true">Assign a order to the client,
+                                                    set order status and additional options.
+                                                </div>
+                                                <div class="panel-body">
+
+                                                    <label for="test">Label for my styled "checkbox"</label>
+
+                                                    <input onclick="check_box(this,1)" type="checkbox" name="checkboxG2"
+                                                           id="checkboxG2" class="css-checkbox"><label for="checkboxG2"
+                                                                                                       class="css-label">*</label>
+
+                                                    <br> <br> <br>
+                                                    <select class="select_costume">
+                                                        <option value="volvo">Timezone</option>
+                                                        <option value="saab">Saab</option>
+                                                        <option value="mercedes">Mercedes</option>
+                                                        <option value="audi">Audi</option>
+                                                    </select><br>
+                                                    <small>You can use the <strong><a href="http://php.net/date">table
+                                                        of date format characters on the PHP website</a></strong> as a
+                                                        reference for building date format strings for use in Easy DCIM.
+                                                    </small>
+                                                    <h5>Locale</h5>
+
+                                                    <div class="form-group">
+                                                        <label for="settingDefaultLanguage">Default Client Area
+                                                            Language</label>
+                                                        <select class="form-control selectized" data-edc-select="1"
+                                                                style="width: 60px; display: none;"
+                                                                name="settings[backend.settings.defaultLanguage]"
+                                                                tabindex="-1">
+                                                            <option value="en" selected="selected"></option>
+                                                        </select>
+                                                        <div class="selectize-control form-control selectized single"
+                                                             style="width: 60px;">
+                                                            <div class="selectize-input items full has-options has-items">
+                                                                <div data-value="en" class="item"></div>
+                                                                <input type="text" autocomplete="off" tabindex="-1"
+                                                                       style="width: 4px;"></div>
+                                                            <div class="selectize-dropdown single form-control selectized"
+                                                                 style="display: none; width: 60px; top: 34px; left: 0px;">
+                                                                <div class="selectize-dropdown-content"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="selectize-control form-control single"
+                                                             style="width: 60px;">
+                                                            <div class="selectize-input items full has-options has-items">
+                                                                <div data-value="en" class="item">en</div>
+                                                                <input type="text" autocomplete="off" tabindex=""
+                                                                       style="width: 4px;"></div>
+                                                            <div class="selectize-dropdown single form-control"
+                                                                 style="display: none; width: 100px; top: 0px; left: 0px;">
+                                                                <div class="selectize-dropdown-content"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <select class="form-control selectized" data-edc-select="1"
+                                                                style="width: 60px; display: none;"
+                                                                name="settings[backend.settings.adminLanguage]"
+                                                                tabindex="-1">
+                                                            <option value="en" selected="selected"></option>
+                                                        </select>
+                                                        <div class="selectize-control form-control selectized single"
+                                                             style="width: 60px;">
+                                                            <div class="selectize-input items full has-options has-items">
+                                                                <div data-value="en" class="item"></div>
+                                                                <input type="text" autocomplete="off" tabindex="-1"
+                                                                       style="width: 4px;"></div>
+                                                            <div class="selectize-dropdown single form-control selectized"
+                                                                 style="display: none; width: 60px; top: 34px; left: 0px;">
+                                                                <div class="selectize-dropdown-content"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="selectize-control form-control single"
+                                                             style="width: 60px;">
+                                                            <div class="selectize-input items full has-options has-items">
+                                                                <div data-value="en" class="item">en</div>
+                                                                <input type="text" autocomplete="off" tabindex=""
+                                                                       style="width: 4px;"></div>
+                                                            <div class="selectize-dropdown single form-control"
+                                                                 style="display: none; width: 100px; top: 0px; left: 0px;">
+                                                                <div class="selectize-dropdown-content"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <h5>Date</h5>
+
+                                                    <div class="form-group"><label for="backend.settings.dateFormat">Global
+                                                        Date Format</label><input class="form-control" id="dateFormat"
+                                                                                  placeholder="Format string"
+                                                                                  name="settings[backend.settings.dateFormat]"
+                                                                                  type="text" value="Y-m-d H:i:s"></div>
+
+                                                    <div class="form-group">
+                                                        <select class="form-control selectized" data-edc-select="1"
+                                                                id="dateFormatPredefined" name="dateFormatPredefined"
+                                                                tabindex="-1" style="display: none;">
+                                                            <option value="" selected="selected"></option>
+                                                        </select>
+                                                        <div class="selectize-control form-control selectized single">
+                                                            <div class="selectize-input items not-full"><input
+                                                                    type="text" autocomplete="off" tabindex="-1"
+                                                                    style="width: 4px;"></div>
+                                                            <div class="selectize-dropdown single form-control selectized"
+                                                                 style="display: none; width: 380px; top: 34px; left: 0px;">
+                                                                <div class="selectize-dropdown-content"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="selectize-control form-control single">
+                                                            <div class="selectize-input items not-full has-options">
+                                                                <input type="text" autocomplete="off" tabindex=""
+                                                                       placeholder="Predefined formats..."
+                                                                       style="width: 135px;"></div>
+                                                            <div class="selectize-dropdown single form-control"
+                                                                 style="display: none; width: 100px; top: 0px; left: 0px;">
+                                                                <div class="selectize-dropdown-content"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <select class="form-control selectized" data-edc-select="1"
+                                                                id="dateFormatPredefined" name="dateFormatPredefined"
+                                                                tabindex="-1" style="display: none;">
+                                                            <option value="" selected="selected"></option>
+                                                        </select>
+                                                        <div class="selectize-control form-control selectized single">
+                                                            <div class="selectize-input items not-full"><input
+                                                                    type="text" autocomplete="off" tabindex="-1"
+                                                                    style="width: 4px;"></div>
+                                                            <div class="selectize-dropdown single form-control selectized"
+                                                                 style="display: none; width: 380px; top: 34px; left: 0px;">
+                                                                <div class="selectize-dropdown-content"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="selectize-control form-control single">
+                                                            <div class="selectize-input items not-full has-options">
+                                                                <input type="text" autocomplete="off" tabindex=""
+                                                                       placeholder="Predefined formats..."
+                                                                       style="width: 135px;"></div>
+                                                            <div class="selectize-dropdown single form-control"
+                                                                 style="display: none; width: 100px; top: 0px; left: 0px;">
+                                                                <div class="selectize-dropdown-content"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <b style="float:right"> <span
+                                                            style="color:#fda; font-size:20px;">*</span> required fields</b>
+                                                </div>
+                                            </div>

@@ -1,0 +1,61 @@
+<style>
+.models_column{
+width:200px; display: inline-table; height:400px;
+}
+
+input[type=radio] {
+    width: 12px;
+    height: 12px;
+}
+
+.btn-default {
+border:0;
+padding:3px;
+min-width:160px;
+ text-align: left;
+ font-size:13px;
+}
+
+</style>
+
+
+<div >
+<div style="border-bottom:1px solid #f3f3f3; text-align: right;">
+ Wybierz model samochodu aby kontynuować konfigurację
+ <input placeholder="wyszukaj" class="form-control"  aria-describedby="sizing-addon1"  style=" height:25px;width:200px;margin-bottom:5px; display:inline-table" input ng-model="search.$">
+</div>
+
+
+    <div class="models_column" >
+        <h4>Marka</h4>
+        <div ng-init="group1 = ( vehicles | groupBy:'mark'| orderBy:'mark')">
+            <div ng-repeat="m2 in group1| orderBy:'mark'">
+              <label class="btn btn-default"><input type="radio" name="Marka" ng-click="filtrujModele(m2)"> {{m2}} </input> </label>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="models_column" >
+        <h4>Grupa modelowa</h4>
+            <div data-ng-repeat="vehicle in vehicles_all | groupBy:'car_type'| orderBy:'car_type'" >
+                  <label class="btn btn-default"><input type="radio" name="Grupa" ng-click="filterNadwozie(m)"> {{vehicle}} </input> </label>
+            </div>
+    </div>
+
+    <div  class="models_column">
+        <h4>Nadwozie</h4>
+
+        <div data-ng-repeat="vehicle in vehicles_all | groupBy:'nadwozie'| orderBy:'nadwozie'">
+              <label class="btn btn-default"><input type="radio" name="Nadwozie" ng-click="filterGrupaModelowa(vehicle)"> {{vehicle}} </input></label>
+        </div>
+    </div>
+
+    <div  class="models_column" style=" width:calc( 100% - 610px ); border-left:1px solid #f3f3f3; padding:0px 10px">
+        <h4>Modele <span style="color:rgb(254, 189, 1);">*</span></h4>
+			 <div style="float:left" data-ng-repeat="vehicle in vehicles_end | groupBy:'name'| orderBy:'name'|filter:search" style="width:150px; flxoat:left">
+	<label class="btn btn-default"><input  style="" type="radio" ng-click="showButton1('button1')" ng-model="color.name" ng-value="vehicle"   value="red" name="Modele" > {{vehicle}} </input></b>
+			 </div>          	 
+    </div>
+	
+</div>

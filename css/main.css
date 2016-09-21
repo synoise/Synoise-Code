@@ -1,0 +1,76 @@
+ body {
+            font-family: 'Armata', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        body, section {
+            background: rgb(236, 244, 255)
+        }
+
+        .panel-default {
+            margin: 7px;
+        }
+
+        .panel-default {
+            min-height: 400px;
+        }
+
+        .panel-default {
+            border: 0;
+        }
+
+        a {
+            cursor: crosshair;
+        }
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1f1f1+0,f3f3f3+62,e1e1e1+100 */
+        menu {
+            background: #f1f1f1; /* Old browsers */
+            background: -moz-linear-gradient(top, #f1f1f1 0%, #f3f3f3 62%, #e1e1e1 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #f1f1f1 0%, #f3f3f3 62%, #e1e1e1 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #f1f1f1 0%, #f3f3f3 62%, #e1e1e1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#e1e1e1', GradientType=0); /* IE6-9 */
+
+            margin: 0;
+            heeeeeeeeeeeeeeeight: 66px;
+            padding: 0;
+        }
+
+        menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        menu li {
+            float: left;
+            eeeeeeeeeemin-width: 165px;
+            text-transform: uppercase;
+            border-right: 1px #dadada solid;
+        }
+
+        menu, a, li, div {
+            transition: -webkit-transform all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        menu li a {
+            display: block;
+            color: #666;
+            font-size: 16px;
+            text-align: center;
+            padding: 17px 55px;
+            text-decoration: none;
+        }
+
+        menu li a:hover {
+            padding: 17px 60px;
+            background-color: #fcfcfc;
+            text-decoration: none;
+        }
+
+        .label {
+            color: #000;
+        }

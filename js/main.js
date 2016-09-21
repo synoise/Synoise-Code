@@ -1,73 +1,304 @@
-/**
- * Created by Piotr on 2016-05-31.
- */
 
-var calculator = {
-    taxPercentage: 0.1,
-    commissionPercentage: 0.1,
+    function simpleController($scope) {
+        $scope.questionPaper = {
+            "id": "1",
+            "subject": "AngularJS",
+            "title": 'Exam#01',
+            "questions": [{
+                "id": "9",
+                "options": [{
+                    "id": "22",
+                    "description": "yes",
+                    "orderId": "1"
+                }, {
+                    "id": "23",
+                    "description": "now",
+                    "orderId": "2"
+                },
 
-    calculateOverSales: function (sales, quota) {
-        return sales > quota ? sales - quota : 0;
-    },
-    calculateCommission: function (overSales) {
-        return this.commissionPercentage * overSales;
-    },
-    calculateTax: function (commission) {
-        return this.taxPercentage * commission;
-    },
-    calculateBonus: function (sales, quota) {
-        var commission = this.calculateCommission(this.calculateOverSales(sales, quota));
-        return commission - this.calculateTax(commission);
-    },
-    cutBonusOnTeam: function (teamBonus, teamSize) {
-        return teamBonus / teamSize;
+                    {
+                        "id": "24",
+                        "description": "don't know",
+                        "orderId": "3"
+                    }
+                ],
+                "description": "Question#01?",
+                "orderId": "1"
+            }, {
+                "id": "10",
+                "options": [{
+                    "id": "25",
+                    "description": "Home",
+                    "orderId": "1"
+                }, {
+                    "id": "26",
+
+                    "description": "Work",
+                    "orderId": "2"
+                }, {
+                    "id": "27",
+                    "description": "Undecided or Other",
+                    "orderId": "3"
+                }],
+                "description": "Where to go?",
+                "orderId": "2"
+            }, {
+                "id": "20",
+                "options": [{
+                    "id": "53",
+                    "description": "Wrong Direction",
+                    "orderId": "1"
+                }, {
+                    "id": "54",
+                    "description": "Right Direction",
+                    "orderId": "2"
+                }, {
+                    "id": "55",
+                    "description": "Don't know",
+                    "orderId": "3"
+                }],
+                "description": "Are you belive your in?",
+                "orderId": "2"
+            }],
+            "updatedOn": "2014-07-12 18:20:52"
+        };
+
+        $scope.selected_ids = [];
+        $scope.submitAnswers = function () {
+            angular.forEach($scope.questionPaper.questions, function (question) {
+                $scope.selected_ids.push(question.selected_id);
+            });
+        }
     }
-};
 
-var calculatorOther = function () {
-    var taxPercentage = 0.1;
-    var commissionPercentage = 0.1;
 
-    this.calculateOverSales = function (sales, quota) {
-        return sales > quota ? sales - quota : 0;
-    }
-    this.calculateCommission = function (overSales) {
-        return this.commissionPercentage * overSales;
-    }
-    this.calculateTax = function (commission) {
-        return this.taxPercentage * commission;
-    }
-    this.calculateBonus = function (sales, quota) {
-        var commission = this.calculateCommission(this.calculateOverSales(sales, quota));
-        return commission - this.calculateTax(commission);
+    function show(n) {
+        if (document.getElementById("t" + n).style.display == "block") {
+            document.getElementById("t" + n).style.display = "none";
+            document.getElementById("i" + n).style.transform = "rotate(0deg)";
+        }
+        else {
+            document.getElementById("t" + n).style.display = "block";
+            document.getElementById("i" + n).style.transform = "rotate(90deg)";
+        }
     }
 
-    this.cutBonusOnTeam = function (teamBonus, teamSize) {
-        return teamBonus / teamSize;
+
+    function setStep(n) {
+        document.getElementById("progbar").style.width = n * 25 + "%";
+        document.getElementById("steps").innerHTML = "Step " + n + "/4";
     }
-};
+
+    setStep(0)
+
+    function hide() {
+        document.getElementById("t1").style.display = "none";
+        document.getElementById("t2").style.display = "none";
+        document.getElementById("t3").style.display = "none";
+        document.getElementById("t4").style.display = "none";
+        document.getElementById("im1").style.display = "none";
+        document.getElementById("im2").style.display = "initial";
+        document.getElementById("im3").style.display = "none";
+        document.getElementById("im4").style.display = "none";
+        activeted();
+    }
+
+    // hide();
+
+    function activeted() {
+
+        //alert(document.getElementById("im"+1).style.display +","+document.getElementById("im"+2).style.display +","+document.getElementById("im"+3).style.display +","+document.getElementById("im"+4).style.display +",")
+
+        if (document.getElementById("im" + 1).style.display == "initial" && document.getElementById("im" + 2).style.display == "initial" && document.getElementById("im" + 3).style.display == "initial" && document.getElementById("im" + 4).style.display == "initial") {
+            document.getElementById("btnPO").disabled = false;
+            document.getElementById("gdx").style.display = "none";
+        }
+        else {
+            document.getElementById("btnPO").disabled = true;
+            document.getElementById("gdx").style.display = "initial";
+        }
+
+    }
+
+    function check_box(event, n) {
+        //alert(event.checked+","+n);
+        if (event.checked) {
+            document.getElementById("im" + n).style.display = "initial";
+            $("#i" + n).addClass("grayNow");
+        }
+        else {
+            document.getElementById("im" + n).style.display = "none";
+            $("#i" + n).removeClass("grayNow");
+        }
+        activeted()
+    }
+
+    $('.btnNext').click(function () {
+        $('.nav3 > .active').next('li').find('a').trigger('click');
+    });
+
+    $('.btnPrev').click(function () {
+        $('.nav3 > .active').prev('li').find('a').trigger('click');
+    });
 
 
+    // Code goes here
 
-angular.module('plunker', ['ui.bootstrap']);
-var PaginationDemoCtrl = function ($scope) {
-    $scope.data = [{"name":"Bell","id":"K0H 2V5"},{"name":"Octavius","id":"X1E 6J0"},{"name":"Alexis","id":"N6E 1L6"},{"name":"Colton","id":"U4O 1H4"},{"name":"Abdul","id":"O9Z 2Q8"},{"name":"Ian","id":"Q7W 8M4"},{"name":"Eden","id":"H8X 5E0"},{"name":"Britanney","id":"I1Q 1O1"},{"name":"Ulric","id":"K5J 1T0"},{"name":"Geraldine","id":"O9K 2M3"},{"name":"Hamilton","id":"S1D 3O0"},{"name":"Melissa","id":"H9L 1B7"},{"name":"Remedios","id":"Z3C 8P4"},{"name":"Ignacia","id":"K3B 1Q4"},{"name":"Jaime","id":"V6O 7C9"},{"name":"Savannah","id":"L8B 8T1"},{"name":"Declan","id":"D5Q 3I9"},{"name":"Skyler","id":"I0O 4O8"},{"name":"Lawrence","id":"V4K 0L2"},{"name":"Yael","id":"R5E 9D9"},{"name":"Herrod","id":"V5W 6L3"},{"name":"Lydia","id":"G0E 2K3"},{"name":"Tobias","id":"N9P 2V5"},{"name":"Wing","id":"T5M 0E2"},{"name":"Callum","id":"L9P 3W5"},{"name":"Tiger","id":"R9A 4E4"},{"name":"Summer","id":"R4B 4Q4"},{"name":"Beverly","id":"M5E 4V4"},{"name":"Xena","id":"I8G 6O1"},{"name":"Yael","id":"L1K 5C3"},{"name":"Stacey","id":"A4G 1S4"},{"name":"Marsden","id":"T1J 5J3"},{"name":"Uriah","id":"S9S 8I7"},{"name":"Kamal","id":"Y8Z 6X0"},{"name":"MacKensie","id":"W2N 7P9"},{"name":"Amelia","id":"X7A 0U3"},{"name":"Xavier","id":"B8I 6C9"},{"name":"Whitney","id":"H4M 9U2"},{"name":"Linus","id":"E2W 7U1"},{"name":"Aileen","id":"C0C 3N2"},{"name":"Keegan","id":"V1O 6X2"},{"name":"Leonard","id":"O0L 4M4"},{"name":"Honorato","id":"F4M 8M6"},{"name":"Zephr","id":"I2E 1T9"},{"name":"Karen","id":"H8W 4I7"},{"name":"Orlando","id":"L8R 0U4"},{"name":"India","id":"N8M 8F4"},{"name":"Luke","id":"Q4Y 2Y8"},{"name":"Sophia","id":"O7F 3F9"},{"name":"Faith","id":"B8P 1U5"},{"name":"Dara","id":"J4A 0P3"},{"name":"Caryn","id":"D5M 8Y8"},{"name":"Colton","id":"A4Q 2U1"},{"name":"Kelly","id":"J2E 2L3"},{"name":"Victor","id":"H1V 8Y5"},{"name":"Clementine","id":"Q9R 4G8"},{"name":"Dale","id":"Q1S 3I0"},{"name":"Xavier","id":"Z0N 0L5"},{"name":"Quynn","id":"D1V 7B8"},{"name":"Christine","id":"A2X 0Z8"},{"name":"Matthew","id":"L1H 2I4"},{"name":"Simon","id":"L2Q 7V7"},{"name":"Evan","id":"Z8Y 6G8"},{"name":"Zachary","id":"F4K 8V9"},{"name":"Deborah","id":"I0D 4J6"},{"name":"Carl","id":"X7H 3J3"},{"name":"Colin","id":"C8P 0O1"},{"name":"Xenos","id":"K3S 1H5"},{"name":"Sonia","id":"W9C 0N3"},{"name":"Arsenio","id":"B0M 2G6"},{"name":"Angela","id":"N9X 5O7"},{"name":"Cassidy","id":"T8T 0Q5"},{"name":"Sebastian","id":"Y6O 0A5"},{"name":"Bernard","id":"P2K 0Z5"},{"name":"Kerry","id":"T6S 4T7"},{"name":"Uriel","id":"K6G 5V2"},{"name":"Wanda","id":"S9G 2E5"},{"name":"Drake","id":"G3G 8Y2"},{"name":"Mia","id":"E4F 4V8"},{"name":"George","id":"K7Y 4L4"},{"name":"Blair","id":"Z8E 0F0"},{"name":"Phelan","id":"C5Z 0C7"},{"name":"Margaret","id":"W6F 6Y5"},{"name":"Xaviera","id":"T5O 7N5"},{"name":"Willow","id":"W6K 3V0"},{"name":"Alden","id":"S2M 8C1"},{"name":"May","id":"L5B 2H3"},{"name":"Amaya","id":"Q3B 7P8"},{"name":"Julian","id":"W6T 7I6"},{"name":"Colby","id":"N3Q 9Z2"},{"name":"Cole","id":"B5G 0V7"},{"name":"Lana","id":"O3I 2W9"},{"name":"Dieter","id":"J4A 9Y6"},{"name":"Rowan","id":"I7E 9U4"},{"name":"Abraham","id":"S7V 0W9"},{"name":"Eleanor","id":"K7K 9P4"},{"name":"Martina","id":"V0Z 5Q7"},{"name":"Kelsie","id":"R7N 7P2"},{"name":"Hedy","id":"B7E 7F2"},{"name":"Hakeem","id":"S5P 3P6"}];
-    $scope.viewby = 10;
-    $scope.totalItems = $scope.data.length;
-    $scope.currentPage = 4;
-    $scope.itemsPerPage = $scope.viewby;
-    $scope.maxSize = 5; //Number of pager buttons to show
+    var iApp = angular.module("App", []);
 
-    $scope.setPage = function (pageNo) {
-        $scope.currentPage = pageNo;
+
+    var uniqueItems = function (data, key) {
+        var result = new Array();
+        for (var i = 0; i < data.length; i++) {
+            var value = data[i][key];
+
+            if (result.indexOf(value) == -1) {
+                result.push(value);
+            }
+
+        }
+        return result;
     };
 
-    $scope.pageChanged = function() {
-        console.log('Page changed to: ' + $scope.currentPage);
-    };
+    iApp.filter('groupBy',
+            function () {
+                return function (collection, key) {
+                    if (collection === null) return;
+                    return uniqueItems(collection, key);
+                };
+            });
 
-    $scope.setItemsPerPage = function(num) {
-        $scope.itemsPerPage = num;
-        $scope.currentPage = 1; //reset to first paghe
-    }
-};
+    /* */
+
+
+    iApp.controller('TestController', function ($scope, $filter, orderByFilter, filterFilter) {
+
+	  $scope.color = {};
+
+        $scope.search = [];
+
+        $scope.Models = {
+            Limousine: false,
+            Avant: false,
+            Sportback: false,
+            Coupe: false,
+            Cabriolet: false,
+            allroad_quattro: false,
+            SUV: false,
+            luxury: false,
+            double_suite: false
+        };
+
+
+        $scope.vehicles = [
+            {mark: "BMW", name: 'A1 Sportback', car_type: 'A1', nadwozie: "Limousine"},
+            {mark: "BMW", name: 'A2 Sportback', car_type: 'A1', nadwozie: "Sportback"},
+            {mark: "BMW", name: 'A3 Sportback', car_type: 'A1', nadwozie: "Avant"},
+
+            {mark: "BMW", name: 'B1 Sportback', car_type: 'B1', nadwozie: "Sportback"},
+            {mark: "BMW", name: 'B2 Sportback', car_type: 'B1', nadwozie: "Avant"},
+            {mark: "BMW", name: 'B3 Sportback', car_type: 'B1', nadwozie: "Limousine"},
+
+            {mark: "BMW", name: 'C1 Sportback', car_type: 'C1', nadwozie: "Limousine"},
+            {mark: "BMW", name: 'C2 Sportback', car_type: 'C1', nadwozie: "Sportback"},
+            {mark: "BMW", name: 'C3 Sportback', car_type: 'C1', nadwozie: "Avant"},
+
+            {mark: "Audi", name: 'Limousine', car_type: 'x', nadwozie: "Limousine"},
+            {mark: "Audi", name: 'Sportback', car_type: 'x', nadwozie: "Limousine"},
+            {mark: "Audi", name: 'Limousine', car_type: 'x', nadwozie: "Limousine"},
+            {mark: "Audi", name: 'Limousine', car_type: 'x', nadwozie: "Limousine"},
+            {mark: "Audi", name: 'ZZ Avant', car_type: 'x', nadwozie: "Limousine"},
+            {mark: "Audi", name: 'ZZ allroad quattro', car_type: 'x', nadwozie: "Limousine"},
+            {mark: "Audi", name: 'ZZ Limousine', car_type: 'x', nadwozie: "Limousine"},
+            {mark: "Audi", name: 'ZZ Avant', car_type: 'x', nadwozie: "Avant"},
+            {mark: "Audi", name: 'ZZ Sportback', car_type: 'x', nadwozie: "Avant"},
+            {mark: "Audi", name: 'ZZ Cabriolet', car_type: 'x', nadwozie: "Avant"},
+            {mark: "Audi", name: 'ZZ Coupe', car_type: 'x', nadwozie: "Avant"},
+            {mark: "Audi", name: 'ZZ Sportback', car_type: 'x', nadwozie: "Avant"},
+            {mark: "Audi", name: 'ZZ Cabriolet', car_type: 'x', nadwozie: "Avant"},
+            {mark: "Audi", name: 'ZZ Limousine', car_type: 'x', nadwozie: "Avant"},
+            {mark: "Audi", name: 'ZZ Avant', car_type: 'x', nadwozie: "Avant"},
+            {mark: "Audi", name: 'ZZ allroad quattro', car_type: 'x', nadwozie: "Avant"},
+            {mark: "Audi", name: 'ZZ Limousine', car_type: 'x', nadwozie: "Avant"},
+            {mark: "Audi", name: 'ZZ Avant', car_type: 'x', nadwozie: "Avant"},
+            {mark: "Audi", name: '6 Avant', car_type: 'x', nadwozie: "Avant"},
+            {mark: "Audi", name: '6 Avant performance', car_type: 'x', nadwozie: "Avant"},
+            {mark: "Audi", name: 'A7 Sportback', car_type: 'A7', nadwozie: "Sportback"},
+            {mark: "Audi", name: 'S7 Sportback', car_type: 'S7', nadwozie: "Sportback"},
+            {mark: "Audi", name: 'RS 7 Sportback', car_type: 'S7', nadwozie: "Sportback"},
+            {mark: "Audi", name: 'RS 7 Sportback performance', car_type: 'S7', nadwozie: "Sportback"},
+            {mark: "Audi", name: 'A8', car_type: 'A8', nadwozie: "Sportback"},
+            {mark: "Audi", name: 'A8 L', car_type: 'A8', nadwozie: "Sportback"},
+            {mark: "Audi", name: 'A8 L W12', car_type: 'A8', nadwozie: "Sportback"},
+            {mark: "Audi", name: 'S8', car_type: 'A8', nadwozie: "Sportback"},
+            {mark: "Audi", name: 'S8 plus', car_type: 'A8', nadwozie: "Sportback"},
+            {mark: "Audi", name: 'Q2', car_type: 'Q2', nadwozie: "Sportback"},
+            {mark: "Audi", name: 'Q3', car_type: 'Q3', nadwozie: "Sportback"},
+            {mark: "Audi", name: 'RS Q3', car_type: 'Q3', nadwozie: "Sportback"},
+            {mark: "Audi", name: 'Q5', car_type: 'Q3', nadwozie: "Coupe"},
+            {mark: "Audi", name: 'SQ5 TDI', car_type: 'Q5', nadwozie: "Coupe"},
+            {mark: "Audi", name: 'Q7', car_type: 'Q3', nadwozie: "Coupe"},
+            {mark: "Audi", name: 'Q7 e-tron', car_type: 'Q7', nadwozie: "Coupe"},
+            {mark: "Audi", name: 'SQ7 TDI', car_type: 'Q7', nadwozie: "Coupe"},
+            {mark: "Audi", name: 'TT Coupe', car_type: 'TT', nadwozie: "Coupe"},
+            {mark: "Audi", name: 'TTS Coupe', car_type: 'TT', nadwozie: "Coupe"},
+            {mark: "Audi", name: 'R8 Coupe', car_type: 'R8', nadwozie: "Coupe"},
+
+            {mark: "Audi", name: 'SQ5 TDI', car_type: 'Q5', nadwozie: "Cabriolet"},
+            {mark: "Audi", name: 'Q7', car_type: 'Q3', nadwozie: "Cabriolet"},
+            {mark: "Audi", name: 'Q7 e-tron', car_type: 'Q7', nadwozie: "Cabriolet"},
+            {mark: "Audi", name: 'SQ7 TDI', car_type: 'Q7', nadwozie: "Cabriolet"},
+            {mark: "Audi", name: 'TT Coupe', car_type: 'TT', nadwozie: "Cabriolet"},
+            {mark: "Audi", name: 'TTS Coupe', car_type: 'TT', nadwozie: "Cabriolet"},
+            {mark: "Audi", name: 'R8 Coupe', car_type: 'R8', nadwozie: "Cabriolet"},
+
+            {mark: "Audi", name: 'SQ5 TDI', car_type: 'Q5', nadwozie: "allroad quattro"},
+            {mark: "Audi", name: 'Q7', car_type: 'Q3', nadwozie: "allroad quattro"},
+            {mark: "Audi", name: 'Q7 e-tron', car_type: 'Q7', nadwozie: "allroad quattro"},
+            {mark: "Audi", name: 'SQ7 TDI', car_type: 'Q7', nadwozie: "allroad quattro"},
+            {mark: "Audi", name: 'TT Coupe', car_type: 'TT', nadwozie: "allroad quattro"},
+            {mark: "Audi", name: 'TTS Coupe', car_type: 'TT', nadwozie: "allroad quattro"},
+            {mark: "Audi", name: 'R8 Coupe', car_type: 'R8', nadwozie: "allroad quattro"},
+
+            {mark: "Audi", name: 'SQ5 TDI', car_type: 'Q5', nadwozie: "SUV"},
+            {mark: "Audi", name: 'Q7', car_type: 'Q3', nadwozie: "SUV"},
+            {mark: "Audi", name: 'Q7 e-tron', car_type: 'Q7', nadwozie: "SUV"},
+            {mark: "Audi", name: 'SQ7 TDI', car_type: 'Q7', nadwozie: "SUV"},
+            {mark: "Audi", name: 'TT Coupe', car_type: 'TT', nadwozie: "SUV"},
+            {mark: "Audi", name: 'TTS Coupe', car_type: 'TT', nadwozie: "SUV"},
+            {mark: "Audi", name: 'R8 Coupe', car_type: 'R8', nadwozie: "SUV"},
+
+        ];
+
+        $scope.vehicles_all = $scope.vehicles;
+        $scope.vehicles_end = $scope.vehicles_mark = $scope.vehicles_all;
+
+
+        $scope.showButton1 = function (type) {
+			document.getElementById(type).disabled = false;
+		}
+		
+        $scope.filtrujModele = function (type) {
+            // alert(type)
+            $scope.vehicles_mark = $scope.vehicles_end = $scope.vehicles_all = filterFilter(orderByFilter($scope.vehicles, "mark"), type);
+
+        }
+
+        $scope.filterNadwozie = function (type) {
+            // $scope.vehicles_all = $scope.vehicles;
+            $scope.vehicles_all = filterFilter(orderByFilter($scope.vehicles_mark, "car_type"), type);
+            $scope.vehicles_end = $scope.vehicles_all
+            // $scope.vehicles;
+        }
+
+        $scope.filterGrupaModelowa = function (type) {
+            // alert(type)
+            $scope.vehicles_end = $scope.vehicles_all
+            $scope.vehicles_end = filterFilter(orderByFilter($scope.vehicles_end, "name"), type);
+        }
+
+
+    });
+
+
+

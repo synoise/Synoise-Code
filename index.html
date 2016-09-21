@@ -1,38 +1,140 @@
-<!doctype html>
-<html ng-app="plunker">
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.js"></script>
-	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
-	<script src="js/main.js"></script>
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>AUTOCONFIGURATOR</title>
+    <base href=".">
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+
+
+    <script data-require="angular.js@1.2.22" data-semver="1.2.22"
+            src="https://code.angularjs.org/1.2.22/angular.js"></script>
+    <!--script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script-->
+
 </head>
+<body ng-app="App" class="skin-black" style="padding-bottom: 0px;">
 
-<body>
-      test   2
-<div ng-controller="PaginationDemoCtrl">
-	<table class="table">
-		<tr ng-repeat="row in data.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))">
-			<td>{{row.name}}</td>
-			<td>{{row.id}}</td>
-		</tr>
-	</table>
-	View <select ng-model="viewby" ng-change="setItemsPerPage(viewby)"><option>3</option><option>5</option><option>10</option><option>20</option><option>30</option><option>40</option><option>50</option></select> records at a time.
+<menu>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</menu>
 
-	<pagination total-items="totalItems" ng-model="currentPage" ng-change="pageChanged()" class="pagination-sm" items-per-page="itemsPerPage"></pagination>
-	<pre>The selected page no: {{currentPage}}</pre>
-	<button class="btn btn-info" ng-click="setPage(3)">Set current page to: 3</button>
 
-	<hr />
-	<h4>Pager</h4>
-	<pager total-items="totalItems" ng-model="currentPage" items-per-page="itemsPerPage"></pager>
+<section class="content big-padding">
+    <div>
+        <form method="POST" action="./" accept-charset="UTF-8" data-edc-form="1" data-scope="order" class="edc-order-form" >
 
-	<hr />
-	<h4>Limit the maximum visible buttons</h4>
-	<pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" items-per-page="itemsPerPage"></pagination>
-	<pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages" items-per-page="itemsPerPage"></pagination>
-	<pre>Page: {{currentPage}} / {{numPages}}</pre>
-</div>
+            <!--input name="_token" type="hidden" value="AarQoOxriZtQ0DEubjiZgEZbHVT8fZntpmA6L0Nh">
+            <div class="col-md-8"-->
+            <div class="panel panel-full panel-default" data-step="1" data-intro="Choose a product/service...">
+
+
+                <div class="panel-title">
+                    <ul id="settingsTab" class="nav nav-tabs nav3" role="tablist" style="background: #ecf4ff;">
+
+                        <li role="presentation" onclick="setStep(1)" class="active">
+                            <a data-target="#mail-settings" role="tab" data-toggle="tab" aria-expanded="true"><b>1</b> Model </a>
+                        </li>
+
+                        <li role="presentation" onclick="setStep(2)" class="">
+                            <a data-target="#advanced-settings" role="tab" data-toggle="tab" aria-expanded="false"><b>2</b> Silnik</a>
+                        </li>
+
+                        <li role="presentation" onclick="setStep(3)" class="">
+                            <a data-target="#url-settings" role="tab" data-toggle="tab" aria-expanded="false"> <b>3 </b> Nadwozie </a>
+                        </li>
+
+                        <li role="presentation" onclick="setStep(4)" class="">
+                            <a data-target="#base-settings" id="home-tab" role="tab" data-toggle="tab" aria-expanded="false"><b>4</b> Wnętrze </a>
+                        </li>
+
+                        <li role="presentation" onclick="setStep(4)" class="">
+                            <a data-target="#base-settings" id="home-tab2" role="tab" data-toggle="tab" aria-expanded="false"><b>5</b> Wyposażenie </a>
+                        </li>
+
+                        <li role="presentation" onclick="setStep(4)" class="">
+                            <a data-target="#base-settings" id="home-tab42" role="tab" data-toggle="tab" aria-expanded="false"><b>5</b> Zamów </a>
+                        </li>
+                        <li>
+                        <div style=" padding:10px 0; width: 260px; float:right">
+                                <div style=" margin:4px;  float:left; height:14px;background:#fff; border:1px solid #efefef;  width: calc( 160px );">
+                                    <div id="progbar" style="height: calc(100% - 2px); width: 100%; margin: 1px; background: rgb(254, 189, 1);"></div>
+                                </div>
+                            <div id="steps" style="font-size:16px;">Step 4/4</div>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="">
+
+                    <div id="settingsTabContent" class="tab-content">
+
+                        <div role="tabpanel" class="tab-pane fade" id="base-settings">
+                            <div class="panel panel-default">
+                                <div ng-include="'tab3.html'">test4</div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade" id="advanced-settings">
+                            <div class="panel panel-default">
+                                Konfiguruj Silnik 1
+                            </div> <button   onclick="javascript:event.preventDefault();" class="btnPrev btn btn-ui-default btn-primary" style="margin:15px;">Prev Step</button><button  onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Next Step</button>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade active in" id="mail-settings" >
+                            <div class="panel panel-default" data-ng-controller="TestController">
+                                <div ng-include="'model1.html'">MODEL1</div>
+								
+<button id="button1" disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Konfiguruj <br/>{{color.name | json}}</button>
+								
+								
+							</div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade" id="url-settings" >
+
+                            <div class="panel panel-default">This product/service has some options which you can choose
+                                from below to customise your order.
+                                <button  onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Next Step</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+
+                    <!--button disabled  onclick="javascript:event.preventDefault();" class="btnPrev btn btn-ui-default btn-primary" style="margin:15px;">Prev Step</button>
+
+                    <button disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Next Step</button-->
+
+            </div>
+
+
+                <!--button id="btnPO" disabled type="submit" class="btn btn-ui-default btn-primary">Wyśłij Zamówienie</button-->
+
+        </form>
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+
 </body>
-
 </html>
