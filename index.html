@@ -35,9 +35,8 @@
 <section class="content big-padding">
     <div>
         <form method="POST" action="./" accept-charset="UTF-8" data-edc-form="1" data-scope="order" class="edc-order-form" >
-
             <!--input name="_token" type="hidden" value="AarQoOxriZtQ0DEubjiZgEZbHVT8fZntpmA6L0Nh">
-            <div class="col-md-8"-->
+            <di  v class="col-md-8"-->
             <div class="panel panel-full panel-default" data-step="1" data-intro="Choose a product/service...">
 
 
@@ -45,7 +44,7 @@
                     <ul id="settingsTab" class="nav nav-tabs nav3" role="tablist" style="background: #ecf4ff;">
 
                         <li role="presentation" onclick="setStep(1)" class="active">
-                            <a data-target="#mail-settings" role="tab" data-toggle="tab" aria-expanded="true"><b>1</b> Model </a>
+                            <a data-target="#model_selecting" role="tab" data-toggle="tab" aria-expanded="true"><b>1</b> Model </a>
                         </li>
 
                         <li role="presentation" onclick="setStep(2)" class="">
@@ -65,7 +64,7 @@
                         </li>
 
                         <li role="presentation" onclick="setStep(4)" class="">
-                            <a data-target="#base-settings" id="home-tab42" role="tab" data-toggle="tab" aria-expanded="false"><b>5</b> Zamów </a>
+                            <a data-target="#base-settings" id="home-tab42" role="tab" data-toggle="tab" aria-expanded="false"><b>6</b> Zamów </a>
                         </li>
                         <li>
                         <div style=" padding:10px 0; width: 260px; float:right">
@@ -78,30 +77,30 @@
                     </ul>
                 </div>
 
-                <div class="">
-
+                <div  data-ng-controller="TestController" class="">
                     <div id="settingsTabContent" class="tab-content">
 
-                        <div role="tabpanel" class="tab-pane fade" id="base-settings">
-                            <div class="panel panel-default">
-                                <div ng-include="'tab3.html'">test4</div>
-                            </div>
-                        </div>
+                    <div role="tabpanel" class="tab-pane fade active in" id="model_selecting">
+                       <div class="panel panel-default">
+                             <div ng-include="'model1.html'">MODEL1</div>
+						</div>
+						<div style="text-align:right">
+							<button id="button1" disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style=" margin:15px;">Konfiguruj <br/>{{color.name}}</button>
+                    </div>
+                    </div>
+						
 
                         <div role="tabpanel" class="tab-pane fade" id="advanced-settings">
                             <div class="panel panel-default">
-                                Konfiguruj Silnik 1
-                            </div> <button   onclick="javascript:event.preventDefault();" class="btnPrev btn btn-ui-default btn-primary" style="margin:15px;">Prev Step</button><button  onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Next Step</button>
+                               <div ng-include="'engine2.html'">MODEL1</div>
+                            </div> 
+							<button   onclick="javascript:event.preventDefault();" class="btnPrev btn btn-ui-default btn-primary" style="margin:15px;">Powrót do </button><button  id="button2" disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Konfiguruj Nadwozie</button>
                         </div>
-
-                        <div role="tabpanel" class="tab-pane fade active in" id="mail-settings" >
-                            <div class="panel panel-default" data-ng-controller="TestController">
-                                <div ng-include="'model1.html'">MODEL1</div>
-								
-<button id="button1" disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Konfiguruj! <br/>{{color.name | json}}</button>
-								
-								
-							</div>
+						
+						<div role="tabpanel" class="tab-pane fade" id="base-settings">
+                            <div class="panel panel-default">
+                                <div ng-include="'tab3.html'">test4</div>
+                            </div>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="url-settings" >
@@ -113,9 +112,9 @@
 
                         </div>
                     </div>
+					{{color}}
                 </div>
             </div>
-
 
             <div>
 

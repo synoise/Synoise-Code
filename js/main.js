@@ -1,77 +1,3 @@
-
-    function simpleController($scope) {
-        $scope.questionPaper = {
-            "id": "1",
-            "subject": "AngularJS",
-            "title": 'Exam#01',
-            "questions": [{
-                "id": "9",
-                "options": [{
-                    "id": "22",
-                    "description": "yes",
-                    "orderId": "1"
-                }, {
-                    "id": "23",
-                    "description": "now",
-                    "orderId": "2"
-                },
-
-                    {
-                        "id": "24",
-                        "description": "don't know",
-                        "orderId": "3"
-                    }
-                ],
-                "description": "Question#01?",
-                "orderId": "1"
-            }, {
-                "id": "10",
-                "options": [{
-                    "id": "25",
-                    "description": "Home",
-                    "orderId": "1"
-                }, {
-                    "id": "26",
-
-                    "description": "Work",
-                    "orderId": "2"
-                }, {
-                    "id": "27",
-                    "description": "Undecided or Other",
-                    "orderId": "3"
-                }],
-                "description": "Where to go?",
-                "orderId": "2"
-            }, {
-                "id": "20",
-                "options": [{
-                    "id": "53",
-                    "description": "Wrong Direction",
-                    "orderId": "1"
-                }, {
-                    "id": "54",
-                    "description": "Right Direction",
-                    "orderId": "2"
-                }, {
-                    "id": "55",
-                    "description": "Don't know",
-                    "orderId": "3"
-                }],
-                "description": "Are you belive your in?",
-                "orderId": "2"
-            }],
-            "updatedOn": "2014-07-12 18:20:52"
-        };
-
-        $scope.selected_ids = [];
-        $scope.submitAnswers = function () {
-            angular.forEach($scope.questionPaper.questions, function (question) {
-                $scope.selected_ids.push(question.selected_id);
-            });
-        }
-    }
-
-
     function show(n) {
         if (document.getElementById("t" + n).style.display == "block") {
             document.getElementById("t" + n).style.display = "none";
@@ -176,6 +102,9 @@
 	  $scope.color = {};
 
         $scope.search = [];
+        $scope.search2 = [];
+
+        $scope.price = 00;
 
         $scope.Models = {
             Limousine: false,
@@ -189,6 +118,311 @@
             double_suite: false
         };
 
+        $scope.engines =[
+            {typ: "Benzyna", silniki: "1.4 TFSI cylinder on demand", kw: "110(150)", gear: "6 biegow", naped: "Naped przedni", kee: "B", cena: "104 100"},
+                {
+                    "mark": "BMW",
+                    "typ": "Benzyna",
+                    "silniki": "1.4 TFSI cylinder on demand",
+                    "kw": "110(150)",
+                    "gear": "S tronic",
+                    "naped": "Naped przedni",
+                    "kee": "B",
+                    "cena": "113 200"
+                },
+                {
+                    "mark": "BMW",
+                    "typ": "Benzyna",
+                    "silniki": "sport 1.4 TFSI cylinder on demand",
+                    "kw": "110(150)",
+                    "gear": "6 biegow",
+                    "naped": "Naped przedni",
+                    "kee": "B",
+                    "cena": "113 100"
+                },
+                {
+                    "mark": "BMW",
+                    "typ": "Benzyna",
+                    "silniki": "sport 1.4 TFSI cylinder on demand",
+                    "kw": "110(150)",
+                    "gear": "S tronic",
+                    "naped": "Naped przedni",
+                    "kee": "B",
+                    "cena": "122 200"
+                },
+                {
+                    "mark": "BMW",
+                    "typ": "Diesel",
+                    "silniki": "1.6 TDI",
+                    "kw": "85(116)",
+                    "gear": "6 biegow",
+                    "naped": "Naped przedni",
+                    "kee": "A",
+                    "cena": "106 400"
+                },
+                {
+                    "mark": "BMW",
+                    "typ": "Benzyna",
+                    "silniki": "1.4 TFSI",
+                    "kw": "110(150)",
+                    "gear": "6 biegów",
+                    "naped": "Napęd przedni",
+                    "kee": "B",
+                    "cena": "131 500"
+                },
+                {
+                    "mark": "BMW",
+                    "typ": "Benzyna",
+                    "silniki": "1.4 TFSI",
+                    "kw": "110(150)",
+                    "gear": "S tronic",
+                    "naped": "Napęd przedni",
+                    "kee": "A",
+                    "cena": "141 000"
+                },
+                {
+                    "mark": "BMW",
+                    "typ": "Benzyna",
+                    "silniki": "2.0 TFSI",
+                    "kw": "185(252)",
+                    "gear": "S tronic",
+                    "naped": "Napęd przedni",
+                    "kee": "B",
+                    "cena": "171 800"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Benzyna",
+                    "silniki": "2.0 TFSI",
+                    "kw": "185(252)",
+                    "gear": "S tronic",
+                    "naped": "quattro",
+                    "kee": "B",
+                    "cena": "181 800"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Benzyna",
+                    "silniki": "2.0 TFSI ultra",
+                    "kw": "140(190)",
+                    "gear": "6 biegów",
+                    "naped": "Napęd przedni",
+                    "kee": "B",
+                    "cena": "149 900"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Benzyna",
+                    "silniki": "2.0 TFSI ultra",
+                    "kw": "140(190)",
+                    "gear": "S tronic",
+                    "naped": "Napęd przedni",
+                    "kee": "A",
+                    "cena": "159 400"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Benzyna",
+                    "silniki": "Sport 1.4 TFSI",
+                    "kw": "110(150)",
+                    "gear": "6 biegów",
+                    "naped": "Napęd przedni",
+                    "kee": "B",
+                    "cena": "140 200"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Benzyna",
+                    "silniki": "Sport 1.4 TFSI",
+                    "kw": "110(150)",
+                    "gear": "S tronic",
+                    "naped": "Napęd przedni",
+                    "kee": "B",
+                    "cena": "149 700"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Benzyna",
+                    "silniki": "Sport 2.0 TFSI",
+                    "kw": "185(252)",
+                    "gear": "S tronic",
+                    "naped": "Napęd przedni",
+                    "kee": "B",
+                    "cena": "177 800"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Benzyna",
+                    "silniki": "Sport 2.0 TFSI",
+                    "kw": "185(252)",
+                    "gear": "S tronic",
+                    "naped": "quattro",
+                    "kee": "B",
+                    "cena": "187 800"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Benzyna",
+                    "silniki": "Sport 2.0 TFSI ultra",
+                    "kw": "140(190)",
+                    "gear": "6 biegów",
+                    "naped": "Napęd przedni",
+                    "kee": "B",
+                    "cena": "155 900"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Benzyna",
+                    "silniki": "Sport 2.0 TFSI ultra",
+                    "kw": "140(190)",
+                    "gear": "S tronic",
+                    "naped": "Napęd przedni",
+                    "kee": "A",
+                    "cena": "165 400"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Diesel",
+                    "silniki": "110(150)",
+                    "kw": "6 biegów",
+                    "gear": "Napęd przedni",
+                    "naped": "A+",
+                    "kee": "150 000",
+                    "cena": ""
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Diesel",
+                    "silniki": "2.0 TDI",
+                    "kw": "110(150)",
+                    "gear": "S tronic",
+                    "naped": "Napęd przedni",
+                    "kee": "A+",
+                    "cena": "159 500"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Diesel",
+                    "silniki": "2.0 TDI",
+                    "kw": "140(190)",
+                    "gear": "6 biegów",
+                    "naped": "Napęd przedni",
+                    "kee": "A",
+                    "cena": "163 600"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Diesel",
+                    "silniki": "2.0 TDI",
+                    "kw": "140(190)",
+                    "gear": "S tronic",
+                    "naped": "Napęd przedni",
+                    "kee": "A+",
+                    "cena": "173 100"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Diesel",
+                    "silniki": "2.0 TDI",
+                    "kw": "140(190)",
+                    "gear": "S tronic",
+                    "naped": "quattro",
+                    "kee": "A+",
+                    "cena": "183 100"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Diesel",
+                    "silniki": "2.0 TDI",
+                    "kw": "90(122)",
+                    "gear": "6 biegów",
+                    "naped": "Napęd przedni",
+                    "kee": "A+",
+                    "cena": "143 600"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Diesel",
+                    "silniki": "2.0 TDI",
+                    "kw": "90(122)",
+                    "gear": "S tronic",
+                    "naped": "Napęd przedni",
+                    "kee": "A+",
+                    "cena": "153 100"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Diesel",
+                    "silniki": "Sport 2.0 TDI",
+                    "kw": "110(150)",
+                    "gear": "6 biegów",
+                    "naped": "Napęd przedni",
+                    "kee": "A+",
+                    "cena": "158 700"
+                },
+                {
+                    "mark": "Audi",
+                    "typ": "Diesel",
+                    "silniki": "Sport 2.0 TDI",
+                    "kw": "110(150)",
+                    "gear": "S tronic",
+                    "naped": "Napęd przedni",
+                    "kee": "A+",
+                    "cena": "168 200"
+                },
+                {
+                    "mark": "BMW",
+                    "typ": "Diesel",
+                    "silniki": "Sport 2.0 TDI BMW 34",
+                    "kw": "140(190)",
+                    "gear": "6 biegów",
+                    "naped": "Napęd przedni",
+                    "kee": "A",
+                    "cena": "169 600"
+                },
+                {
+                    "mark": "BMW",
+                    "typ": "Diesel",
+                    "silniki": "Sport 2.0 TDI BMW",
+                    "kw": "140(190)",
+                    "gear": "S tronic",
+                    "naped": "Napęd przedni",
+                    "kee": "A+",
+                    "cena": "179 100"
+                },
+                {
+                    "mark": "BMW",
+                    "typ": "Diesel",
+                    "silniki": "Sport 2.0 TDI BMW",
+                    "kw": "140(190)",
+                    "gear": "S tronic",
+                    "naped": "quattro",
+                    "kee": "A+",
+                    "cena": "189 100"
+                },
+                {
+                    "mark": "BMW",
+                    "typ": "Diesel",
+                    "silniki": "Sport 2.0 TDI BMW",
+                    "kw": "90(122)",
+                    "gear": "6 biegów",
+                    "naped": "Napęd przedni",
+                    "kee": "A+",
+                    "cena": "152 300"
+                },
+                {
+                    "mark": "BMW",
+                    "typ": "Diesel",
+                    "silniki": "Sport 2.0 TDI BMW",
+                    "kw": "90(122)",
+                    "gear": "S tronic",
+                    "naped": "Napęd przedni",
+                    "kee": "A+",
+                    "cena": "161 800"
+                }
+            ]
+
+        $scope.engines_end = $scope.engines_mark = $scope.engines_all = $scope.engines;
 
         $scope.vehicles = [
             {mark: "BMW", name: 'A1 Sportback', car_type: 'A1', nadwozie: "Limousine"},
@@ -270,8 +504,7 @@
 
         ];
 
-        $scope.vehicles_all = $scope.vehicles;
-        $scope.vehicles_end = $scope.vehicles_mark = $scope.vehicles_all;
+        $scope.vehicles_end = $scope.vehicles_mark = $scope.vehicles_all = $scope.vehicles;
 
 
         $scope.showButton1 = function (type) {
@@ -281,6 +514,12 @@
         $scope.filtrujModele = function (type) {
             // alert(type)
             $scope.vehicles_mark = $scope.vehicles_end = $scope.vehicles_all = filterFilter(orderByFilter($scope.vehicles, "mark"), type);
+
+        }
+
+        $scope.filtrujSilnik = function (type) {
+            // alert(type)
+            $scope.engines_end = $scope.engines_mark = $scope.engines_all = filterFilter(orderByFilter($scope.engines, "mark"), type);
 
         }
 
