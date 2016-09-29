@@ -43,28 +43,28 @@
                 <div class="panel-title">
                     <ul id="settingsTab" class="nav nav-tabs nav3" role="tablist" style="background: #ecf4ff;">
 
-                        <li role="presentation" onclick="setStep(1)" class="active">
-                            <a data-target="#model_selecting" role="tab" data-toggle="tab" aria-expanded="true"><b>1</b> Model </a>
+                        <li role="presentation" onclick="setStep(1)" class="">
+                            <a data-target="#model_selecting" role="tab" data-toggle="tab" ><b>1</b> Model </a>
                         </li>
 
-                        <li role="presentation" onclick="setStep(2)" class="">
-                            <a data-target="#advanced-settings" role="tab" data-toggle="tab" aria-expanded="false"><b>2</b> Silnik</a>
+                        <li role="presentation" onclick="setStep(2)" class="active">
+                            <a data-target="#advanced-settings" role="tab" data-toggle="tab"><b>2</b> Silnik</a>
                         </li>
 
                         <li role="presentation" onclick="setStep(3)" class="">
-                            <a data-target="#url-settings" role="tab" data-toggle="tab" aria-expanded="false"> <b>3 </b> Nadwozie </a>
+                            <a data-target="#url-settings" role="tab" data-toggle="tab"> <b>3 </b> Nadwozie </a>
                         </li>
 
                         <li role="presentation" onclick="setStep(4)" class="">
-                            <a data-target="#base-settings" id="home-tab" role="tab" data-toggle="tab" aria-expanded="false"><b>4</b> Wnętrze </a>
+                            <a data-target="#base-settings" id="home-tab" role="tab" data-toggle="tab" ><b>4</b> Wnętrze </a>
                         </li>
 
-                        <li role="presentation" onclick="setStep(4)" class="">
-                            <a data-target="#base-settings" id="home-tab2" role="tab" data-toggle="tab" aria-expanded="false"><b>5</b> Wyposażenie </a>
+                        <li role="presentation" onclick="setStep(5)" class="">
+                            <a data-target="#4inner" id="home-tab2" role="tab" data-toggle="tab" ><b>5</b> Wyposażenie </a>
                         </li>
 
-                        <li role="presentation" onclick="setStep(4)" class="">
-                            <a data-target="#base-settings" id="home-tab42" role="tab" data-toggle="tab" aria-expanded="false"><b>6</b> Zamów </a>
+                        <li role="presentation" onclick="setStep(6)" class="">
+                            <a data-target="#5order" id="home-tab42" role="tab" data-toggle="tab"><b>6</b> Zamów </a>
                         </li>
                         <li>
                         <div style=" padding:10px 0; width: 260px; float:right">
@@ -80,7 +80,7 @@
                 <div  data-ng-controller="TestController" class="">
                     <div id="settingsTabContent" class="tab-content">
 
-                    <div role="tabpanel" class="tab-pane fade active in" id="model_selecting">
+                    <div role="tabpanel" class="tab-pane fade" id="model_selecting">
                        <div class="panel panel-default">
                              <div ng-include="'model1.html'">MODEL1</div>
 						</div>
@@ -90,29 +90,39 @@
                     </div>
 						
 
-                        <div role="tabpanel" class="tab-pane fade" id="advanced-settings">
+                        <div role="tabpanel" class="tab-pane fade active in" id="advanced-settings">
                             <div class="panel panel-default">
                                <div ng-include="'engine2.html'">MODEL1</div>
                             </div> 
 							<button   onclick="javascript:event.preventDefault();" class="btnPrev btn btn-ui-default btn-primary" style="margin:15px;">Powrót do </button><button  id="button2" disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Konfiguruj Nadwozie</button>
                         </div>
-						
-						<div role="tabpanel" class="tab-pane fade" id="base-settings">
-                            <div class="panel panel-default">
-                                <div ng-include="'tab3.html'">test4</div>
-                            </div>
-                        </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="url-settings" >
-
-                            <div class="panel panel-default">This product/service has some options which you can choose
-                                from below to customise your order.
-                                <button  onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Next Step</button>
+                            <div class="panel panel-default">
+                                <div ng-include="'body3.html'">test4</div>
                             </div>
-
                         </div>
+
+                        <div role="tabpanel" class="tab-pane fade" id="4inner">
+                            <div class="panel panel-default">
+                                <div ng-include="'tab1.html'">test4</div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade" id="base-settings">
+                            <div class="panel panel-default">
+                                <div ng-include="'tab2.html'">test4</div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade" id="5order">
+                            <div class="panel panel-default">
+                                <div > <button id="btnPO" disabled type="submit" class="btn btn-ui-default btn-primary">Wyśłij Zamówienie</button></div>
+                            </div>
+                        </div>
+
                     </div>
-					{{color}}
+					{{something}}
                 </div>
             </div>
 

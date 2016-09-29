@@ -1,157 +1,121 @@
+<style>
+    .models_column{
+        width:200px; display: inline-table;
+    }
 
-                                            <div class="panel panel-default">
-                                                <div class="info_summary"><img
-                                                        src="./Order Management EasyDCIM - Complete Solution For Data Center Management_files/blue.png"
-                                                        data-evernote-hover-show="true">Assign a order to the client,
-                                                    set order status and additional options.
-                                                </div>
-                                                <div class="panel-body">
+    input[type=radio] {
+        width: 12px;
+        height: 12px;
+    }
 
-                                                    <label for="test">Label for my styled "checkbox"</label>
+    td,th { width:160px}
 
-                                                    <input onclick="check_box(this,1)" type="checkbox" name="checkboxG2"
-                                                           id="checkboxG2" class="css-checkbox"><label for="checkboxG2"
-                                                                                                       class="css-label">*</label>
+    .btn-default {
+        border:0;
+        padding:3px;
+        min-width:160px;
+        text-align: left;
+        font-size:13px;
+    }
 
-                                                    <br> <br> <br>
-                                                    <select class="select_costume">
-                                                        <option value="volvo">Timezone</option>
-                                                        <option value="saab">Saab</option>
-                                                        <option value="mercedes">Mercedes</option>
-                                                        <option value="audi">Audi</option>
-                                                    </select><br>
-                                                    <small>You can use the <strong><a href="http://php.net/date">table
-                                                        of date format characters on the PHP website</a></strong> as a
-                                                        reference for building date format strings for use in Easy DCIM.
-                                                    </small>
-                                                    <h5>Locale</h5>
-
-                                                    <div class="form-group">
-                                                        <label for="settingDefaultLanguage">Default Client Area
-                                                            Language</label>
-                                                        <select class="form-control selectized" data-edc-select="1"
-                                                                style="width: 60px; display: none;"
-                                                                name="settings[backend.settings.defaultLanguage]"
-                                                                tabindex="-1">
-                                                            <option value="en" selected="selected"></option>
-                                                        </select>
-                                                        <div class="selectize-control form-control selectized single"
-                                                             style="width: 60px;">
-                                                            <div class="selectize-input items full has-options has-items">
-                                                                <div data-value="en" class="item"></div>
-                                                                <input type="text" autocomplete="off" tabindex="-1"
-                                                                       style="width: 4px;"></div>
-                                                            <div class="selectize-dropdown single form-control selectized"
-                                                                 style="display: none; width: 60px; top: 34px; left: 0px;">
-                                                                <div class="selectize-dropdown-content"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="selectize-control form-control single"
-                                                             style="width: 60px;">
-                                                            <div class="selectize-input items full has-options has-items">
-                                                                <div data-value="en" class="item">en</div>
-                                                                <input type="text" autocomplete="off" tabindex=""
-                                                                       style="width: 4px;"></div>
-                                                            <div class="selectize-dropdown single form-control"
-                                                                 style="display: none; width: 100px; top: 0px; left: 0px;">
-                                                                <div class="selectize-dropdown-content"></div>
-                                                            </div>
-                                                        </div>
-
-                                                        <select class="form-control selectized" data-edc-select="1"
-                                                                style="width: 60px; display: none;"
-                                                                name="settings[backend.settings.adminLanguage]"
-                                                                tabindex="-1">
-                                                            <option value="en" selected="selected"></option>
-                                                        </select>
-                                                        <div class="selectize-control form-control selectized single"
-                                                             style="width: 60px;">
-                                                            <div class="selectize-input items full has-options has-items">
-                                                                <div data-value="en" class="item"></div>
-                                                                <input type="text" autocomplete="off" tabindex="-1"
-                                                                       style="width: 4px;"></div>
-                                                            <div class="selectize-dropdown single form-control selectized"
-                                                                 style="display: none; width: 60px; top: 34px; left: 0px;">
-                                                                <div class="selectize-dropdown-content"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="selectize-control form-control single"
-                                                             style="width: 60px;">
-                                                            <div class="selectize-input items full has-options has-items">
-                                                                <div data-value="en" class="item">en</div>
-                                                                <input type="text" autocomplete="off" tabindex=""
-                                                                       style="width: 4px;"></div>
-                                                            <div class="selectize-dropdown single form-control"
-                                                                 style="display: none; width: 100px; top: 0px; left: 0px;">
-                                                                <div class="selectize-dropdown-content"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <h5>Date</h5>
-
-                                                    <div class="form-group"><label for="backend.settings.dateFormat">Global
-                                                        Date Format</label><input class="form-control" id="dateFormat"
-                                                                                  placeholder="Format string"
-                                                                                  name="settings[backend.settings.dateFormat]"
-                                                                                  type="text" value="Y-m-d H:i:s"></div>
-
-                                                    <div class="form-group">
-                                                        <select class="form-control selectized" data-edc-select="1"
-                                                                id="dateFormatPredefined" name="dateFormatPredefined"
-                                                                tabindex="-1" style="display: none;">
-                                                            <option value="" selected="selected"></option>
-                                                        </select>
-                                                        <div class="selectize-control form-control selectized single">
-                                                            <div class="selectize-input items not-full"><input
-                                                                    type="text" autocomplete="off" tabindex="-1"
-                                                                    style="width: 4px;"></div>
-                                                            <div class="selectize-dropdown single form-control selectized"
-                                                                 style="display: none; width: 380px; top: 34px; left: 0px;">
-                                                                <div class="selectize-dropdown-content"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="selectize-control form-control single">
-                                                            <div class="selectize-input items not-full has-options">
-                                                                <input type="text" autocomplete="off" tabindex=""
-                                                                       placeholder="Predefined formats..."
-                                                                       style="width: 135px;"></div>
-                                                            <div class="selectize-dropdown single form-control"
-                                                                 style="display: none; width: 100px; top: 0px; left: 0px;">
-                                                                <div class="selectize-dropdown-content"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <select class="form-control selectized" data-edc-select="1"
-                                                                id="dateFormatPredefined" name="dateFormatPredefined"
-                                                                tabindex="-1" style="display: none;">
-                                                            <option value="" selected="selected"></option>
-                                                        </select>
-                                                        <div class="selectize-control form-control selectized single">
-                                                            <div class="selectize-input items not-full"><input
-                                                                    type="text" autocomplete="off" tabindex="-1"
-                                                                    style="width: 4px;"></div>
-                                                            <div class="selectize-dropdown single form-control selectized"
-                                                                 style="display: none; width: 380px; top: 34px; left: 0px;">
-                                                                <div class="selectize-dropdown-content"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="selectize-control form-control single">
-                                                            <div class="selectize-input items not-full has-options">
-                                                                <input type="text" autocomplete="off" tabindex=""
-                                                                       placeholder="Predefined formats..."
-                                                                       style="width: 135px;"></div>
-                                                            <div class="selectize-dropdown single form-control"
-                                                                 style="display: none; width: 100px; top: 0px; left: 0px;">
-                                                                <div class="selectize-dropdown-content"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+    td{
+        -webkit-box-sizing: initial !important;
+        box-sizing: initial !important;
+    }
+</style>
 
 
-                                                    <b style="float:right"> <span
-                                                            style="color:#fda; font-size:20px;">*</span> required fields</b>
-                                                </div>
-                                            </div>
+<div >
+    <div style="border-bottom:1px solid #f3f3f3;">
+<span style=" width:45%;display:inline-table; text-align: left;">
+<h4 >
+    Cena modelu {{color.name}}:{{color.price}}  zł
+</h4>
+</span>
+<span>
+Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
+ <input placeholder="wyszukaj silnik" class="form-control"  aria-describedby="sizing-addon1"  style=" height:25px;width:200px;margin-bottom:5px; display:inline-table" input ng-model="search2.$">
+</span>
+    </div>
+
+
+    <div class="models_column" >
+        <h4>Tapicerka</h4>
+
+        <div ng-repeat="m1 in color">
+            <!--label class="btn btn-default">
+                <input type="radio" name="Marka" ng-click="filtrujSilnik(m1,'typ')" > {{m1}} </input></label>
+                <input type="checkbox" ng-model='search2' ng-true-value='320' ng-false-value='' /> {{m1}}
+                <input type="checkbox" data-ng-model='search2' data-ng-true-value='benzyna' data-ng-false-value='' /> {{m1}}-->
+            <label class="btn btn-default" style="background:{{m1.hex}}; margin-bottom: -3px;">
+                <input type="radio" name="color" ng-click="includeColour(m1,'typ')"/>
+
+                <span style="background:{{m1.hex}}"> {{m1.name}}</span>
+
+            </label>
+
+        </div>
+
+    </div>
+    <div class="models_column"  style="width:540px;">
+        <h4>Listwy</h4>
+
+
+        <div ng-repeat="m1 in color">
+            <!--label class="btn btn-default">
+                <input type="radio" name="Marka" ng-click="filtrujSilnik(m1,'typ')" > {{m1}} </input></label>
+                <input type="checkbox" ng-model='search2' ng-true-value='320' ng-false-value='' /> {{m1}}
+                <input type="checkbox" data-ng-model='search2' data-ng-true-value='benzyna' data-ng-false-value='' /> {{m1}}-->
+            <label class="btn btn-default" style="background:{{m1.hex}}; margin-bottom: -3px;">
+                <input type="radio" name="color" ng-click="includeColour(m1,'typ')"/>
+
+                <span style="background:{{m1.hex}}"> {{m1.name}}</span>
+
+            </label>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<!--div class="models_column" style="width:calc( 100% - 250px );" >
+    <h4>Silniki</h4>
+<table class="table table-striped">
+<thead><tr><th> Name </th><th>Moc w kW (KM) </th><th> Rodzaj Napędu </th><th> Rodzaj Napędu </th><th> kee? </th><th> Cena </th></tr> </thead>
+<tr data-ng-repeat="engi in engines_all | orderBy:'silniki'|filter:search2">
+
+<td> <input type="radio" name="Markaee" ng-click="showButton1('button2')" ng-model="color.price" ng-value="engi.cena" > {{engi.silniki}}</input></td>
+<td>{{engi.kw}}</td>
+<td>{{engi.gear}}</td>
+<td>{{engi.naped}}</td>
+<td>{{engi.kee}}</td>
+<td>{{engi.cena}}</td>
+</tr>
+</table>
+
+        <!- -div data-ng-repeat="engi in engines_all | groupBy:'silniki'| orderBy:'silniki'" >
+              <label class="btn btn-default"><input type="radio" name="Grupa" ng-click=""> {{engi}} </input> </label>
+        </div- ->
+</div-->
+
+<!--div  class="models_column">
+    <h4>moc</h4>
+
+    <div data-ng-repeat="silnik in engines | groupBy:'kw'| orderBy:'kw'">
+          <label class="btn btn-default"><input type="radio" name="kw" ng-click="filterGrupaModelowa(silnik)"> {{silnik}} </input></label>
+    </div>
+</div-->
+
+<!--div  class="models_column" style="width:100%; font-size:8px;">
+    <h1>( Baza Danych )</h1>
+         <div data-ng-repeat="engines in engines|filter:search" >
+{{engines.mark}} , {{engines.typ}}, <b>silnik:</b> {{engines.silnik}} ,<b>moc:</b> {{engines.kw}} , {{engines.gear}} ,
+<b>naped:</b> {{engines.naped}} ,<b> cena: </b>{{engines.cena}}pln</b><br/>
+         </div>
+</div-->
+
+</div>

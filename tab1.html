@@ -1,263 +1,142 @@
-<div ng-controller='simpleController'>
-    <form name="questionsForm" ng-submit="submitAnswers()">
-        <input type="hidden" name="question_paper_id" ng-model="questionPaper.id">
-        <h5>{{questionPaper.title}}</h5>
-        <h6>{{questionPaper.subject}}</h6>
-        <ul>
-            <li ng-repeat="question in questionPaper.questions">
-                <div>{{question.description}}</div>
-                <ul>
-                    <li ng-repeat="option in question.options">
-              <span>
-            <input type="radio" name="option_question_{{question.id}}" ng-model="question.selected_id" ng-value="option.id"/>
-            {{option.description}}
-          </span>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <input type='submit' value="Submit Answers">
-        {{selected_ids}}
-    </form>
-</div>
+<style>
+    .models_column {
+        width: 200px;
+        display: inline-table;
+    }
+
+    input[type=radio] {
+        width: 12px;
+        height: 12px;
+    }
+
+    td, th {
+        width: 160px
+    }
+
+    .btn-default {
+        border: 0;
+        padding: 3px;
+        min-width: 160px;
+        text-align: left;
+        font-size: 13px;
+    }
+
+    td {
+        -webkit-box-sizing: initial !important;
+        box-sizing: initial !important;
+    }
+</style>
 
 
-
-
-
-
-<div style="background: #fafafa;">
-    <div class="floating-container" style="background: #fafafa;" >
-        <div class="panel panel-full panel-default" data-edc-scroll="true" style="  min-height: 200px; width:300px; float: right; background: #fafafa;">
-            <div class="panel-title" style="padding: 20px 20px 0 20px;">
-                <h4>Model</h4>
-
-                <hr>
-                <form>
-
-                    <div key="a1" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-                        <input type="radio" name="optradio">
-                        <span class="label">Audi A1</span>  </input>
-                    </div>
-
-                    <div key="a3" rbgroup="carlineGroup" class="radioButton checked" tooltip="html">
-                        <input type="radio" name="optradio">
-                        <span class="label">Audi A3</span>  </input>
-                    </div>
-
-                    <div key="a4" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-                        <input type="radio" name="optradio">
-                        <span class="label">Audi A4</span>  </input>
-                    </div>
-
-                    <div key="a5" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-                        <input type="radio" name="optradio">
-                        <span class="label">Audi A5</span>  </input>
-                    </div>
-
-                    <div key="a6" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-                        <input type="radio" name="optradio">
-                        <span class="label">Audi A6</span>  </input>
-                    </div>
-
-                    <div key="a7" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-                        <input type="radio" name="optradio">
-                        <span class="label">Audi A7</span>  </input>
-                    </div>
-
-                    <div key="a8" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-                        <input type="radio" name="optradio">
-                        <span class="label">Audi A8</span>  </input>
-                    </div>
-
-                    <div key="q2" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-                        <input type="radio" name="optradio">
-                        <span class="label">Audi Q2</span>  </input>
-                    </div>
-
-                    <div key="q3" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-                        <input type="radio" name="optradio">
-                        <span class="label">Audi Q3</span>  </input>
-                    </div>
-
-                    <div key="q5" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-                        <input type="radio" name="optradio">
-                        <span class="label">Audi Q5</span>  </input>
-                    </div>
-
-                    <div key="q7" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-                        <input type="radio" name="optradio">
-                        <span class="label">Audi Q7</span>  </input>
-                    </div>
-
-                    <div key="tt" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-                        <input type="radio" name="optradio">
-                        <span class="label">Audi TT</span>  </input>
-                    </div>
-
-                    <div key="r8" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-                        <input type="radio" name="optradio">
-                        <span class="label">Audi R8</span>  </input>
-                    </div>
-                    <div class="radio">
-                        <label><input type="radio" name="optradio">Option 1</label>
-                    </div>
-                    <div class="radio">
-                        <label><input type="radio" name="optradio">Option 2</label>
-                    </div>
-                    <div class="radio disabled">
-                        <label><input type="radio" name="optradio" disabled>Option 3</label>
-                    </div>
-                </form>
-            </div>
-
-        </div>
+<div>
+    <div style="border-bottom:1px solid #f3f3f3;">
+<span style=" width:45%;display:inline-table; text-align: left;">
+<h4>
+    Cena modelu {{color.name}}:{{color.price}} zł
+</h4>
+</span>
+<span>
+Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
+ <input placeholder="wyszukaj silnik" class="form-control" aria-describedby="sizing-addon1"
+        style=" height:25px;width:200px;margin-bottom:5px; display:inline-table" input ng-model="search2.$">
+</span>
     </div>
-</div>
 
 
-<div style="background: #fafafa;">
-    <div class="floating-container" style="background: #fafafa;" >
-        <div class="panel panel-full panel-default" data-edc-scroll="true" style="  min-height: 200px; width:300px; float: right; background: #fafafa;">
-            <div class="panel-title" style="padding: 20px 20px 0 20px;">
-                <h4>Nadwozie</h4>
+    <div class="models_column" style="width:540px;">
+        <h4>Wybór Pakietu</h4>
 
-                <hr>
-                <form>
+        <input type="radio">  Pakiet Innowacji      <br/>
+        4 355,00 PLN lub 48,05 PLN mies. brutto   <br/>
+               <br/>
 
-                    <div key="a1" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-                        <input type="radio" name="optradio">
-                        <span class="label">Audi A1</span>  </input>
-                    </div>
+        <input type="radio"> Convenience Plus Package   <br/>
+        7 292,00 PLN lub 80,46 PLN mies. brutto   <br/>
+                  <br/>
 
+        <input type="radio">  BMW ConnectedDrive Advanced    <br/>
+        7 537,00 PLN lub 83,17 PLN mies. brutto    <br/>
+                   <br/>
 
+        <input type="radio"> Driver Assistance Package     <br/>
+        7 660,00 PLN lub 84,53 PLN mies. brutto   <br/>
+              <br/>
 
+        <input type="radio"> BMW ConnectedDrive Plus  <br/>
+        9 123,00 PLN lub 100,67 PLN mies. brutto   <br/>
+                   <br/>
 
+        <input type="radio">  Business Class Package     <br/>
+        12 409,00 PLN* lub 136,93 PLN mies. brutto     <br/>
+                           <br/>
 
-                                <div key="limo" group="a3 a4 a6 a8" rbgroup="bodyType" class="radioButton" tooltip="html">
-                                     <input type="radio" name="optradio">
-                                    <span class="label">Limousine</span></input>
-                                </div>
+        <input type="radio">  First Class Upgrade     <br/>
+        17 572,00 PLN lub 193,90 PLN mies. brutto  <br/>
+                         <br/>
 
-                                <div key="avant" group="a4 a6" rbgroup="bodyType" class="radioButton" tooltip="html">
-                                     <input type="radio" name="optradio">
-                                    <span class="label">Avant</span></input>
-                                </div>
-
-                                <div key="sportback" group="a1 a3 a5 a7" rbgroup="bodyType" class="radioButton" tooltip="html">
-                                     <input type="radio" name="optradio">
-                                    <span class="label">Sportback</span></input>
-                                </div>
-
-                                <div key="coupe" group="tt a5 r8" rbgroup="bodyType" class="radioButton" tooltip="html">
-                                     <input type="radio" name="optradio">
-                                    <span class="label">Coupé</span></input>
-                                </div>
-
-                                <div key="cabrio" group="a5" rbgroup="bodyType" class="radioButton" tooltip="html">
-                                     <input type="radio" name="optradio">
-                                    <span class="label">Cabriolet</span></input>
-                                </div>
-
-                                <div key="aaq" group="a4 a6" rbgroup="bodyType" class="radioButton" tooltip="html">
-                                     <input type="radio" name="optradio">
-                                    <span class="label">allroad quattro</span></input>
-                                </div>
-
-                                <div key="suv" group="q2 q3 q5 q7" rbgroup="bodyType" class="radioButton" tooltip="html">
-                                     <input type="radio" name="optradio">
-                                    <span class="label">SUV</span></input>
-                                </div>
+        <input type="radio">         <br/>
+        Kompozycja Individual     <br/>
+        18 733,00 PLN lub 206,71 PLN mies. brutto    <br/>
+                      <br/>
 
 
 
-                </form>
-            </div>
+        <h5>Opis Pakietu</h5>
 
-        </div>
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Pakiet</th>
+                <th>Opis</th>
+                <th>Cena w pakiecie</th>
+                <th>Cena bez pakietu</th>
+            </thead>
+
+            <tr ng-repeat="m2 in packs">
+
+                <td> {{m2.Pakiet}}</td>
+                <td>{{m2.name}}</td>
+                <td>{{m2.price_in}}</td>
+                <td>{{m2.price_out}}</td>
+            </tr>
+
+        </table>
+
+
     </div>
+
+
+    <div class="models_column">
+        <h4>Dodatkowe Opcje </h4>
+
+
+
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Opis</th>
+                <th>equ_group</th>
+                <th>equ_sub_group</th>
+            </thead>
+
+            <tr ng-repeat="m2 in pakiet">
+
+                <td>   <input type="checkbox"/> {{m2.id}} </br/></td>
+                <td>{{m2.Denotation}}</td>
+                <td>{{m2.equ_group}}</td>
+                <td>{{m2.equ_sub_group}}</td>
+            </tr>
+
+        </table>
+
+
+    </div>
+
+
 </div>
 
 
-<div class="container">
-    <h2>Grupa modelowa</h2>
-    <p>The form below contains three radio buttons. The last option is disabled:</p>
-    <form>
-
-        <div key="a1" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-            <input type="radio" name="optradio">
-            <span class="label">Audi A1</span>  </input>
-        </div>
-
-        <div key="a3" rbgroup="carlineGroup" class="radioButton checked" tooltip="html">
-            <input type="radio" name="optradio">
-            <span class="label">Audi A3</span>  </input>
-        </div>
-
-        <div key="a4" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-            <input type="radio" name="optradio">
-            <span class="label">Audi A4</span>  </input>
-        </div>
-
-        <div key="a5" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-            <input type="radio" name="optradio">
-            <span class="label">Audi A5</span>  </input>
-        </div>
-
-        <div key="a6" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-            <input type="radio" name="optradio">
-            <span class="label">Audi A6</span>  </input>
-        </div>
-
-        <div key="a7" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-            <input type="radio" name="optradio">
-            <span class="label">Audi A7</span>  </input>
-        </div>
-
-        <div key="a8" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-            <input type="radio" name="optradio">
-            <span class="label">Audi A8</span>  </input>
-        </div>
-
-        <div key="q2" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-            <input type="radio" name="optradio">
-            <span class="label">Audi Q2</span>  </input>
-        </div>
-
-        <div key="q3" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-            <input type="radio" name="optradio">
-            <span class="label">Audi Q3</span>  </input>
-        </div>
-
-        <div key="q5" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-            <input type="radio" name="optradio">
-            <span class="label">Audi Q5</span>  </input>
-        </div>
-
-        <div key="q7" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-            <input type="radio" name="optradio">
-            <span class="label">Audi Q7</span>  </input>
-        </div>
-
-        <div key="tt" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-            <input type="radio" name="optradio">
-            <span class="label">Audi TT</span>  </input>
-        </div>
-
-        <div key="r8" rbgroup="carlineGroup" class="radioButton" tooltip="html">
-            <input type="radio" name="optradio">
-            <span class="label">Audi R8</span>  </input>
-        </div>
-        <div class="radio">
-            <label><input type="radio" name="optradio">Option 1</label>
-        </div>
-        <div class="radio">
-            <label><input type="radio" name="optradio">Option 2</label>
-        </div>
-        <div class="radio disabled">
-            <label><input type="radio" name="optradio" disabled>Option 3</label>
-        </div>
-    </form>
 </div>
-
-

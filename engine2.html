@@ -39,23 +39,45 @@ Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
 </div>
 
 
+
+
     <div class="models_column" >
         <h4>Typ paliwa</h4>
-        <div ng-init="group1 = ( engines | groupBy:'typ'| orderBy:'typ')">
-            <div ng-repeat="m1 in group1| orderBy:'typ'">
-              <label class="btn btn-default"><input type="radio" name="Marka" ng-click="filtrujSilnik(m1)"> {{m1}} </input> </label>
+        <div >
+            <div ng-repeat="m1 in engines|  groupBy:'typ'|orderBy:'typ'">
+                <!--label class="btn btn-default">
+                    <input type="radio" name="Marka" ng-click="filtrujSilnik(m1,'typ')" > {{m1}} </input></label>
+                    <input type="checkbox" ng-model='search2' ng-true-value='320' ng-false-value='' /> {{m1}}
+                    <input type="checkbox" data-ng-model='search2' data-ng-true-value='benzyna' data-ng-false-value='' /> {{m1}}-->
+                <input type="checkbox" ng-click="includeColour(m1,'typ')"/> {{m1}} </br/>
+
             </div>
+
+
+            <!--div ng-repeat="m1 in group1| orderBy:'typ'">
+              <label class="btn btn-default">
+                  <!--input type="radio" name="Marka" ng-click="filtrujSilnik(m1,'typ')" > {{m1}} </input></label>
+                  <input type="checkbox" ng-model='search2' ng-true-value='320' ng-false-value='' /> {{m1}}-- >
+                  <input type="checkbox" name="Marka3" data-ng-model='search2' data-ng-true-value='a' data-ng-false-value='' /> Luxury &nbsp;&nbsp;&nbsp;
+                  <input type="checkbox" name="Marka3" data-ng-model='search2' data-ng-true-value='benzyna' data-ng-false-value='' /> Double suite
+            </div-->
+
         </div>
 		 <h4>Skrzynia Biegów</h4>
 			<div ng-init="group2 = ( engines | groupBy:'gear'| orderBy:'gear')">
 				<div ng-repeat="m2 in group2| orderBy:'gear'">
-				  <label class="btn btn-default"><input type="radio" name="Marka" ng-click="filtrujSilnik(m2)"> {{m2}} </input> </label>
+				  <label class="btn btn-default">
+                      <!--input type="radio" name="Marka" ng-click="filtrujSkrzynia (m2,'gear')"> {{m2}} </input-->
+                      <input type="checkbox" ng-click="includeColour(m2,'gear')"/> {{m2}} </br/>
+                  </label>
 				</div>
 			</div>
 		 <h4>Napęd</h4>
 			<div ng-init="group3 = ( engines | groupBy:'naped'| orderBy:'naped')">
 				<div ng-repeat="m3 in group3| orderBy:'naped'">
-				  <label class="btn btn-default"><input type="radio" name="Marka" ng-click="filtrujSilnik(m3)"> {{m3}} </input> </label>
+				  <!--label class="btn btn-default"><input type="radio" name="Marka" ng-click="filtrujSilnik(m3,'naped')"> {{m3}} </input> </label-->
+
+                    <input type="checkbox" ng-click="includeColour(m3,'naped')"/> {{m3}} </br/>
 				</div>
 			</div>
     </div>
@@ -64,17 +86,19 @@ Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
     <div class="models_column" style="width:calc( 100% - 250px );" >
         <h4>Silniki</h4>  
 <table class="table table-striped">
-   <thead><tr><th> Name </th><th>Moc w kW (KM) </th><th> Rodzaj Napędu </th><th> Rodzaj Napędu </th><th> kee? </th><th> Cena </th></tr> </thead>
-  <tr data-ng-repeat="engi in engines_all | orderBy:'silniki'|filter:search2">
+   <thead><tr><th> Name </th><th>Moc w kW (KM) </th><th> Skrzynia Biegów </th><th> Przyspieszenie <br/> Spalanie <br/> Emisja CO2 </th><th> typ paliwa </th><th> Cena </th><th> Rata </th></tr> </thead>
+  <tr data-ng-repeat="engi in engines_all | orderBy:'silniki'|filter:search2|filter:colourFilter">
  
-    <td> <input type="radio" name="Marka" ng-click="showButton1('button2')" ng-model="color.price" ng-value="engi.cena" > {{engi.silniki}}</input></td>
-    <td>{{engi.kw}}</td>
+    <td> <input type="radio" name="Markaee" ng-click="showButton1('button2')" ng-model="color.price" ng-value="engi.cena" > {{engi.name}}</input></td>
+    <td>{{engi.power}}</td>
     <td>{{engi.gear}}</td>
-    <td>{{engi.naped}}</td>
-    <td>{{engi.kee}}</td>
+    <td>{{engi.boost}} <br/> {{engi.burn}} <br/> {{engi.co2}}</td>
+    <td>{{engi.typ}}</td>
     <td>{{engi.cena}}</td>
+    <td>{{engi.rata}}</td>
   </tr>
 </table>
+
 
             <!--div data-ng-repeat="engi in engines_all | groupBy:'silniki'| orderBy:'silniki'" >
                   <label class="btn btn-default"><input type="radio" name="Grupa" ng-click=""> {{engi}} </input> </label>

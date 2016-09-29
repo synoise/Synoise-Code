@@ -1,0 +1,94 @@
+{
+  "records": [
+ {
+   "model": "F30",
+   "ID": "710",
+   "name": "Sportowa skorzana kierownica M ",
+   "Pakiet": "Pakiet M Sport",
+   "id_pack": "337",
+   "price_in": "0",
+   "price_out": "1 322",
+   "waluta": "PLN"
+ },
+ {
+   "model": "F30",
+   "ID": "760",
+   "name": "Obramowania BMW Individual Shadow Line",
+   "Pakiet": "Pakiet M Sport",
+   "id_pack": "337",
+   "price_in": "0",
+   "price_out": "2 292",
+   "waluta": "PLN"
+ },
+ {
+   "model": "F30",
+   "ID": "775",
+   "name": "Podsufitka BMW Individual w kolorze antracytowym",
+   "Pakiet": "Pakiet M Sport",
+   "id_pack": "337",
+   "price_in": "0",
+   "price_out": "1 719",
+   "waluta": "PLN"
+ },
+ {
+   "model": "F30",
+   "ID": "704",
+   "name": "Sportowe zawieszenie M",
+   "Pakiet": "Pakiet M Sport",
+   "id_pack": "337",
+   "price_in": "0",
+   "price_out": "1 738",
+   "waluta": "PLN"
+ },
+ {
+   "model": "F30",
+   "ID": "5A1",
+   "name": "Diodowe reflektory przeciwmglowe",
+   "Pakiet": "Pakiet M Sport",
+   "id_pack": "337",
+   "price_in": "0",
+   "price_out": "926",
+   "waluta": "PLN"
+ },
+ {
+   "model": "F30",
+   "ID": "481",
+   "name": "Sportowe fotele przednie",
+   "Pakiet": "Pakiet M Sport",
+   "id_pack": "337",
+   "price_in": "0",
+   "price_out": "2 424",
+   "waluta": "PLN"
+ },
+ {
+   "model": "F30",
+   "ID": "21B",
+   "name": "Obrecze kol ze stopu lekkiego 21B Double Spoke 441 M z ogumieniem mieszanym  w kolorze Ferric Grey  18 cali Rozmiar opon z przodu 225/45 R1 z tylu 255/40 R18",
+   "Pakiet": "Pakiet M Sport",
+   "id_pack": "tylko z 337",
+   "price_in": "882",
+   "price_out": "",
+   "waluta": "PLN",
+   "FIELD9": "882"
+ },
+ {
+   "model": "F30",
+   "ID": "4WG",
+   "name": "Listwy ozdobne Aluminium Hexagon z listwa akcentowa w kolorze czarnym blyszczacym",
+   "Pakiet": "",
+   "id_pack": "tylko z 337",
+   "price_in": "0",
+   "price_out": "-",
+   "waluta": "PLN"
+ },
+ {
+   "model": "F30",
+   "ID": "715",
+   "name": "Pakiet Areodynamiczny M",
+   "Pakiet": "",
+   "id_pack": "tylko z 337",
+   "price_in": "0",
+   "price_out": "-",
+   "waluta": "PLN"
+ }
+]}
