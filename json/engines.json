@@ -1,5 +1,43 @@
 {
-  "records": [
+
+  "F31": [
+    {
+      "name": "318i Limousine",
+      "gear": "Skrzynia manualna",
+      "power": "100 kW (136 KM)",
+      "naped": "Napęd przedni","typ": "benzyna",
+      "burn": "5.5 - 5.1 l/100km",
+      "cena": "126 200.00 PLN",
+      "boost": "8.9 sec",
+      "co2": "129 - 119 g/km",
+      "rata": "1 477.64 PLN",
+      "colour1": "Yellow"
+    },
+    {
+      "name": "318i Limousine",
+      "gear": "Automatyczna skrzynia biegow",
+      "power": "100 kW (136 KM)",
+      "naped": "Napęd tylni","typ": "benzyna",
+      "burn": "5.4 - 5.0 l/100km",
+      "cena": "135 675.00 PLN",
+      "boost": "9.1 sec",
+      "co2": "126 - 116 g/km",
+      "rata": "1 588.58 PLN",
+      "colour1": "Orange"
+    },
+    {
+      "name": "320i Limousine",
+      "gear": "Skrzynia manualna",
+      "power": "135 kW (184 KM)",
+      "naped": "Napęd tylni","typ": "benzyna",
+      "burn": "5.9 - 5.5 l/100km",
+      "cena": "144 600.00 PLN",
+      "boost": "7.2 sec",
+      "co2": "138 - 128 g/km",
+      "rata": "1 732.07 PLN",
+      "colour1": "Red"
+    }],
+  "F30": [
     {
       "name": "318i Limousine",
       "gear": "Skrzynia manualna",

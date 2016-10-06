@@ -19,14 +19,14 @@ min-width:160px;
 }
 
 td{
-    -webkit-box-sizing: initial !important; 
-     box-sizing: initial !important; 
+    -webkit-box-sizing: initial !important;
+     box-sizing: initial !important;
 }
 </style>
 
 
-<div > 
-<div style="border-bottom:1px solid #f3f3f3;"> 
+<div >
+<div style="border-bottom:1px solid #f3f3f3;">
 <span style=" width:45%;display:inline-table; text-align: left;">
 <h4 >
 Cena modelu {{color.name}}:{{color.price}}  zł
@@ -40,7 +40,7 @@ Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
 
 
     <div class="models_column" >
-        <h5>Pakiety wyposażenia </br> i stylistyczne</h5>
+        <h5>Pakiety wyposażenia </br> i stylistyczne1</h5>
         <div ng-init="group1 = ( engines | groupBy:'typ'| orderBy:'typ')">
             <div ng-repeat="m1 in group1| orderBy:'typ'">
               <label class="btn btn-default"><input type="radio" name="" ng-click="" > {{m1}} </input> </label>
@@ -58,11 +58,11 @@ Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
 
 
     <!--div class="models_column" style="width:calc( 100% - 250px );" >
-        <h4>Silniki</h4>  
+        <h4>Silniki</h4>
 <table class="table table-striped">
    <thead><tr><th> Name </th><th>Moc w kW (KM) </th><th> Rodzaj Napędu </th><th> Rodzaj Napędu </th><th> kee? </th><th> Cena </th></tr> </thead>
   <tr data-ng-repeat="engi in engines_all | orderBy:'silniki'|filter:search2">
- 
+
     <td> <input type="radio" name="Markaee" ng-click="showButton1('button2')" ng-model="color.price" ng-value="engi.cena" > {{engi.silniki}}</input></td>
     <td>{{engi.kw}}</td>
     <td>{{engi.gear}}</td>
@@ -90,7 +90,7 @@ Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
 			 <div data-ng-repeat="engines in engines|filter:search" >
  {{engines.mark}} , {{engines.typ}}, <b>silnik:</b> {{engines.silnik}} ,<b>moc:</b> {{engines.kw}} , {{engines.gear}} ,
 	<b>naped:</b> {{engines.naped}} ,<b> cena: </b>{{engines.cena}}pln</b><br/>
-			 </div>          	 
+			 </div>
     </div-->
-	
+
 </div>

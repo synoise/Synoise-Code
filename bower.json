@@ -1,0 +1,28 @@
+{
+  "name": "auto_config",
+  "description": "auto configurator",
+  "main": "index.html",
+  "authors": [
+    "piotr.synos@gmail.com"
+  ],
+  "license": "UNLICENSED",
+  "keywords": [
+    "auto",
+    "configurator"
+  ],
+  "homepage": "https://github.com/synoise/Synoise-Code",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "bootstrap-css": "^3.3.6",
+    "jquery-3.1.0.min": "https://code.jquery.com/jquery-3.1.0.min.js"
+  }
+}

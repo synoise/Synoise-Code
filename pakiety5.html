@@ -30,23 +30,19 @@
 
 <div>
     <div style="border-bottom:1px solid #f3f3f3;">
-<span style=" width:45%;display:inline-table; text-align: left;">
+<span style=" text-align: left;">
 <h4>
-    Cena modelu {{color.name}}:{{color.price}} zł     5
+    Cena modelu {{orderedCar.name}}:{{orderedCar.price}} zł  +{{orderedCar.pack_price}} zł  +{{orderedCar.free_pack_price}} zł
 </h4>
 </span>
-<span>
-Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
- <input placeholder="wyszukaj silnik" class="form-control" aria-describedby="sizing-addon1"
-        style=" height:25px;width:200px;margin-bottom:5px; display:inline-table" input ng-model="search2.$">
-</span>
+
     </div>
 
 
     <div class="models_column" style="width:540px;">
         <h4>Wybór Pakietu 1</h4>
 
-        <input type="radio">  Pakiet Innowacji      <br/>
+        <!--input type="radio">  Pakiet Innowacji      <br/>
         4 355,00 PLN lub 48,05 PLN mies. brutto   <br/>
                <br/>
 
@@ -77,28 +73,55 @@ Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
         <input type="radio">         <br/>
         Kompozycja Individual     <br/>
         18 733,00 PLN lub 206,71 PLN mies. brutto    <br/>
-                      <br/>
+                      <br/-->
 
 
 
         <h5>Opis Pakietu</h5>
 
+        <div ng-repeat="m2 in packs | unique:'Pakiet'  ">
+        <input name="pakiet" ng-click="setPacks( m2.Pakiet, m2.pack_price, m2.id_pack)"  type="radio">  {{m2.Pakiet}}  ,>>{{m2.id_pack}}<< <br/>
+         <b>{{m2.pack_price}} zł </b> lub  <b>6,66 zł </b>  miesięcznie    <br/>
+        <br/>
+        </div>
 
-        <table class="table table-striped">
+        <!--table class="table table-striped">
             <thead>
             <tr>
                 <th>Pakiet</th>
+                <th>Opis</th>
+                <th>Cena</th>
+            </thead>
+
+            <tr ng-repeat="m2 in packs | unique:'Pakiet'  ">
+
+                <td>  <input name="pakiet" ng-click="setPacks(m2.Pakiet)"  type="radio">
+                </td>
+                <td>{{m2.Pakiet}}</td>
+                <td>{{m2.pack_price}}</td>
+            </tr>
+
+        </table-->
+
+
+
+        <h5>Opis Wybranego Pakietu</h5>
+
+
+        <table  ng-init="packsElements" ng-show="1" class="table table-striped">
+            <thead>
+            <tr>
+                <th>{{search5}}</th>
                 <th>Opis</th>
                 <th>Cena w pakiecie</th>
                 <th>Cena bez pakietu</th>
             </thead>
 
-            <tr ng-repeat="m2 in packs">
-
-                <td> {{m2.Pakiet}}</td>
-                <td>{{m2.name}}</td>
-                <td>{{m2.price_in}}</td>
-                <td>{{m2.price_out}}</td>
+            <tr ng-repeat="m3 in packs|filter:search5"  >
+                <td> <input type="checkbox" ng-model="m3.waluta1" ng-init="( m3.waluta1 ='true')"  value="m3.waluta1" ng-true-value="true" ng-false-value="" disabled></td>
+                <td>{{m3.name}}</td>
+                <td>{{m3.price_in}}</td>
+                <td>{{m3.price_out}}</td>
             </tr>
 
         </table>
@@ -107,13 +130,33 @@ Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
     </div>
 
 
-    <div class="models_column">
+    <div class="models_column" styele="width: 550px" >
         <h4>Dodatkowe Opcje </h4>
 
+        <table  ng-init="packs" class="table table-striped">
+            <thead>
+            <tr>
+                <th>{{packsElementsName}}</th>
+                <th>Opis</th>
+                <th>Cena w pakiecie</th>
+                <th>Cena bez pakietu</th>
+                <th>W pakiecie Pakiet</th>
+            </thead>
+
+            <tr ng-repeat="m3 in packs" >
+
+                <td> <input type="checkbox" class="resetCheckbox" ng-model="m3.waluta1" ng-change="countFreePacks()"  value="m3.waluta1" ng-true-value="true" ng-false-value=""></td>
+                <td>{{m3.name}}</td>
+                <td>{{m3.price_in}}</td>
+                <td>{{m3.price_out}}</td>
+                <td>{{m3.Pakiet}}</td>
+            </tr>
+        </table>
 
 
 
-        <table class="table table-striped">
+
+        <!--table class="table table-striped">
             <thead>
             <tr>
                 <th>ID</th>
@@ -130,7 +173,7 @@ Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
                 <td>{{m2.equ_sub_group}}</td>
             </tr>
 
-        </table>
+        </table-->
 
 
     </div>

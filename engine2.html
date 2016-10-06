@@ -11,11 +11,11 @@ input[type=radio] {
 td,th { width:160px}
 
 .btn-default {
-border:0;
-padding:3px;
-min-width:160px;
- text-align: left;
- font-size:13px;
+    border:0;
+    padding:3px;
+    min-width:160px;
+    text-align: left;
+    font-size:13px;
 }
 
 td{
@@ -29,11 +29,11 @@ td{
 <div style="border-bottom:1px solid #f3f3f3;"> 
 <span style=" width:45%;display:inline-table; text-align: left;">
 <h4 >
-Cena modelu {{color.name}}:{{color.price}}  zł
+Cena modelu {{orderedCar.name}}:{{orderedCar.price}}  zł
 </h4>
 </span>
 <span>
-Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
+Wybierz silnik dla {{orderedCar.name}} aby kontynuować konfigurację
  <input placeholder="wyszukaj silnik" class="form-control"  aria-describedby="sizing-addon1"  style=" height:25px;width:200px;margin-bottom:5px; display:inline-table" input ng-model="search2.$">
 </span>
 </div>
@@ -44,6 +44,13 @@ Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
     <div class="models_column" >
         <h4>Typ paliwa</h4>
         <div >
+
+            <input type="checkbox"  ng-model='search2' ng-true-value='320' ng-false-value='' /> {{m1}}>
+            <input type="checkbox"  data-ng-model='search2' data-ng-true-value='diesel' data-ng-false-value='' /> diesel &nbsp;&nbsp;&nbsp;
+            <input type="checkbox"  data-ng-model='search2' data-ng-true-value='benzyna' data-ng-false-value='' /> benzyna
+            <input type="checkbox"  data-ng-model='search2' data-ng-true-value='hybryda' data-ng-false-value='' /> hybryda
+
+
             <div ng-repeat="m1 in engines|  groupBy:'typ'|orderBy:'typ'">
                 <!--label class="btn btn-default">
                     <input type="radio" name="Marka" ng-click="filtrujSilnik(m1,'typ')" > {{m1}} </input></label>
@@ -89,7 +96,7 @@ Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
    <thead><tr><th> Name </th><th>Moc w kW (KM) </th><th> Skrzynia Biegów </th><th> Przyspieszenie <br/> Spalanie <br/> Emisja CO2 </th><th> typ paliwa </th><th> Cena </th><th> Rata </th></tr> </thead>
   <tr data-ng-repeat="engi in engines_all | orderBy:'silniki'|filter:search2|filter:colourFilter">
  
-    <td> <input type="radio" name="Markaee" ng-click="showButton1('button2')" ng-model="color.price" ng-value="engi.cena" > {{engi.name}}</input></td>
+    <td> <input type="radio" name="Markaee" ng-click="showButton2('button2',engi.typ)" ng-model="orderedCar.price" ng-value="engi.cena" > {{engi.name}}</input></td>
     <td>{{engi.power}}</td>
     <td>{{engi.gear}}</td>
     <td>{{engi.boost}} <br/> {{engi.burn}} <br/> {{engi.co2}}</td>
