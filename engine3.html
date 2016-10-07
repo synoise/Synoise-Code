@@ -44,6 +44,9 @@ Wybierz silnik dla {{orderedCar.name}} aby kontynuować konfigurację
 
 
     <div class="models_column">
+
+        <img ng-src="images/{{row_img}}" />
+
         <h4>Typ paliwa</h4>
         <div>
 
@@ -156,11 +159,13 @@ Wybierz silnik dla {{orderedCar.name}} aby kontynuować konfigurację
                 <th st-sort="gear">gear</th>
                 <th st-sort="power">power</th>
                 <th st-sort="naped">naped</th>
+
                 <th st-sort="burn">burn</th>
                 <th st-sort="cena">cena</th>
                 <th st-sort="boost">boost</th>
-                <th st-sort="burn">burn</th>
+
                 <th st-sort="co2">co2</th>
+                <th st-sort="rata">rata</th>
                 <th></th>
             </tr>
             </thead>
@@ -169,12 +174,12 @@ Wybierz silnik dla {{orderedCar.name}} aby kontynuować konfigurację
                 <td><input class="input14" ng-value='row.gear' ng-model="row.gear"/></td>
                 <td><input class="input14" ng-value='row.power' ng-model="row.power"/></td>
                 <td><input class="input14" ng-value='row.naped' ng-model="row.naped"/></td>
+
                 <td><input class="input14" ng-value='row.burn' ng-model="row.burn"/> </td>
                 <td><input class="input14" ng-value='row.cena' ng-model="row.cena"/>   </td>
                 <td><input class="input14" ng-value='row.boost' ng-model="row.boost"/>  </td>
-                <td><input class="input14" ng-value='row.burn' ng-model="row.burn"/>  </td>
+
                 <td><input class="input14" ng-value='row.co2' ng-model="row.co2"/>   </td>
-                <td><input class="rata" ng-value='row.rata' ng-model="row.rata"/>   </td>
                 <td><input class="rata" ng-value='row.rata' ng-model="row.rata"/>   </td>
                 <td>         <div  ng-click="removeItemEngines(row)"   class="btn btn-ui-default btn-primary"  style=" padding: 0;" >usun</div>    <br/></td>
             </tr>
@@ -183,11 +188,14 @@ Wybierz silnik dla {{orderedCar.name}} aby kontynuować konfigurację
                 <th><input placeholder="gear" ng-value='addingItem.gear' ng-model="addingItem.gear" style="width:100%"/></th>
                 <th><input placeholder="power" ng-value='addingItem.power' ng-model="addingItem.power" style="width:100%"/></th>
                 <th><input placeholder="naped" ng-value='addingItem.naped' ng-model="addingItem.naped" style="width:100%"/></th>
+
                 <th><input placeholder="burn" ng-value='addingItem.burn' ng-model="addingItem.burn" style="width:100%"/></th>
                 <th><input placeholder="cena" ng-value='addingItem.burn' ng-model="addingItem.cena" style="width:100%"/></th>
                 <th><input placeholder="boost" ng-value='addingItem.boost' ng-model="addingItem.boost" style="width:100%"/></th>
-                <th><input placeholder="boost" ng-value='addingItem.co2' ng-model="addingItem.co2" style="width:100%"/></th>
-                <th><input placeholder="boost" ng-value='addingItem.co2' ng-model="addingItem.co2" style="width:100%"/></th>
+
+                <th><input placeholder="co2" ng-value='addingItem.co2' ng-model="addingItem.co2" style="width:100%"/></th>
+                <th><input placeholder="rata" ng-value='addingItem.rata' ng-model="addingItem.rata" style="width:100%"/></th>
+
                 <td><div  ng-click="addRecordEngines()"   class="btn btn-ui-default btn-primary"  style="width:20%;  height:90%; padding: 0;" > dodaj </div></td>
             </tr>
 
@@ -198,3 +206,13 @@ Wybierz silnik dla {{orderedCar.name}} aby kontynuować konfigurację
 </div>
 
 
+"name": "318i Limousine",
+"gear": "Skrzynia manualna",
+"power": "100 kW (136 KM)",
+"naped": "Napęd przedni","typ": "benzyna",
+
+"burn": "5.5 - 5.1 l/100km",
+"cena": "126 200.00 PLN",
+"boost": "8.9 sec",
+"co2": "129 - 119 g/km",
+"rata": "1 477.64 PLN"

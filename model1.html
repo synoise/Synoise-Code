@@ -1,8 +1,8 @@
 <style>
 .models_column{
-width:200px; display: inline-table;
+    float: left;  display: inline-table;
+    min-height: 350px;
 }
-
 input[type=radio] {
     width: 12px;
     height: 12px;
@@ -36,7 +36,13 @@ min-width:160px;
 .st-sort-descent:before{
     content: '\25BC';
 }
+.carsrow{
+    display:inline-table; width: 197px;
+}
 
+#g_mod0,#g_mod1{
+    border-right: 1px solid #eee;
+}
 </style>
 
 
@@ -46,45 +52,42 @@ min-width:160px;
  <input placeholder="wyszukaj" class="form-control"  aria-describedby="sizing-addon1"  style=" height:25px;width:200px;margin-bottom:5px; display:inline-table" input ng-model="search.$">
 </div>
 
-
     <div class="models_column" >
         <h4>Marka</h4>
         <!--div ng-init="group1 = ( vehicles | groupBy:'mark'| orderBy:'mark')"-->
         <div >
             <!--div ng-repeat="row in group1 |filter:'mark'| orderBy:'mark'"-->
-                <div ng-repeat="row in vehicles| unique:'mark'">
-                <label class="btn btn-default"><input type="radio" name="Marka"  ng-click="filtrujModele(row.mark)"> {{row.mark}} </input> </label>
+            <div ng-repeat="row in vehicles |  groupBy:'mark'| orderBy:'mark'">
+                <label class="btn btn-default"><input type="radio" name="Marka"  ng-click="filtrujModele(row)"> {{row}} </input> </label>
             </div>
         </div>
     </div>
 
-
-
-
     <div class="models_column" id="g_mod0" style="display:none">
         <h4>Nadwozie</h4>
-        <div ng-repeat="vehicle in vehicles| unique:'body_typ'">
-            <label class="btn btn-default"><input type="radio" name="Grupa" ng-click="filterNadwozie(vehicle.body_typ)"> {{vehicle.body_typ}} </input> </label>
+        <div ng-repeat="row in vehicles | filter:filtrCarType |  unique:'body_typ' ">
+            <label class="btn btn-default"><input type="radio" name="Grupa" ng-click="filterNadwozie(row.body_typ)"> {{row.body_typ}} </input> </label>
 		</div>
     </div>
-
 
     <div  class="models_column" id="g_mod1" >
         <h4>Grupa modelowa</h4>
-
-        <div data-ng-repeat="vehicle in vehicles | groupBy:'car_type'| orderBy:'car_type'">
-            <label ng4-hide="displayGM(vehicle.length)"  ng-init="displayGM(!$index)"  class="btn btn-default"><input type="radio" name="body_typ"  ng-click="filterGrupaModelowa(vehicle)"> {{vehicle}} </input></label>
+        <div data-ng-repeat="row in vehicles | filter:filtrCarType|filter:search | unique:'car_type'| orderBy:'car_type'">
+            <label ng4-hide="displayGM(vehicle.length)"  ng-init="displayGM(!$index)"  class="btn btn-default"><input type="radio" name="body_typ"  ng-click="filterGrupaModelowa(row)"> {{row.car_type}} </input></label>
 		</div>
     </div>
 
-    <div  class="models_column" style=" width:calc( 100% - 610px ); border-left:1px solid #f3f3f3; padding:0px 10px">
+    <!--div  class="models_column" style=" width:calc( 100% - 610px ); border-left:1px solid #f3f3f3; padding:0px 10px"-->
+
         <h4> <span id="g_mod2">Modele</span><span id="g_mod3">Grupa modelowa</span> <span style="color:rgb(254, 189, 1);">*</span></h4>
-			 <div style="float:left" data-ng-repeat="vehicle in vehicles | orderBy:'name'|filter:search" style="width:150px; flxoat:left">
-                <label class="btn btn-default">
-                    <input  style="" type="radio"  ng-if="vehicle.ID=='F30' || vehicle.ID=='F31'"  ng-click="showButton1('button1',vehicle.ID)" ng-model="orderedCar.name" ng-value="vehicle.name"   value="red" name="Modele" > {{vehicle.name}}  </input>
-                </label>
-			 </div>
-    </div>
+        <div class="carsrow" data-ng-repeat="row in vehicles | orderBy:'name'|filter:search" >
+            <label class="btn btn-default" style="text-align: center;">
+
+                <img ng-src="images/{{row.img}}"/>       <br>
+                <input  style="" type="radio"  ng-if="row.model_id=='F30' || row.model_id=='F31'"  ng-click="showButton1('button1',row.model_id,row.img)" ng-model="orderedCar.name" ng-value="row.name"   value="red" name="Modele" > {{row.name}}  </input>
+            </label>
+        </div>
+    <!--/div-->
 
 
 
@@ -107,22 +110,28 @@ min-width:160px;
             </tr>
             </thead>
             <tr ng-repeat="row in vehicles|filter:searchVechicelsInAadmin" >
-                <td> <input class="input14" ng-value='row.ID'  ng-model="row.ID" /></td>
+                <td> <input class="input14" ng-value='row.model_id'  ng-model="row.model_id" /></td>
                 <td> <input class="input14" ng-value='row.mark' ng-model="row.mark" /> </td>
                 <td> <input class="input14" ng-value='row.name' ng-model="row.name" /> </td>
                 <td> <input class="input14" ng-value='row.body_typ' ng-model="row.body_typ" /></td>
-                <td>  <input class="input14" ng-value='row.car_type' ng-model="row.car_type" style="width:70% " />
-                    <div  ng-click="removeItem(row)"  class="btn" style="width:20%;  height:90%; padding: 0;" >usun</div>
+                <td>  <input class="input14" ng-value='row.car_type' ng-model="row.car_type" />
+                <td> <img ng-src="images/{{row.img}}" /></td>
+                <td>
+                    <div  ng-click="removeItem(row)"   class="btn btn-ui-default btn-primary"  style=" padding: 0;" >usun</div>    <br/>
+                    <div  class="btn btn-ui-default btn-primary"  style="  padding: 0;" >dodaj obrazek</div>  <br/>
+                    <div  class="btn btn-ui-default btn-primary"  style=" padding: 0;" > usuńobrazek</div>
                 </td>
             </tr>
             <tr>
-                <th><input  ng-value='addingItem.model_id'  ng-model="addingItem.model_id" style="width:100%"/></th>
-                <th> <input  ng-value='addingItem.mark'  ng-model="addingItem.mark" style="width:100%"/></th>
-                <th><input  ng-value='addingItem.name'  ng-model="addingItem.name" style="width:100%"/></th>
-                <th><input  ng-value='addingItem.body_typ'  ng-model="addingItem.body_typ" style="width:100%"/></th>
-                <th><input  ng-value='addingItem.car_type'  ng-model="addingItem.car_type" style="width:70%"/>
-                    <div  ng-click="addRecord()"  class="btn" style="width:20%;  height:90%; padding: 0;" > dodaj </div>
-                </th>    <at-pagination at-list="list" at-config="config"></at-pagination>
+                <th><input  placeholder="model_id" ng-value='addingItem.model_id'  ng-model="addingItem.model_id" style="width:100%"/></th>
+                <th><input  placeholder="mark" ng-value='addingItem.mark'  ng-model="addingItem.mark" style="width:100%"/></th>
+                <th><input  placeholder="name" ng-value='addingItem.name'  ng-model="addingItem.name" style="width:100%"/></th>
+                <th><input  placeholder="body_typ" ng-value='addingItem.body_typ'  ng-model="addingItem.body_typ" style="width:100%"/></th>
+                <th><input  placeholder="car_type" ng-value='addingItem.car_type'  ng-model="addingItem.car_type" style="width:100%"/></th>
+                <th><div  ng-click="addRecord()"   class="btn btn-ui-default btn-primary"  style="width:20%;  height:90%; padding: 0;" > dodaj </div></th>
+
+
+                <at-pagination at-list="list" at-config="config"></at-pagination>
 
             </tr>
 

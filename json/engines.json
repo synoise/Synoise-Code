@@ -10,8 +10,7 @@
       "cena": "126 200.00 PLN",
       "boost": "8.9 sec",
       "co2": "129 - 119 g/km",
-      "rata": "1 477.64 PLN",
-      "colour1": "Yellow"
+      "rata": "1 477.64 PLN"
     },
     {
       "name": "318i Limousine",
@@ -22,8 +21,7 @@
       "cena": "135 675.00 PLN",
       "boost": "9.1 sec",
       "co2": "126 - 116 g/km",
-      "rata": "1 588.58 PLN",
-      "colour1": "Orange"
+      "rata": "1 588.58 PLN"
     },
     {
       "name": "320i Limousine",
@@ -35,7 +33,6 @@
       "boost": "7.2 sec",
       "co2": "138 - 128 g/km",
       "rata": "1 732.07 PLN",
-      "colour1": "Red"
     }],
   "F30": [
     {

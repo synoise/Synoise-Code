@@ -660,8 +660,23 @@
             }
         }
 
+
+        $scope.removeItemEngines = function removeItem(row) {
+            var index = $scope.engines.indexOf(row);
+            if (index !== -1) {
+                $scope.engines.splice(index, 1);
+            }
+        }
+
         $scope.addRecord = function() {
-            $scope.vehicles.push( {"ID": $scope.addingItem.model_id, "mark":  $scope.addingItem.mark, "name":  $scope.addingItem.name, "car_type":  $scope.addingItem.car_type, "body_typ": $scope.addingItem.body_typ } );
+            $scope.vehicles.push( {"model_id": $scope.addingItem.model_id, "mark":  $scope.addingItem.mark, "name":  $scope.addingItem.name, "car_type":  $scope.addingItem.car_type, "body_typ": $scope.addingItem.body_typ } );
+            $scope.addingItem=[];
+        }
+
+
+
+        $scope.addRecordEngines = function() {
+            $scope.engines.push({"name":$scope.addingItem.name, "gear":$scope.addingItem.gear, "power":$scope.addingItem.power, "naped":$scope.addingItem.naped, "burn":$scope.addingItem.burn, "cena":$scope.addingItem.cena,"boost" : $scope.addingItem.boost, "burn":$scope.addingItem.burn, "co2":$scope.addingItem.co2})
             $scope.addingItem=[];
         }
 
@@ -684,14 +699,14 @@
         $scope.displayGM = function(x) {
 
             if(!x) {
-                document.getElementById("g_mod1").style.display = "inline-table";
-                document.getElementById("g_mod2").style.display = "inline-table";
-                document.getElementById("g_mod3").style.display = "none";
+               document.getElementById("g_mod1").style.display = "inline-table";
+               document.getElementById("g_mod2").style.display = "inline-table";
+               document.getElementById("g_mod3").style.display = "none";
             }
             else{
-                document.getElementById("g_mod1").style.display = "none";
-                document.getElementById("g_mod2").style.display = "none";
-                document.getElementById("g_mod3").style.display = "inline-table";
+               document.getElementById("g_mod1").style.display = "none";
+               document.getElementById("g_mod2").style.display = "none";
+               document.getElementById("g_mod3").style.display = "inline-table";
             }
             return x;
         };
@@ -748,7 +763,7 @@
 
                 $scope.engines_end = $scope.engines_mark = $scope.engines_all = $scope.engines  = response.data[pack] ;
                 document.getElementById(type).disabled = false;
-                $scope.engineURL="engine2.html";
+                $scope.engineURL="engine3.html";
 
                 $scope.pakiets="";
 
@@ -762,11 +777,6 @@
                     function mySucces(response) {
                         $scope.packs =response.data[pack];
 
-
-
-
-
-
                         $http(
                             {
                                 method : "GET",
@@ -775,8 +785,9 @@
                         ).then(function mySucces(response) {
                             $scope.wheels =response.data[pack];
                         }, function myError(response) {
-                            alert("E r r o r  56 !");
+                            alert("E r r o r  5 6 !");
                         });
+
 
 
                         $http(
@@ -787,8 +798,20 @@
                         ).then(function mySucces(response) {
                             $scope.color =response.data[pack];
                         }, function myError(response) {
-                            alert("E r r o r  1 !");
+                            alert("E r r o r  2 4 2 !");
                         });
+
+
+                      /*  $http(
+                            {
+                                method : "GET",
+                              colors: "./json/colors.json?"+pack
+                            }
+                        ).then(function mySucces(response) {
+                           // $scope.color =response.data[pack];
+                        }, function myError(response) {
+                            alert("E r r o r  1rr !");
+                        });  */
 
 
 
@@ -805,14 +828,18 @@
             });
         }
 
-        $scope.showButton1 = function (type, id) {
+        $scope.showButton1 = function (type, id,row_img) {
             $scope.engineURL="";
+            $scope.row_img=row_img;
 
             $scope.orderedCar.engine_id=id
             $scope.loadJSONtoScope("./json/engines.json?",String(id),type);
 		}
 
-         //var pack1="F30";
+         //
+
+
+ //pack1="F30";
 
 
 
@@ -832,20 +859,23 @@
             document.getElementById(type).disabled = true;
         }
         //1
+        $scope.filtrCarType="spo";
         $scope.filtrujModele = function (type) {
 
+            $scope.filtrCarType=type;
+            $scope.search="";
             document.getElementById("g_mod0").style.display = "inline-table";
 
-            $scope.vehicles_mark = $scope.vehicles_end = $scope.vehicles_all = filterFilter(orderByFilter($scope.vehicles, "mark"), type);
+            //$scope.vehicles_mark = $scope.vehicles_end = $scope.vehicles_all = filterFilter(orderByFilter($scope.vehicles, "mark"), type);
             $('input[name="body_typ"]').attr('checked', false);
             $('input[name="Grupa"]').attr('checked', false);
             $('input[name="Modele"]').attr('checked', false);
         }
 
         $scope.filterNadwozie = function (type) {
-
-            $scope.vehicles_end = $scope.vehicles_all = vehicles_mark = filterFilter(orderByFilter($scope.vehicles_mark, "car_type"), type);
-            $scope.vehicles_end = $scope.vehicles_all;
+            $scope.search=type;
+           // $scope.vehicles_end = $scope.vehicles_all = vehicles_mark = filterFilter(orderByFilter($scope.vehicles_mark, "car_type"), type);
+           // $scope.vehicles_end = $scope.vehicles_all;
             $('input[name="body_typ"]').attr('checked', false);
             $('input[name="Modele"]').attr('checked', false);
         }
@@ -925,7 +955,8 @@
             }
         }
 
-        $scope.showTable = function(fruit) { }
+        $scope.showTable = function(fruit) { }   ///usuń
+
         $scope.colourFilter = function(fruit) {
             if ($scope.colourIncludes.length > 0) {
                 console.log($scope.typ1);
@@ -935,7 +966,7 @@
             return fruit;
         }
 
-
+         //konfiguracja sortowania tabel
         $scope.list = $scope.$parent.personList
         $scope.config = {
             itemsPerPage: 5,
