@@ -1,0 +1,65 @@
+<div class="btn btn-ui-default btn-primary"  ng-click="reloadEngines()">Kliknij aby pokazać Panel zarządzania</div>        sss
+<div style="display:{{model1admin}}; text-align: right;">
+
+    <h4> Edyduj Tabelę Silników {{orderedCar.name}}</h4>Kliknij na nazwę kolumny aby posortować  lub zmień widok użytkowanika, na górze :
+
+    <select ng-model="selectedItem"  ng-change="changeEngine(selectedItem)">
+        <option value="" default selected>Symbol modelu</option>
+        <option  ng-repeat="row_0 in engines_all" ng-selected="selectedItem == $index" value="{{$index}}"  ng-value="0" > {{row_0.engin}} </option>
+    </select><br>
+    <table  ng-repeat="row_0 in engines_all" class="table table-striped" st-table="row_0.list">
+        <thead>
+        <tr>
+            <th>model_id</th>
+            <th st-sort="name" style='content: "\25C0"'>name</th>
+            <th st-sort="gear" style='content: "\25C0"'>gear</th>
+            <th st-sort="power" style='content: "\25C0"'>power</th>
+            <th st-sort="naped" style='content: "\25C0"'>naped</th>
+
+            <th st-sort="burn" style='content: "\25C0"'>burn</th>
+            <th st-sort="cena" style='content: "\25C0"'>cena</th>
+            <th st-sort="boost" style='content: "\25C0"'>boost</th>
+
+            <th st-sort="co2" style='content: "\25C0"'>co2</th>
+            <th st-sort="rata" style='content: "\25C0"'>rata</th>
+            <th st-sort="rata" style='content: "\25C0"'>typ</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tr ng-repeat="row in row_0.list|filter:searchVechicelsInAadmin">
+            <td  rowspan="10000" ng-show="$index==0"> <h4> {{row_0.engin}}</h4> </td>
+            <td><input class="input14" ng-value='row.name' ng-model="row.name"/>{{items}}</td>
+            <td><input class="input14" ng-value='row.gear' ng-model="row.gear"/></td>
+            <td><input class="input14" ng-value='row.power' ng-model="row.power"/></td>
+            <td><input class="input14" ng-value='row.naped' ng-model="row.naped"/></td>
+
+            <td><input class="input14" ng-value='row.burn' ng-model="row.burn"/> </td>
+            <td><input class="input14" ng-value='row.cena' ng-model="row.cena"/>   </td>
+            <td><input class="input14" ng-value='row.boost' ng-model="row.boost"/>  </td>
+
+            <td><input class="input14" ng-value='row.co2' ng-model="row.co2"/>   </td>
+            <td><input class="rata" ng-value='row.rata' ng-model="row.rata"/>   </td>
+            <td><input class="rata" ng-value='row.typ' ng-model="row.typ"/>   </td>
+            <td>         <div  ng-click="removeItemEngines(row,row_0.engin)"   class="btn btn-ui-default btn-primary"  style=" padding: 0;" >usun</div>    <br/></td>
+        </tr>
+        <tr>
+            <th><input placeholder="name" ng-value='addingItem.name' ng-model="addingItem.name" style="width:100%"/></th>
+            <th><input placeholder="gear" ng-value='addingItem.gear' ng-model="addingItem.gear" style="width:100%"/></th>
+            <th><input placeholder="power" ng-value='addingItem.power' ng-model="addingItem.power" style="width:100%"/></th>
+            <th><input placeholder="naped" ng-value='addingItem.naped' ng-model="addingItem.naped" style="width:100%"/></th>
+
+            <th><input placeholder="burn" ng-value='addingItem.burn' ng-model="addingItem.burn" style="width:100%"/></th>
+            <th><input placeholder="cena" ng-value='addingItem.burn' ng-model="addingItem.cena" style="width:100%"/></th>
+            <th><input placeholder="boost" ng-value='addingItem.boost' ng-model="addingItem.boost" style="width:100%"/></th>
+
+            <th><input placeholder="co2" ng-value='addingItem.co2' ng-model="addingItem.co2" style="width:100%"/></th>
+            <th><input placeholder="rata" ng-value='addingItem.rata' ng-model="addingItem.rata" style="width:100%"/></th>
+            <th><input placeholder="typ" ng-value='addingItem.rata' ng-model="addingItem.typ" style="width:100%"/></th>
+
+            <td><div  ng-click="addRecordEngines()"   class="btn btn-ui-default btn-primary"  style="width:20%;  height:90%; padding: 0;" > dodaj </div></td>
+        </tr>
+
+    </table>
+
+
+</div>

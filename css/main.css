@@ -68,3 +68,78 @@
         .label {
             color: #000;
         }
+
+
+
+
+
+  .models_column{
+      float: left;
+      display: inline-table;
+      min-height: 350px;
+      width: 200px;
+  }
+ input[type=radio] {
+     width: 12px;
+     height: 12px;
+ }
+
+ .btn-default {
+     border:0;
+     padding:3px;
+     min-width:160px;
+     text-align: left;
+     font-size:13px;
+ }
+
+ .input14 {
+     border: none;
+     border-bottom: 1px solid #ccc;
+     border-left: 1px solid #ccc;
+     background-color: rgba(255, 162, 0, 0.06) ;
+     width: 100%;
+ }
+
+ .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+     padding: 0px 0px;
+
+ }
+
+ .st-sort-ascent:before{
+     content: '\25B2';
+ }
+
+ .st-sort-descent:before{
+     content: '\25BC';
+ }
+ .carsrow{
+     display:inline-table; width: 197px;
+ }
+
+ #g_mod0,#g_mod1{
+     border-right: 1px solid #eee;
+ }
+
+
+
+ td, th {
+     width: 160px
+ }
+
+
+ td {
+     -webkit-box-sizing: initial !important;
+     box-sizing: initial !important;
+ }
+
+ .pack_list {
+     list-style:none;
+     width: 100%;
+     padding: 0;
+ }
+ .list_short input {
+     width: 50%;
+ }
+ .st-sort-type:before {
+     content: '\25BC';
+ }

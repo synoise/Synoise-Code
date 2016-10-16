@@ -1,0 +1,45 @@
+<div class="btn btn-ui-default btn-primary"  ng-click="model1admin='block'">Kliknij aby pokazać Panel zarządzania</div>
+<div style="display:{{model1admin}}; text-align: right;">
+
+    <h4> Edyduj kolumne Samochodów {{orderedCar.name}}</h4>Kliknij na nazwę kolumny aby  posortować  <br>
+
+    <input placeholder="wyszukaj" class="form-control"  aria-describedby="sizing-addon1"  style=" height:25px;width:200px;margin-bottom:5px; display:inline-table" input ng-model="searchVechicelsInAadmin.$">
+
+    <table class="table table-striped"  st-table="vehicles" >
+        <thead>
+        <tr>
+            <th  st-sort="ID" >Model ID</th>
+            <th  st-sort="mark"> mark</th>
+            <th  st-sort="name">name</th>
+            <th  st-sort="body_typ">body_typ</th>
+            <th  st-sort="car_type">car_type (optional)</th>
+        </tr>
+        </thead>
+        <tr ng-repeat="row in vehicles|filter:searchVechicelsInAadmin" >
+            <td> <input class="input14" ng-value='row.model_id'  ng-model="row.model_id" /></td>
+            <td> <input class="input14" ng-value='row.mark' ng-model="row.mark" /> </td>
+            <td> <input class="input14" ng-value='row.name' ng-model="row.name" /> </td>
+            <td> <input class="input14" ng-value='row.body_typ' ng-model="row.body_typ" /></td>
+            <td>  <input class="input14" ng-value='row.car_type' ng-model="row.car_type" />
+            <td> <img ng-src="images/{{row.img}}" /></td>
+            <td>
+                <div  ng-click="removeItem(row)"   class="btn btn-ui-default btn-primary"  style=" padding: 0;" >usun</div>    <br/>
+                <div  class="btn btn-ui-default btn-primary"  style="  padding: 0;" >dodaj obrazek</div>  <br/>
+                <div  class="btn btn-ui-default btn-primary"  style=" padding: 0;" > usuńobrazek</div>
+            </td>
+        </tr>
+        <tr>
+            <th><input  placeholder="model_id" ng-value='addingItem.model_id'  ng-model="addingItem.model_id" style="width:100%"/></th>
+            <th><input  placeholder="mark" ng-value='addingItem.mark'  ng-model="addingItem.mark" style="width:100%"/></th>
+            <th><input  placeholder="name" ng-value='addingItem.name'  ng-model="addingItem.name" style="width:100%"/></th>
+            <th><input  placeholder="body_typ" ng-value='addingItem.body_typ'  ng-model="addingItem.body_typ" style="width:100%"/></th>
+            <th><input  placeholder="car_type" ng-value='addingItem.car_type'  ng-model="addingItem.car_type" style="width:100%"/></th>
+            <th><div  ng-click="addRecord()"   class="btn btn-ui-default btn-primary"  style="width:20%;  height:90%; padding: 0;" > dodaj </div></th>
+
+
+            <at-pagination at-list="list" at-config="config"></at-pagination>
+
+        </tr>
+
+    </table>
+</div>

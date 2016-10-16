@@ -1,33 +1,3 @@
-<style>
-    .models_column {
-        width: 200px;
-        display: inline-table;
-    }
-
-    input[type=radio] {
-        width: 12px;
-        height: 12px;
-    }
-
-    td, th {
-        width: 160px
-    }
-
-    .btn-default {
-        border: 0;
-        padding: 3px;
-        min-width: 160px;
-        text-align: left;
-        font-size: 13px;
-    }
-
-    td {
-        -webkit-box-sizing: initial !important;
-        box-sizing: initial !important;
-    }
-</style>
-
-
 <div>
     <div style="border-bottom:1px solid #f3f3f3;">
 <span style=" width:45%;display:inline-table; text-align: left;">
@@ -39,6 +9,13 @@
 Wybierz silnik dla {{orderedCar.name}} aby kontynuować konfigurację
  <input placeholder="wyszukaj silnik" class="form-control" aria-describedby="sizing-addon1"
         style=" height:25px;width:200px;margin-bottom:5px; display:inline-table" input ng-model="search2.$">
+
+
+    <!--select  ng-model="row_0 in engines_all" ng-change="update()">
+        <option ng-repeat="row_0 in engines_all" ng-selected="selectedItem == item.Id" value="1">{{row_0.name}}</option>
+    </select--->
+
+
 </span>
     </div>
 
@@ -47,25 +24,24 @@ Wybierz silnik dla {{orderedCar.name}} aby kontynuować konfigurację
 
         <img ng-src="images/{{row_img}}" />
 
-        <h4>Typ paliwa</h4>
+        <h4>Typ paliwa3</h4>
         <div>
 
-            <input type="checkbox" ng-model='search2' ng-true-value='320' ng-false-value=''/> {{m1}}>
+            <!--input type="checkbox" ng-model='search2' ng-true-value='320' ng-false-value=''/> {{m1}}>
             <input type="checkbox" data-ng-model='search2' data-ng-true-value='diesel' data-ng-false-value=''/> diesel
             &nbsp;&nbsp;&nbsp;
             <input type="checkbox" data-ng-model='search2' data-ng-true-value='benzyna' data-ng-false-value=''/> benzyna
-            <input type="checkbox" data-ng-model='search2' data-ng-true-value='hybryda' data-ng-false-value=''/> hybryda
+            <input type="checkbox" data-ng-model='search2' data-ng-true-value='hybryda' data-ng-false-value=''/> hybryda -->
 
 
-            <div ng-repeat="m1 in engines|  groupBy:'typ'|orderBy:'typ'">
+            <div ng-repeat="m1 in engines_all[engines_selected].list |   unique:'typ'|orderBy:'typ'">
                 <!--label class="btn btn-default">
                     <input type="radio" name="Marka" ng-click="filtrujSilnik(m1,'typ')" > {{m1}} </input></label>
                     <input type="checkbox" ng-model='search2' ng-true-value='320' ng-false-value='' /> {{m1}}
                     <input type="checkbox" data-ng-model='search2' data-ng-true-value='benzyna' data-ng-false-value='' /> {{m1}}-->
-                <input type="checkbox" ng-click="includeColour(m1,'typ')"/> {{m1}} </br/>
+                <input type="radio" name="engintyp"  ng-click="setEngineFilter('search2A',m1.typ)"/> {{m1.typ}} </br/>
 
             </div>
-
 
             <!--div ng-repeat="m1 in group1| orderBy:'typ'">
               <label class="btn btn-default">
@@ -77,22 +53,20 @@ Wybierz silnik dla {{orderedCar.name}} aby kontynuować konfigurację
 
         </div>
         <h4>Skrzynia Biegów</h4>
-        <div ng-init="group2 = ( engines | groupBy:'gear'| orderBy:'gear')">
-            <div ng-repeat="m2 in group2| orderBy:'gear'">
+
+            <div ng-repeat="m2 in engines_all[engines_selected].list| unique:'gear'| orderBy:'gear' ">
                 <label class="btn btn-default">
                     <!--input type="radio" name="Marka" ng-click="filtrujSkrzynia (m2,'gear')"> {{m2}} </input-->
-                    <input type="checkbox" ng-click="includeColour(m2,'gear')"/> {{m2}} </br/>
+                    <input type="radio" name="engingear" ng-click="setEngineFilter('search2A',m2.gear)"/> {{m2.gear}}  </br/>
                 </label>
             </div>
-        </div>
-        <h4>Napęd</h4>
-        <div ng-init="group3 = ( engines | groupBy:'naped'| orderBy:'naped')">
-            <div ng-repeat="m3 in group3| orderBy:'naped'">
-                <!--label class="btn btn-default"><input type="radio" name="Marka" ng-click="filtrujSilnik(m3,'naped')"> {{m3}} </input> </label-->
 
-                <input type="checkbox" ng-click="includeColour(m3,'naped')"/> {{m3}} </br/>
+        <h4>Napęd</h4>
+            <div ng-repeat="m3 in engines_all[engines_selected].list| unique:'naped'| orderBy:'naped'">
+                <!--label class="btn btn-default"><input type="radio" name="Marka" ng-click="filtrujSilnik(m3,'naped')"> {{m3}} </input> </label>
+                <input type="checkbox" ng-click="includeColour(m3,'naped')"/> {{m3.naped}} </br/-->
+                <input type="radio" name="enginnaped" ng-click="setEngineFilter('search2B',m3.naped)"/> {{m3.naped}} </br/>
             </div>
-        </div>
     </div>
 
 
@@ -110,7 +84,7 @@ Wybierz silnik dla {{orderedCar.name}} aby kontynuować konfigurację
                 <th> Rata</th>
             </tr>
             </thead>
-            <tr data-ng-repeat="engi in engines_all | orderBy:'silniki'|filter:search2|filter:colourFilter">
+            <tr data-ng-repeat="engi in engines_all[engines_selected].list | orderBy:'silniki'|filter:search2|filter:search2A|filter:search2B">
 
                 <td><input type="radio" name="Markaee" ng-click="showButton2('button2',engi.typ)"
                            ng-model="orderedCar.price" ng-value="engi.cena"> {{engi.name}}</input></td>
@@ -142,35 +116,43 @@ Wybierz silnik dla {{orderedCar.name}} aby kontynuować konfigurację
 			 <div data-ng-repeat="engines in engines|filter:search" >
  {{engines.mark}} , {{engines.typ}}, <b>silnik:</b> {{engines.silnik}} ,<b>moc:</b> {{engines.kw}} , {{engines.gear}} ,
 	<b>naped:</b> {{engines.naped}} ,<b> cena: </b>{{engines.cena}}pln</b><br/>
-			 </div>          	 
+			 </div>
     </div-->
 
+    <!--div>
 
 
-    <div ng-click="model1admin='block'">Kliknij aby pokazać Panel zarządzania</div>
-    <div style="display:{{model1admin}}">
+    <div class="btn btn-ui-default btn-primary"  ng-click="model1admin='block'">Kliknij aby pokazać Panel zarządzania</div>
+    <div style="display:{{model1admin}}; text-align: right;">
 
-        <h4> Edyduj Tabelę Silników {{orderedCar.name}}</h4>Kliknij na nazwę kolumny aby posortować <br>
+        <h4> Edyduj Tabelę Silników {{orderedCar.name}}</h4>Kliknij na nazwę kolumny aby posortować  lub zmień widok użytkowanika, na górze :
 
-        <table class="table table-striped" st-table="engines">
+        <select ng-model="selectedItem"  ng-change="changeEngine(selectedItem)">
+            <option value="" default selected>Symbol modelu</option>
+            <option  ng-repeat="row_0 in engines_all" ng-selected="selectedItem == $index" value="{{$index}}"  ng-value="0" > {{row_0.engin}} </option>
+        </select><br>
+        <table  ng-repeat="row_0 in engines_all" class="table table-striped" st-table="row_0.list">
             <thead>
             <tr>
-                <th st-sort="name">name</th>
-                <th st-sort="gear">gear</th>
-                <th st-sort="power">power</th>
-                <th st-sort="naped">naped</th>
+                <th>model_id</th>
+                <th st-sort="name" style='content: "\25C0"'>name</th>
+                <th st-sort="gear" style='content: "\25C0"'>gear</th>
+                <th st-sort="power" style='content: "\25C0"'>power</th>
+                <th st-sort="naped" style='content: "\25C0"'>naped</th>
 
-                <th st-sort="burn">burn</th>
-                <th st-sort="cena">cena</th>
-                <th st-sort="boost">boost</th>
+                <th st-sort="burn" style='content: "\25C0"'>burn</th>
+                <th st-sort="cena" style='content: "\25C0"'>cena</th>
+                <th st-sort="boost" style='content: "\25C0"'>boost</th>
 
-                <th st-sort="co2">co2</th>
-                <th st-sort="rata">rata</th>
+                <th st-sort="co2" style='content: "\25C0"'>co2</th>
+                <th st-sort="rata" style='content: "\25C0"'>rata</th>
+                <th st-sort="rata" style='content: "\25C0"'>typ</th>
                 <th></th>
             </tr>
             </thead>
-            <tr ng-repeat="row in engines|filter:searchVechicelsInAadmin">
-                <td><input class="input14" ng-value='row.name' ng-model="row.name"/></td>
+            <tr ng-repeat="row in row_0.list|filter:searchVechicelsInAadmin">
+                <td  rowspan="10000" ng-show="$index==0"> <h4> {{row_0.engin}}</h4> </td>
+                <td><input class="input14" ng-value='row.name' ng-model="row.name"/>{{items}}</td>
                 <td><input class="input14" ng-value='row.gear' ng-model="row.gear"/></td>
                 <td><input class="input14" ng-value='row.power' ng-model="row.power"/></td>
                 <td><input class="input14" ng-value='row.naped' ng-model="row.naped"/></td>
@@ -181,7 +163,8 @@ Wybierz silnik dla {{orderedCar.name}} aby kontynuować konfigurację
 
                 <td><input class="input14" ng-value='row.co2' ng-model="row.co2"/>   </td>
                 <td><input class="rata" ng-value='row.rata' ng-model="row.rata"/>   </td>
-                <td>         <div  ng-click="removeItemEngines(row)"   class="btn btn-ui-default btn-primary"  style=" padding: 0;" >usun</div>    <br/></td>
+                <td><input class="rata" ng-value='row.typ' ng-model="row.typ"/>   </td>
+                <td>         <div  ng-click="removeItemEngines(row,row_0.engin)"   class="btn btn-ui-default btn-primary"  style=" padding: 0;" >usun</div>    <br/></td>
             </tr>
             <tr>
                 <th><input placeholder="name" ng-value='addingItem.name' ng-model="addingItem.name" style="width:100%"/></th>
@@ -195,24 +178,19 @@ Wybierz silnik dla {{orderedCar.name}} aby kontynuować konfigurację
 
                 <th><input placeholder="co2" ng-value='addingItem.co2' ng-model="addingItem.co2" style="width:100%"/></th>
                 <th><input placeholder="rata" ng-value='addingItem.rata' ng-model="addingItem.rata" style="width:100%"/></th>
+                <th><input placeholder="typ" ng-value='addingItem.rata' ng-model="addingItem.typ" style="width:100%"/></th>
 
                 <td><div  ng-click="addRecordEngines()"   class="btn btn-ui-default btn-primary"  style="width:20%;  height:90%; padding: 0;" > dodaj </div></td>
             </tr>
 
         </table>
+
+
+    </div>
+
+
     </div>
 
 
 </div>
 
-
-"name": "318i Limousine",
-"gear": "Skrzynia manualna",
-"power": "100 kW (136 KM)",
-"naped": "Napęd przedni","typ": "benzyna",
-
-"burn": "5.5 - 5.1 l/100km",
-"cena": "126 200.00 PLN",
-"boost": "8.9 sec",
-"co2": "129 - 119 g/km",
-"rata": "1 477.64 PLN"

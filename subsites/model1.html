@@ -1,0 +1,46 @@
+<div>
+<div style="border-bottom:1px solid #f3f3f3; text-align: right;">
+ Wybierz model samochodu aby kontynuować konfigurację
+ <input placeholder="wyszukaj" class="form-control"  aria-describedby="sizing-addon1"  style=" height:25px;width:200px;margin-bottom:5px; display:inline-table" input ng-model="search.$">
+</div>
+
+    <div class="models_column" >
+        <h4>Marka</h4>
+        <!--div ng-init="group1 = ( vehicles | groupBy:'mark'| orderBy:'mark')"-->
+        <div >
+            <!--div ng-repeat="row in group1 |filter:'mark'| orderBy:'mark'"-->
+            <div ng-repeat="row in vehicles |  groupBy:'mark'| orderBy:'mark'">
+                <label class="btn btn-default"><input type="radio" name="Marka"  ng-click="filtrujModele(row);"> {{row}} </input> </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="models_column" id="g_mod0" style="display:none">
+        <h4>Nadwozie</h4>
+        <div ng-repeat="row in vehicles | filter:filtrCarType |  unique:'body_typ' ">
+            <label class="btn btn-default"><input type="radio" name="Grupa" ng-click="filterNadwozie(row.body_typ)"> {{row.body_typ}} </input> </label>
+		</div>
+    </div>
+
+    <div  class="models_column" id="g_mod1">
+        <h4>Grupa modelowa</h4>
+        <div data-ng-repeat="row in vehicles | filter:filtrCarType|filter:searchBodyTyp| filter:filtrCarType | unique:'car_type'">
+            <label ng4-hide="displayGM(vehicle.length)"  ng-init="displayGM(!$index)"  class="btn btn-default"><input type="radio" name="body_typ"  ng-click="filterGrupaModelowa(row.car_type)"> {{row.car_type}} </input></label>
+		</div>
+    </div>
+
+    <!--div  class="models_column" style=" width:calc( 100% - 610px ); border-left:1px solid #f3f3f3; padding:0px 10px"-->
+
+        <h4> <span id="g_mod2">Modele</span><span id="g_mod3">Grupa modelowa</span> <span style="color:rgb(254, 189, 1);">*</span></h4>
+        <div class="carsrow" data-ng-repeat="row in vehicles | orderBy:'name' | filter:searchBodyTyp|filter:filtrCarType |filter:search" >
+            <label class="btn btn-default" style="text-align: center;">
+
+                <img ng-src="images/{{row.img}}"/>       <br>
+                <input  style="" type="radio"  ng-if="row.model_id=='F30' || row.model_id=='F31'"  ng-click="showButton1('button1',row.model_id,row.img)" ng-model="orderedCar.name" ng-value="row.name"   value="red" name="Modele" > {{row.name}}  </input>
+            </label>
+        </div>
+    <!--/div-->
+
+         <div></div>
+
+</div>

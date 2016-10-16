@@ -1,0 +1,166 @@
+<div data-ng-controller="TestController2">
+
+    <div class="btn btn-ui-default btn-primary" ng-click="reloadPakiety()">Kliknij aby pokazać Panel zarządzania</div>
+
+    {{pakiety5admin}}
+    <div style="display:{{pakiety5admin}};">
+        <h4> Edyduj Tabelę Pakietów {{orderedCar.name}}</h4>Kliknij na nazwę kolumny aby posortować lub zmień widok
+        użytkowanika, na górze :
+
+        <select ng-model="selectedItem" ng-change="changeEngine(selectedItem)">
+            <option value="" default selected>Symbol modelu</option>
+            <option ng-repeat="row_0 in pakiety" ng-selected="selectedItem == $index" value="{{$index}}" ng-value="0">
+                {{row_0.engin}}
+            </option>
+        </select><br>
+
+
+        <div style="width:70%;display:inline-table;">
+            <table ng-repeat="row in pakiety" class="table table-striped" st-table="pakiety">
+                <thead>
+                <tr>
+                    <th st-sort="model_id" style='content: "\25C0"'>model_id</th>
+                    <th st-sort="name" style='content: "\25C0"'>name / pack_id</th>
+                    <th st-sort="price" style='content: "\25C0"'>price / price_rata</th>
+                    <th st-sort="boost" style='content: "\25C0"'>element / cena</th>
+
+                    <th></th>
+                </tr>
+                </thead>
+                <!--tr ng-repeat="row in row_0.list|filter:searchVechicelsInAadmin"-->
+                <tr ng-repeat="row_0 in row.list">
+
+                    <td rowspan="10000" ng-show="$index==0">
+                        <ul class="pack_list">
+                            <li><input class="input14" ng-value='row.model_id' ng-model="row.model_id"/></li>
+                            <li>
+                                <!--input class="input14" ng-init="geModelAliasFromID(row.model_id)" ng-model="1" ng-value='row.model_id'/-->
+                                <h4>{{ geModelAliasFromID(row.model_id)}}</h4></li>
+                            <br/>
+                            </li>
+                            <li>
+                                <table>
+
+                                    <thead>
+                                    <tr>
+                                        <th>bez pakietu</th>
+                                        <th>cena</th>
+
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+
+                                    <tr ng-repeat="m3 in row.pack_alt">
+                                        <td><input class="input14" ng-value='m3[0]' ng-model="m3[0]"/> <br/>{{geModelPackElementAliasFromID(m3[0])}}
+                                        </td>
+                                        <td>{{m3[1]}} <br/>
+                                            <div ng-click="removeItemEngines(row,row_0.engin)"
+                                                 class="btn btn-ui-default btn-primary" style=" padding: 0;"> &nbsp -
+                                                &nbsp
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input placeholder="item_id"/> <br/>
+                                            <input placeholder="price"/> <br/></td>
+                                        <td>
+                                            <div ng-click="removeItemEngines(row,row_0.engin)"
+                                                 class="btn btn-ui-default btn-primary" style=" padding: 0;"> &nbsp +
+                                                &nbsp
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="pack_list">
+                            <li><input class="input14" ng-value='row_0.name' ng-model="row_0.name"/></li>
+                            <li><input class="input14" ng-value='row_0.pack_id' ng-model="row_0.pack_id"/></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="pack_list">
+                            <li><input class="input14" ng-value='row_0.price' ng-model="row_0.price"/></li>
+                            <li><input class="input14" ng-value='row_0.price_rata' ng-model="row_0.price_rata"/></li>
+                        </ul>
+                    </td>
+
+                    <td>
+                        <ul class="pack_list list_short" ng-repeat="row in row_0.list">
+                            <li><input class="input14" ng-value='row[0]' ng-model="row[0]"/><input class=" input14"
+                                                                                                   ng-value='row[1]'
+                                                                                                   ng-model="row[1]"/>
+                            </li>
+                            <li style="text-align:right;">{{geModelPackElementAliasFromID(row[0])}}
+                                <div ng-click="removeItemEngines(row,row_0.engin)"
+                                     class="btn btn-ui-default btn-primary"
+                                     style=" padding: 0;"> &nbsp- &nbsp
+                                </div>
+                            </li>
+                        </ul>
+                        <div ng-click="removeItemEngines(row,row_0.engin)" class="btn btn-ui-default btn-primary"
+                             style=" padding: 0;"> &nbsp + &nbsp
+                        </div>
+                    <td style="text-align:right;">
+                        <div ng-click="removeItemEngines(row,row_0.engin)" class="btn btn-ui-default btn-primary"
+                             style=" padding: 0;">usun
+                        </div>
+                        <br/></td>
+
+                </tr>
+                <tr>
+                    <th><input placeholder="name" ng-value='addingItem.name' ng-model="addingItem.name"
+                               style="width:100%"/>
+                        <input placeholder="gear" ng-value='addingItem.gear' ng-model="addingItear" style="width:100%"/>
+                    </th>
+                    <th><input placeholder="power" ng-value='addingItem.power' ng-model="addingItem.power"
+                               style="width:100%"/>
+                        <input placeholder="naped" ng-value='addingItem.naped' ng-model="addingItem.naped"
+                               style="width:100%"/></th>
+
+                    <th><input placeholder="burn" ng-value='addingItem.burn' ng-model="addingItem.burn"
+                               style="width:100%"/></th>
+
+                    <td style="text-align:right;">
+                        <div ng-click="addRecordEngines()" class="btn btn-ui-default btn-primary"> dodaj
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div style="width:29%;display:inline-table;text-align: right;">
+            <table class="table table-striped" style="width:90%; display:inline-table;" st-table="pakiet">
+                <thead>
+                <tr>
+                    <th st-sort="item_id">item_id</th>
+                    <th st-sort="mark">mark</th>
+                    <th st-sort="name">name</th>
+                    <th st-sort="equ_group">equ_group</th>
+                </tr>
+                </thead>
+                <tr ng-repeat="row in pakiet|filter:searchVechicelsInAadmin">
+                    <td><input class="input14" ng-value='row.item_id' ng-model="row.item_id"/></td>
+                    <td><input class="input14" ng-value='row.model' ng-model="row.model"/></td>
+                    <td><input class="input14" ng-value='row.name' ng-model="row.name"/></td>
+                    <td><input class="input14" ng-value='row.equ_group' ng-model="row.equ_group"/></td>
+                </tr>
+                <tr>
+                    <th><input placeholder="item_id" ng-value='addingItem.item_id' ng-model="addingItem.item_id"
+                               style="width:100%"/></th>
+                    <th><input placeholder="model" ng-value='addingItem.model' ng-model="addingItem.model"
+                               style="width:100%"/></th>
+                    <th><input placeholder="name" ng-value='addingItem.name' ng-model="addingItem.name"
+                               style="width:100%"/></th>
+                    <th><input placeholder="equ_group" ng-value='addingItem.equ_group' ng-model="addingItem.equ_group"
+                               style="width:100%"/></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

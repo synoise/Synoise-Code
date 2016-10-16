@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" ng-app="iApp">
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -20,7 +20,7 @@
     <!--script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script-->
 
 </head>
-<body ng-app="App" class="skin-black" style="padding-bottom: 0px;">
+<body class="skin-black" style="padding-bottom: 0px;">
 
 <menu>
     <ul>
@@ -56,6 +56,10 @@
                             <a data-target="#4inner" id="home-tab2" role="tab" data-toggle="tab" ><b>3</b> Wyposażenie </a>
                         </li>
 
+                        <li role="presentation" onclick="setStep(3)" class="">
+                            <a data-target="#4inner" id="home-tab2" role="tab" data-toggle="tab" ><b>3B</b> Opcje </a>
+                        </li>
+
                         <li role="presentation" onclick="setStep(4)" class="">
                             <a data-target="#url-settings" role="tab" data-toggle="tab"> <b>4 </b> Nadwozie </a>
                         </li>
@@ -81,43 +85,43 @@
                 <div  data-ng-controller="TestController" class="">
                     <div id="settingsTabContent" class="tab-content">
 
-                    <div role="tabpanel" class="tab-pane fade active in" id="model_selecting">
+                    <div role="tabpanel" class="tab-pane fade" id="model_selecting">
                        <div class="panel panel-default">
-                             <div ng-include="'model1.html'">MODEL1</div>
+                             <div ng-include="'./subsites/model1.html'">Loading...</div>
+                           <div ng-include="'./app/subsites_admin/model1.html'" >Loading...</div>
 						</div>
 						<div style="text-align:right">
 							<button id="button1" disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style=" margin:15px;">Konfiguruj <br/>{{orderedCar.name}}</button>
                     </div>
                     </div>
 
-
                         <div role="tabpanel" class="tab-pane fade" id="advanced-settings">
                             <div class="panel panel-default">
-                               <div ng-include='engineURL' >MODEL1</div>
-                            </div> 
+                               <div ng-include='engineURL' >Loading...</div>
+                               <div ng-include="'./app/subsites_admin/engine2.html'" >Loading...</div>
+                            </div>
 							<button   onclick="javascript:event.preventDefault();" class="btnPrev btn btn-ui-default btn-primary" style="margin:15px;">Powrót do </button>
                             <button  id="button2" disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Konfiguruj Pakiety</button>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="url-settings" >
                             <div class="panel panel-default">
-                                <div ng-include="'body3.html'">test4</div>
+                                <div ng-include="'./subsites/body3.html'">Loading...</div>
                             </div>
-
                             <button   onclick="javascript:event.preventDefault();" class="btnPrev btn btn-ui-default btn-primary" style="margin:15px;">Powrót do Wyposażenia </button><button  id="button3" disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Konfiguruj Wnętrze</button>
                         </div>
 
-                        <div role="tabpanel" class="tab-pane fade" id="4inner">
-                            <div class="panel panel-default">  {{pakiets}}
-                                <div ng-include="pakiets">pakiets</div>
+                        <div role="tabpanel" class="tab-pane fade  active in" id="4inner">
+                            <div class="panel panel-default">  {{pakiets}} 333
+                               22 <div ng-include="pakiets">pakiets</div>  44
+                                <div ng-include="'./app/subsites_admin/pakiety5.html'">pakiets</div>
                             </div>
                             <button   onclick="javascript:event.preventDefault();" class="btnPrev btn btn-ui-default btn-primary" style="margin:15px;">Powrót do wyboru silnika </button><button  id="button4" disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Konfiguruj Nadwozie</button>
-
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="base-settings">
                             <div class="panel panel-default">
-                                <div ng-include="'tab2.html'">test4</div>
+                                <div ng-include="'./subsites/tab2.html'">test4</div>
                             </div>
                         </div>
 
@@ -150,7 +154,11 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
-<script src="./js/main.js"></script>
+<script src="./js/ng-table.js"></script>
+<script src="./js/animations.js"></script>
+<script src="./app/app.js"></script>
+<script src="./app/home/home_ctrl.js"></script>
+<script src="./app/subsites_admin/admin_ctrl.js"></script>
 
 </body>
 </html>

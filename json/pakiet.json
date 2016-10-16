@@ -1,248 +1,248 @@
 {
   "records": [
  {
-   "id": "161",
-   "model":"F30","Denotation": "EU5 exhaust emissions standard ",
+   "item_id": "161",
+   "model":["F30"],"name": "EU5 exhaust emissions standard ",
    "equ_group": "11. Internal control\t",
    "equ_sub_group": ""
  },
  {
-   "id": "163",
-   "model":"F30","Denotation": "BMW diesel with BluePerformance ",
+   "item_id": "163",
+   "model":["F30"],"name": "BMW diesel with BluePerformance ",
    "equ_group": "11. Internal control\t",
    "equ_sub_group": ""
  },
  {
-   "id": "167",
-   "model":"F30","Denotation": "EU4 exhaust emissions standard ",
+   "item_id": "167",
+   "model":"F30","name": "EU4 exhaust emissions standard ",
    "equ_group": "11. Internal control\t",
    "equ_sub_group": ""
  },
  {
-   "id": "169",
-   "model":"F30","Denotation": "EU3 exhaust emissions standard ",
+   "item_id": "169",
+   "model":"F30","name": "EU3 exhaust emissions standard ",
    "equ_group": "11. Internal control\t",
    "equ_sub_group": ""
  },
  {
-   "id": "1AF",
-   "model":"F30","Denotation": "Larger fuel filler neck ",
+   "item_id": "1AF",
+   "model":"F30","name": "Larger fuel filler neck ",
    "equ_group": "11. Internal control\t",
    "equ_sub_group": ""
  },
  {
-   "id": "1AK",
-   "model":"F30","Denotation": "External fuel filter ",
+   "item_id": "1AK",
+   "model":"F30","name": "External fuel filter ",
    "equ_group": "11. Internal control\t",
    "equ_sub_group": ""
  },
  {
-   "id": "1CA",
-   "model":"F30","Denotation": "Selection of COP relevant vehicles ",
+   "item_id": "1CA",
+   "model":"F30","name": "Selection of COP relevant vehicles ",
    "equ_group": "11. Internal control\t",
    "equ_sub_group": ""
  },
  {
-   "id": "1CB",
-   "model":"F30","Denotation": "CO2 content",
+   "item_id": "1CB",
+   "model":"F30","name": "CO2 content",
    "equ_group": "6. Technology",
    "equ_sub_group": "6.2 Drive and transmission"
  },
  {
-   "id": "1CC",
-   "model":"F30","Denotation": "Automatic Start/Stop function",
+   "item_id": "1CC",
+   "model":"F30","name": "Automatic Start/Stop function",
    "equ_group": "6. Technology",
    "equ_sub_group": "6.2 Drive and transmission"
  },
  {
-   "id": "1CD",
-   "model":"F30","Denotation": "Brake Energy Regeneration",
+   "item_id": "1CD",
+   "model":"F30","name": "Brake Energy Regeneration",
    "equ_group": "6. Technology",
    "equ_sub_group": "6.2 Drive and transmission"
  },
  {
-   "id": "205",
-   "model":"F30","Denotation": "Steptronic transmission",
+   "item_id": "205",
+   "model":"F30","name": "Steptronic transmission",
    "equ_group": "6. Technology",
    "equ_sub_group": "6.2 Drive and transmission"
  },
  {
-   "id": "212",
-   "model":"F30 F31","Denotation": "National brake system equipment ",
+   "item_id": "212",
+   "model":["F30","F31"],"name": "National brake system equipment ",
    "equ_group": "11. Internal control\t",
    "equ_sub_group": ""
  },
  {
-   "id": "216",
-   "model":"F30 F31","Denotation": "Servotronic",
+   "item_id": "216",
+   "model":["F30","F31"],"name": "Servotronic",
    "equ_group": "6. Technology",
    "equ_sub_group": "6.1 Running gear"
  },
  {
-   "id": "217",
-   "model":"F30 F31","Denotation": "Active Steering",
+   "item_id": "217",
+   "model":"F30 F31","name": "Active Steering",
    "equ_group": "6. Technology",
    "equ_sub_group": "6.1 Running gear"
  },
  {
-   "id": "21B",
-   "model":"F30 F31","Denotation": "18\" M light alloy wheels Double-spoke style\t\t",
+   "item_id": "21B",
+   "model":"F30 F31","name": "18\" M light alloy wheels Double-spoke style\t\t",
    "equ_group": "",
    "equ_sub_group": ""
  },
  {
-   "id": "441",
-   "model":"F30 F31","Denotation": "M Ferric Grey metallic",
+   "item_id": "441",
+   "model":"F30 F31","name": "M Ferric Grey metallic",
    "equ_group": "4. Wheels/tyres\t",
    "equ_sub_group": ""
  },
  {
-   "id": "21C",
-   "model":"F30 F31","Denotation": "19\" M light alloy wheels Double-spoke style \t\t",
+   "item_id": "21C",
+   "model":"F30 F31","name": "19\" M light alloy wheels Double-spoke style \t\t",
    "equ_group": "",
    "equ_sub_group": ""
  },
  {
-   "id": "442",
-   "model":"F30 F31","Denotation": "M Bicolour Orbit Grey metallic",
+   "item_id": "442",
+   "model":"F30 F31","name": "M Bicolour Orbit Grey metallic",
    "equ_group": "4. Wheels/tyres\t",
    "equ_sub_group": ""
  },
  {
-   "id": "21S",
-   "model":"F30 F31","Denotation": "20\" M light alloy wheels Double-spoke style 680 M with mixed tyres",
+   "item_id": "21S",
+   "model":"F30 F31","name": "20\" M light alloy wheels Double-spoke style 680 M with mixed tyres",
    "equ_group": "4. Wheels/tyres\t",
    "equ_sub_group": ""
  },
  {
-   "id": "223",
-   "model":"F30 F31","Denotation": "Dynamic Damper Control",
+   "item_id": "223",
+   "model":"F30 F31","name": "Dynamic Damper Control",
    "equ_group": "6. Technology",
    "equ_sub_group": "6.1 Running gear"
  },
  {
-   "id": "225",
-   "model":"F30 F31","Denotation": "Standard suspension",
+   "item_id": "225",
+   "model":"F30 F31","name": "Standard suspension",
    "equ_group": "6. Technology",
    "equ_sub_group": "6.1 Running gear"
  },
  {
-   "id": "226",
-   "model":"F30 F31","Denotation": "Sport suspension settings",
+   "item_id": "226",
+   "model":"F30 F31","name": "Sport suspension settings",
    "equ_group": "6. Technology",
    "equ_sub_group": "6.1 Running gear"
  },
  {
-   "id": "233",
-   "model":"","Denotation": "Increased towing capability",
+   "item_id": "233",
+   "model":"","name": "Increased towing capability",
    "equ_group": "8. Exterior and interior functional equipment\t",
    "equ_sub_group": ""
  },
  {
-   "id": "23A",
-   "model":"","Denotation": "16\" light alloy wheels V-spoke style 656",
+   "item_id": "23A",
+   "model":"","name": "16\" light alloy wheels V-spoke style 656",
    "equ_group": "4. Wheels/tyres\t",
    "equ_sub_group": ""
  },
  {
-   "id": "23C",
-   "model":"","Denotation": "18\" light alloy wheels V-spoke style 658 with mixed tyres",
+   "item_id": "23C",
+   "model":"","name": "18\" light alloy wheels V-spoke style 658 with mixed tyres",
    "equ_group": "4. Wheels/tyres\t",
    "equ_sub_group": ""
  },
  {
-   "id": "23N",
-   "model":"","Denotation": "18'' light alloy wheels V-spoke style 398 with performance tyres and mixed tyres",
+   "item_id": "23N",
+   "model":"","name": "18'' light alloy wheels V-spoke style 398 with performance tyres and mixed tyres",
    "equ_group": "Orbit Grey",
    "equ_sub_group": "4. Wheels/tyres"
  },
  {
-   "id": "23P",
-   "model":"","Denotation": "18'' light alloy wheels V-spoke style 398 with performance tyres and mixed tyres",
+   "item_id": "23P",
+   "model":"","name": "18'' light alloy wheels V-spoke style 398 with performance tyres and mixed tyres",
    "equ_group": "4. Wheels/tyres\t",
    "equ_sub_group": ""
  },
  {
-   "id": "240",
-   "model":"","Denotation": "Leather steering wheel",
+   "item_id": "240",
+   "model":"","name": "Leather steering wheel",
    "equ_group": "7. Interior",
    "equ_sub_group": "7.2 Steering wheels"
  },
  {
-   "id": "248",
-   "model":"F31","Denotation": "Steering-wheel heating",
+   "item_id": "248",
+   "model":"F31","name": "Steering-wheel heating",
    "equ_group": "7. Interior",
    "equ_sub_group": "7.2 Steering wheels"
  },
  {
-   "id": "249",
-   "model":"F31","Denotation": "Multifunction for steering wheel",
+   "item_id": "249",
+   "model":"F31","name": "Multifunction for steering wheel",
    "equ_group": "7. Interior",
    "equ_sub_group": "7.2 Steering wheels"
  },
  {
-   "id": "24B",
-   "model":"F31","Denotation": "18\" light alloy wheels Double-spoke style 397 with mixed tyres",
+   "item_id": "24B",
+   "model":"F31","name": "18\" light alloy wheels Double-spoke style 397 with mixed tyres",
    "equ_group": "4. Wheels/tyres\t",
    "equ_sub_group": ""
  },
  {
-   "id": "255",
-   "model":"F31","Denotation": "Sport leather steering wheel",
+   "item_id": "255",
+   "model":"F31","name": "Sport leather steering wheel",
    "equ_group": "7. Interior",
    "equ_sub_group": "7.2 Steering wheels"
  },
  {
-   "id": "258",
-   "model":"F31","Denotation": "Runflat tyres",
+   "item_id": "258",
+   "model":"F31","name": "Runflat tyres",
    "equ_group": "4. Wheels/tyres\t",
    "equ_sub_group": ""
  },
  {
-   "id": "25C",
-   "model":"F31","Denotation": "'19\" light alloy wheels Star-spoke style 606 with mixed tyres",
+   "item_id": "25C",
+   "model":"F31","name": "'19\" light alloy wheels Star-spoke style 606 with mixed tyres",
    "equ_group": "black'",
    "equ_sub_group": "4. Wheels/tyres"
  },
  {
-   "id": "27A",
-   "model":"F31","Denotation": "16\" light alloy wheels turbine styling 406",
+   "item_id": "27A",
+   "model":"F31","name": "16\" light alloy wheels turbine styling 406",
    "equ_group": "BMW EfficientDynamics",
    "equ_sub_group": "4. Wheels/tyres"
  },
  {
-   "id": "2A6",
-   "model":"F31","Denotation": "17'' light alloy wheels Double-spoke style 392",
+   "item_id": "2A6",
+   "model":"F31","name": "17'' light alloy wheels Double-spoke style 392",
    "equ_group": "4. Wheels/tyres\t",
    "equ_sub_group": ""
  },
  {
-   "id": "2AM",
-   "model":"F31","Denotation": "17'' light alloy wheels Streamline style 306",
+   "item_id": "2AM",
+   "model":"F31","name": "17'' light alloy wheels Streamline style 306",
    "equ_group": "4. Wheels/tyres\t",
    "equ_sub_group": ""
  },
  {
-   "id": "2AZ",
-   "model":"F31","Denotation": "18'' light alloy wheels Double-spoke style 446",
+   "item_id": "2AZ",
+   "model":"F31","name": "18'' light alloy wheels Double-spoke style 446",
    "equ_group": "4. Wheels/tyres\t",
    "equ_sub_group": ""
  },
  {
-   "id": "2D4",
-   "model":"F31","Denotation": "19'' light alloy wheels Star-spoke style 449",
+   "item_id": "2D4",
+   "model":"F31","name": "19'' light alloy wheels Star-spoke style 449",
    "equ_group": "4. Wheels/tyres\t",
    "equ_sub_group": ""
  },
  {
-   "id": "2D9",
-   "model":"F31","Denotation": "19\" light alloy wheels Star-spoke style 606 with mixed tyres",
+   "item_id": "2D9",
+   "model":"F31","name": "19\" light alloy wheels Star-spoke style 606 with mixed tyres",
    "equ_group": "4. Wheels/tyres\t",
    "equ_sub_group": ""
  },
  {
-   "id": "2DW",
-   "model":"F31","Denotation": "17'' light alloy wheels Star-spoke style 393",
+   "item_id": "2DW",
+   "model":"F31","name": "17'' light alloy wheels Star-spoke style 393",
    "equ_group": "4. Wheels/tyres\t",
    "equ_sub_group": ""
  }
