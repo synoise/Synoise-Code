@@ -1,79 +1,56 @@
-<!--style>
-    .models_column {
-        width: 200px;
-        display: inline-table;
-    }
-
-    input[type=radio] {
-        width: 12px;
-        height: 12px;
-    }
-
-    td, th {
-        width: 160px
-    }
-
-    .btn-default {
-        border: 0;
-        padding: 3px;
-        min-width: 160px;
-        text-align: left;
-        font-size: 13px;
-    }
-
-    td {
-        -webkit-box-sizing: initial !important;
-        box-sizing: initial !important;
-    }
-</style-->
-            xx>>{{pakiets}}<<xx
 <div>
 
 
     <div style="border-bottom:1px solid #f3f3f3;">
                 <span style=" text-align: left;">
-                <h4>
-                    Cena modelu {{orderedCar.name}}:{{orderedCar.price}} zł +{{orderedCar.pack_price}} zł
-                    +{{orderedCar.free_pack_price}} zł
-                </h4>
+                    <h4>
+                        Cena modelu {{orderedCar.name}}:{{orderedCar.price}} zł +{{orderedCar.pack_price}} zł +{{orderedCar.free_pack_price}} zł
+                    </h4>
                 </span>
     </div>
-                           wwwwwwwww
 
-    <div class="models_column" style="width:540px; display:1none;">
 
-        <h4> Wybór Pakietu 1 </h4>
-        <h5> Opis Pakietu </h5>     cccccc
-                                           // engines_all[engines_selected].list
-        <div ng-repeat="m2 in pakiety[0].list ">
+    <div ng-init="pakiety[selectedPakiet].list" class="models_column" style="width:540px;">
+
+        <h4> Wybór Pakietu </h4>
+        <h5> Opis Pakietu </h5>
+        <div ng-repeat="m2 in pakiety[selectedPakiet].list ">
+
             <input name="pakiet" ng-click="setPackElement( m2.list,m2.name )" type="radio">
             {{m2.name}} <br/>
+
             <b>{{m2.price}} zł </b> lub <b>{{m2.price}} zł </b> miesięcznie <br/>
             <br/>
         </div>
 
-        <h5>Opis Wybranego Pakietu</h5>
+        <h5 style="display:{{displayAddonPacks}};">Opis Wybranego Pakietu</h5>
 
-        <table ng-init="packElement" ng-show="1" class="table table-striped">
+        <table ng-init="packElement" ng-show="1" class="table table-striped" style="display:{{displayAddonPacks}};" >
+
             <thead>
+
             <tr>
                 <th>{{search5}}</th>
                 <th>Opis</th>
                 <th>Cena w pakiecie</th>
+            </tr>
             </thead>
 
             <tr ng-repeat="m3 in packElement">
                 <td><input type="checkbox" ng-model="m3.waluta1" ng-init="( m3.waluta1 ='true')" value="m3.waluta1"
-                           ng-true-value="true" ng-false-value="" disabled></td>
+                           ng-true-value="true" ng-false-value="" ></td>
                 <td>{{geModelPackElementAliasFromID(m3[0])}}</td>
-                <td>{{m3[1]}}</td>
+                <td>{{m3[1]}} {{m3.waluta1}}</td>
             </tr>
+
         </table>
+
+
     </div>
 
-    <div class="models_column" style="width:550px; display:no11ne; ">
-        <h4>Dodatkowe Opcje </h4>
-        <table ng-init="pakiety[0].pack_alt" class="table table-striped">
+    <div class="models_column" style="width:550px; display:{{displayAddonPacks}}; ">
+        <h4>Dodatkowe Opcje111 </h4>
+        <table  ng-init="pakiety[selectedPakiet].pack_alt" class="table table-striped">
             <thead>
             <tr>
                 <th>Cena bez pakietu</th>
@@ -81,13 +58,14 @@
                 <th>Cena w pakiecie</th>
             </thead>
 
-            <tr ng-repeat="m3 in pakiety[0].pack_alt">
+            <tr ng-repeat="m3 in pakiety[selectedPakiet].pack_alt">
 
-                <td><input type="checkbox" class="resetCheckbox" ng-model="m3[0]" ng-change="countFreePacks()"
+                <td><input type="checkbox" class="resetCheckbox" ng-model="m3.waluta1" ng-change="countFreePacks()"
                            value="m3.waluta1" ng-true-value="true" ng-false-value=""></td>
                 <td>{{geModelPackElementAliasFromID(m3[0])}}</td>
                 <td>{{m3[1]}}</td>
             </tr>
+
         </table>
     </div>
 

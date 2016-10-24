@@ -1,145 +1,146 @@
- body {
-            font-family: 'Armata', sans-serif;
-            font-size: 12px;
-            font-weight: 400;
-        }
+body {
+    font-family: 'Armata', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
 
-        body, section {
-            background: rgb(236, 244, 255)
-        }
+body, section {
+    background: rgb(236, 244, 255)
+}
 
-        .panel-default {
-            margin: 7px;
-            min-height: 400px;
-            border: 0;
-        }
+.panel-default {
+    margin: 7px;
+    min-height: 400px;
+    border: 0;
+}
 
-        a {
-            cursor: crosshair;
-        }
+a {
+    cursor: crosshair;
+}
 
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1f1f1+0,f3f3f3+62,e1e1e1+100 */
-        menu {
-            background: #f1f1f1; /* Old browsers */
-            background: -moz-linear-gradient(top, #f1f1f1 0%, #f3f3f3 62%, #e1e1e1 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, #f1f1f1 0%, #f3f3f3 62%, #e1e1e1 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, #f1f1f1 0%, #f3f3f3 62%, #e1e1e1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#e1e1e1', GradientType=0); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1f1f1+0,f3f3f3+62,e1e1e1+100 */
+menu {
+    background: #f1f1f1; /* Old browsers */
+    background: -moz-linear-gradient(top, #f1f1f1 0%, #f3f3f3 62%, #e1e1e1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f1f1f1 0%, #f3f3f3 62%, #e1e1e1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f1f1f1 0%, #f3f3f3 62%, #e1e1e1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#e1e1e1', GradientType=0); /* IE6-9 */
 
-            margin: 0;
-            heeeeeeeeeeeeeeeight: 66px;
-            padding: 0;
-        }
+    margin: 0;
+    heeeeeeeeeeeeeeeight: 66px;
+    padding: 0;
+}
 
-        menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
+menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
-        menu li {
-            float: left;
-            eeeeeeeeeemin-width: 165px;
-            text-transform: uppercase;
-            border-right: 1px #dadada solid;
-        }
+menu li {
+    float: left;
+    eeeeeeeeeemin-width: 165px;
+    text-transform: uppercase;
+    border-right: 1px #dadada solid;
+}
 
-        menu, a, li, div {
-            transition: -webkit-transform all 0.5s ease;
-            transition: all 0.5s ease;
-        }
+menu, a, li, div {
+    transition: -webkit-transform all 0.5s ease;
+    transition: all 0.5s ease;
+}
 
-        menu li a {
-            display: block;
-            color: #666;
-            font-size: 16px;
-            text-align: center;
-            padding: 17px 55px;
-            text-decoration: none;
-        }
+menu li a {
+    display: block;
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    padding: 17px 55px;
+    text-decoration: none;
+}
 
-        menu li a:hover {
-            padding: 17px 60px;
-            background-color: #fcfcfc;
-            text-decoration: none;
-        }
+menu li a:hover {
+    padding: 17px 60px;
+    background-color: #fcfcfc;
+    text-decoration: none;
+}
 
-        .label {
-            color: #000;
-        }
+.label {
+    color: #000;
+}
 
+.models_column {
+    /*float: left;*/
+    display: inline-table;
+    min-height: 350px;
+    width: 200px;
+}
 
+input[type=radio] {
+    width: 12px;
+    height: 12px;
+}
 
+.btn-default {
+    border: 0;
+    padding: 3px;
+    text-align: left;
+    font-size: 13px;
+}
 
+.input14 {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    background-color: rgba(255, 162, 0, 0.06);
+    width: 100%;
+}
 
-  .models_column{
-      float: left;
-      display: inline-table;
-      min-height: 350px;
-      width: 200px;
-  }
- input[type=radio] {
-     width: 12px;
-     height: 12px;
- }
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 0px 0px;
 
- .btn-default {
-     border:0;
-     padding:3px;
-     min-width:160px;
-     text-align: left;
-     font-size:13px;
- }
+}
 
- .input14 {
-     border: none;
-     border-bottom: 1px solid #ccc;
-     border-left: 1px solid #ccc;
-     background-color: rgba(255, 162, 0, 0.06) ;
-     width: 100%;
- }
+.st-sort-ascent:before {
+    content: '\25B2';
+}
 
- .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
-     padding: 0px 0px;
+.st-sort-descent:before {
+    content: '\25BC';
+}
 
- }
+.carsrow {
+    display: inline-table;
+    width: 197px;
+}
 
- .st-sort-ascent:before{
-     content: '\25B2';
- }
-
- .st-sort-descent:before{
-     content: '\25BC';
- }
- .carsrow{
-     display:inline-table; width: 197px;
- }
-
- #g_mod0,#g_mod1{
-     border-right: 1px solid #eee;
- }
+#g_mod0, #g_mod1 {
+    border-right: 1px solid #eee;
+}
 
 
 
- td, th {
-     width: 160px
- }
+td {
+    -webkit-box-sizing: initial !important;
+    box-sizing: initial !important;
+}
+
+.pack_list {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.list_short input {
+    width:49%;
+}
+
+.st-sort-type:before {
+    content: '\25BC';
+}
 
 
- td {
-     -webkit-box-sizing: initial !important;
-     box-sizing: initial !important;
- }
-
- .pack_list {
-     list-style:none;
-     width: 100%;
-     padding: 0;
- }
- .list_short input {
-     width: 50%;
- }
- .st-sort-type:before {
-     content: '\25BC';
- }
+.fix-search  {
+    position: fixed;
+    top: 10px;
+}

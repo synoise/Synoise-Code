@@ -24,7 +24,7 @@
 
     <div  class="models_column" id="g_mod1">
         <h4>Grupa modelowa</h4>
-        <div data-ng-repeat="row in vehicles | filter:filtrCarType|filter:searchBodyTyp| filter:filtrCarType | unique:'car_type'">
+        <div ng-repeat="row in vehicles | filter:filtrCarType|filter:searchBodyTyp| filter:filtrCarType | unique:'car_type'">
             <label ng4-hide="displayGM(vehicle.length)"  ng-init="displayGM(!$index)"  class="btn btn-default"><input type="radio" name="body_typ"  ng-click="filterGrupaModelowa(row.car_type)"> {{row.car_type}} </input></label>
 		</div>
     </div>
@@ -32,7 +32,7 @@
     <!--div  class="models_column" style=" width:calc( 100% - 610px ); border-left:1px solid #f3f3f3; padding:0px 10px"-->
 
         <h4> <span id="g_mod2">Modele</span><span id="g_mod3">Grupa modelowa</span> <span style="color:rgb(254, 189, 1);">*</span></h4>
-        <div class="carsrow" data-ng-repeat="row in vehicles | orderBy:'name' | filter:searchBodyTyp|filter:filtrCarType |filter:search" >
+        <div class="carsrow" ng-repeat="row in vehicles | orderBy:'name' | filter:searchBodyTyp|filter:filtrCarType |filter:search" >
             <label class="btn btn-default" style="text-align: center;">
 
                 <img ng-src="images/{{row.img}}"/>       <br>

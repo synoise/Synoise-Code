@@ -1,16 +1,17 @@
-<div data-ng-controller="TestController2">
+<!--div data-ng-controller="TestController2"-->
+<div>
 
     <div class="btn btn-ui-default btn-primary" ng-click="reloadPakiety()">Kliknij aby pokazać Panel zarządzania</div>
 
-    {{pakiety5admin}}
     <div style="display:{{pakiety5admin}};">
         <h4> Edyduj Tabelę Pakietów {{orderedCar.name}}</h4>Kliknij na nazwę kolumny aby posortować lub zmień widok
         użytkowanika, na górze :
 
-        <select ng-model="selectedItem" ng-change="changeEngine(selectedItem)">
+        <select ng-model="selectedPakiet" ng-change="changePakiety(selectedPakiet)">
             <option value="" default selected>Symbol modelu</option>
-            <option ng-repeat="row_0 in pakiety" ng-selected="selectedItem == $index" value="{{$index}}" ng-value="0">
-                {{row_0.engin}}
+            <option ng-repeat="row_0 in  pakiety" ng-selected="selectedPakiet == $index" value="{{$index}}"
+                    ng-value="0">
+                {{row_0.model_id}}
             </option>
         </select><br>
 
@@ -21,10 +22,9 @@
                 <tr>
                     <th st-sort="model_id" style='content: "\25C0"'>model_id</th>
                     <th st-sort="name" style='content: "\25C0"'>name / pack_id</th>
-                    <th st-sort="price" style='content: "\25C0"'>price / price_rata</th>
+                    <!--th st-sort="price" style='content: "\25C0"'>price / price_rata</th-->
                     <th st-sort="boost" style='content: "\25C0"'>element / cena</th>
 
-                    <th></th>
                 </tr>
                 </thead>
                 <!--tr ng-repeat="row in row_0.list|filter:searchVechicelsInAadmin"-->
@@ -42,19 +42,24 @@
                                 <table>
 
                                     <thead>
+
                                     <tr>
                                         <th>bez pakietu</th>
+
                                         <th>cena</th>
 
                                         <th></th>
                                     </tr>
+
                                     </thead>
 
-                                    <tr ng-repeat="m3 in row.pack_alt">
-                                        <td><input class="input14" ng-value='m3[0]' ng-model="m3[0]"/> <br/>{{geModelPackElementAliasFromID(m3[0])}}
+                                    <tr ng-repeat="m3 in row.pack_alt"  ng-drop="true"  ng-drop-success="onDropCompleteAlt($data,$event,row)"  style="background:#cce3f0;">
+
+                                        <td>
+                                            <input class="input14" ng-value='m3[0]' ng-model="m3[0]"/> <br/>{{geModelPackElementAliasFromID(m3[0])}}
                                         </td>
                                         <td>{{m3[1]}} <br/>
-                                            <div ng-click="removeItemEngines(row,row_0.engin)"
+                                            <div ng-click="removePackFreeItem(row.pack_alt,$index)"
                                                  class="btn btn-ui-default btn-primary" style=" padding: 0;"> &nbsp -
                                                 &nbsp
                                             </div>
@@ -62,96 +67,226 @@
                                     </tr>
 
                                     <tr>
-                                        <td><input placeholder="item_id"/> <br/>
-                                            <input placeholder="price"/> <br/></td>
+                                        <td><input placeholder="item_id" ng-model="addingItem.item_id"
+                                                   ng-value='addingItem.item_id'/> <br/>
+                                            <input placeholder="price" ng-model="addingItem.price"
+                                                   ng-value='addingItem.price'/> <br/>
+                                        </td>
                                         <td>
-                                            <div ng-click="removeItemEngines(row,row_0.engin)"
+                                            <div ng-click="addPackFreeItem(row.pack_alt,$index)"
                                                  class="btn btn-ui-default btn-primary" style=" padding: 0;"> &nbsp +
                                                 &nbsp
                                             </div>
                                         </td>
+                                        <td>
+                                        </td>
                                     </tr>
 
                                 </table>
+                                <br/>
+
+
+                                <table>
+
+                                    <thead>
+                                    <tr>
+                                        <th style="width:50px;">id koloru</th>
+                                        <!--th>nazwa</th-->
+                                    </tr>
+                                    </thead>
+
+                                    <tr ng-repeat="m3 in row.body_colors" style="background:#ecf0b7; "  ng-drop="true"  ng-drop-success="onDropCompleted($data,$event,row.body_colors)" ><br/>
+                                        <td> <div ng-click="removePackFreeItem(row.body_colors,$index)" class="btn btn-ui-default btn-primary" style=" padding: 0;"> &nbsp - &nbsp </div>
+                                            <input class="input14" ng-value='m3' style=' width: 50px; background:{{getColorHex(m3)}}'  ng-model="m3" /> <br/>
+                                       {{getColorName(m3)}} <br/> <br/>
+                                        </td>
+                                    </tr>
+
+                                    <!--tr><br/>
+                                        <td><input placeholder="item_id" ng-model="addingItem.xxx"
+                                                   ng-value='addingItem.xxx'/>
+                                            <!--input placeholder="price"  ng-model="addingItem.yyy" ng-value='addingItem.yyy'/> <br/- ->
+                                        </td>
+                                        <td>
+                                            <div ng-click="addPackColorItem(row.body_colors,$index)"
+                                                 class="btn btn-ui-default btn-primary" style=" padding: 0;"> &nbsp
+                                                +&nbsp
+                                            </div>
+                                        </td>
+                                    </tr>-->
+                                </table>
+
+                                <br/>
+
+
+                                <table>
+
+                                    <thead>
+                                    <tr>
+                                        <th style="width:50px;">id obręczy</th>
+                                        <!--th>nazwa</th-->
+                                    </tr>
+                                    </thead>
+
+                                    <tr ng-repeat="m3 in row.wheels" style="background:#f0d9d1;" ng-drop="true" ng-drop-success="onDrop($data,$event,row.wheels)" ><br/>
+                                        <td> <div ng-click="removePackFreeItem(row.wheels,$index)" class="btn btn-ui-default btn-primary" style=" padding: 0;"> &nbsp - &nbsp </div>
+                                            <input class="input14" ng-value='m3[0]' style=' width: 50px;'  ng-model="m3[0]" /> <br/>
+                                            <input class="input14" ng-value='m3[1]' style=' width: 50px;'  ng-model="m3[1]" /> <br/>
+                                            {{ getWheelName( m3[0]) }} <br/>
+                                            rozmiar: {{ getWheelSize( m3[0]) }}''  <br/>
+                                            <br/>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+
+                                <div ng-click="removeRecordPackGroup($index)" style="width:100%"
+                                     class="btn btn btn-danger btn-ui-default btn-primary"> USUŃ Pakiety dla <br/>{{
+                                    geModelAliasFromID(row.model_id)}}
+                                </div>
+
+
                             </li>
                         </ul>
                     </td>
-                    <td>
+                    <td style="border-top:solid 3px #99a;border-left:solid 3px #99a;border-right:dotted 1px #99a">
+
                         <ul class="pack_list">
-                            <li><input class="input14" ng-value='row_0.name' ng-model="row_0.name"/></li>
+                            <li>
+                                <div ng-click="removePackFreeItem(row.list,$index)" class="btn btn btn-danger btn-ui-default btn-primary"> usuń &nbsp &nbsp  {{row_0.name}} </div>
+                            </li>
+                            <li> <h4>name</h4></li>
+                            <li><input class="input14" style="font-size: 18px;" ng-value='row_0.name' ng-model="row_0.name"/></li>
+                            <li> <h5>pack_id</h5></li>
                             <li><input class="input14" ng-value='row_0.pack_id' ng-model="row_0.pack_id"/></li>
+                            <li> <h5>price</h5></li>
+                            <li><input class="input14" ng-value='row_0.price' ng-model="row_0.price"/></li>
+                            <li> <h5>price_rata</h5></li>
+                            <li><input class="input14" ng-value='row_0.price_rata' ng-model="row_0.price_rata"/></li>
                         </ul>
                     </td>
-                    <td>
+                    <!--td>
                         <ul class="pack_list">
                             <li><input class="input14" ng-value='row_0.price' ng-model="row_0.price"/></li>
                             <li><input class="input14" ng-value='row_0.price_rata' ng-model="row_0.price_rata"/></li>
                         </ul>
-                    </td>
+                    </td-->
 
-                    <td>
-                        <ul class="pack_list list_short" ng-repeat="row in row_0.list">
-                            <li><input class="input14" ng-value='row[0]' ng-model="row[0]"/><input class=" input14"
-                                                                                                   ng-value='row[1]'
-                                                                                                   ng-model="row[1]"/>
+                    <td ng-drop="true"  ng-drop-success="onDropComplete($data,$event,row_0)"  style="background:#cce3f0; border-top:solid 3px #99a;border-right:solid 3px #99a">
+                        <ul class="pack_list list_short" ng-repeat="row in row_0.list" >
+                            <li>
+                                <input class="input14" placeholder="podaj ID" ng-value='row[0]' ng-model="row[0]"/>
+                                <input class=" input14" placeholder="wpisz cenę" ng-value='row[1]' ng-model="row[1]"/>
                             </li>
                             <li style="text-align:right;">{{geModelPackElementAliasFromID(row[0])}}
-                                <div ng-click="removeItemEngines(row,row_0.engin)"
+                                <div ng-click="removePackFreeItem(row_0.list,$index)"
                                      class="btn btn-ui-default btn-primary"
-                                     style=" padding: 0;"> &nbsp- &nbsp
+                                     style=" padding: 0;"> &nbsp - &nbsp
                                 </div>
                             </li>
                         </ul>
-                        <div ng-click="removeItemEngines(row,row_0.engin)" class="btn btn-ui-default btn-primary"
-                             style=" padding: 0;"> &nbsp + &nbsp
+
+                        <ul class="pack_list list_short"  ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
+                            <li><input ng-value='addingItem.first' ng-model="addingItem.first"
+                                       placeholder="element id"/>
+                                <input ng-value='addingItem.second' ng-model="addingItem.second" placeholder="cena"/>
+                            </li>
+                            <li style="text-align:right;">{{geModelPackElementAliasFromID(row[0])}}
+                                <div ng-click="addRecordPackItemOne(row,$index)" class="btn btn-ui-default btn-primary"
+                                     style=" padding: 0;"> &nbsp + &nbsp
+                                </div>
+                            </li>
+                        </ul>
+
+
+                    </td>
+                    <!--td style="text-align:right;">
+                        <!--div ng-click="removeItemRow(row.list,$index)" class="btn btn-ui-default btn-primary"
+                             style=" padding: 0;">usun    {{$index}}
+                        </div-- >
+                        <div ng-click="removePackFreeItem(row.list,$index)"
+                             class="btn btn btn-danger btn-ui-default btn-primary"> usuń
                         </div>
-                    <td style="text-align:right;">
-                        <div ng-click="removeItemEngines(row,row_0.engin)" class="btn btn-ui-default btn-primary"
-                             style=" padding: 0;">usun
-                        </div>
-                        <br/></td>
+
+                        <br/>
+                    </td-->
 
                 </tr>
                 <tr>
                     <th><input placeholder="name" ng-value='addingItem.name' ng-model="addingItem.name"
                                style="width:100%"/>
-                        <input placeholder="gear" ng-value='addingItem.gear' ng-model="addingItear" style="width:100%"/>
-                    </th>
-                    <th><input placeholder="power" ng-value='addingItem.power' ng-model="addingItem.power"
+                        <input placeholder="pack_id" ng-value='addingItem.gear' ng-model="addingItem.pack_id"
                                style="width:100%"/>
-                        <input placeholder="naped" ng-value='addingItem.naped' ng-model="addingItem.naped"
-                               style="width:100%"/></th>
+                        <div ng-click="addRecordOnePack($index)" class="btn btn-ui-default btn-primary"> dodaj</div>
+                    </th>
+                    <th><input placeholder="price" ng-value='addingItem.price' ng-model="addingItem.price"
+                               style="width:100%"/>
+                        <input placeholder="price_rata" ng-value='addingItem.price_rata'
+                               ng-model="addingItem.price_rata" style="width:100%"/>
+                    </th>
 
-                    <th><input placeholder="burn" ng-value='addingItem.burn' ng-model="addingItem.burn"
-                               style="width:100%"/></th>
+                    <!--th>
+
+                                       "pack_id": "337",
+                    "name":"Pakiet M sport",
+                    "price":"2099",
+                    "price_rata":"2099",
+                        <input placeholder="burn" ng-value='addingItem.burn' ng-model="addingItem.burn" style="width:100%"/>
+                    </th- ->
 
                     <td style="text-align:right;">
-                        <div ng-click="addRecordEngines()" class="btn btn-ui-default btn-primary"> dodaj
-                        </div>
-                    </td>
+                    </td-->
                 </tr>
 
             </table>
+            <h4>Add Pack Gropu for model_id</h4>
+            <table>
+                <tr>
+                    <th><input placeholder="model_id" ng-value='addingItem.model_id' ng-model="addingItem.model_id"
+                               style="width:100%"/></th>
+                    <!--th>
+                        <input placeholder="burn" ng-value='addingItem.burn' ng-model="addingItem.burn" style="width:100%"/>
+                    </th-->
+                    <td style="text-align:right;">
+                        <div ng-click="addRecordPackGroup()" class="btn btn-ui-default btn-primary"> DODAJ</div>
+                    </td>
+                </tr>
+            </table>
+
         </div>
 
-        <div style="width:29%;display:inline-table;text-align: right;">
-            <table class="table table-striped" style="width:90%; display:inline-table;" st-table="pakiet">
+        <div id="wrapped" style="width:29%; display:inline-table;text-align: right; top:0; height: 90%">
+        <div  style="overflow-y:scroll;  overflow : auto; height: 100%; min-height: 400px;">
+
+            <h4>Wszyskie Elementy Pakietów </h4>
+            <table class="table table-striped" style="width:90%; display:inline-table;" st-table="pakiet" >
                 <thead>
                 <tr>
+                    <th style=" width: 15px;" st-sort="item_id">drag</th>
                     <th st-sort="item_id">item_id</th>
                     <th st-sort="mark">mark</th>
                     <th st-sort="name">name</th>
                     <th st-sort="equ_group">equ_group</th>
                 </tr>
                 </thead>
-                <tr ng-repeat="row in pakiet|filter:searchVechicelsInAadmin">
-                    <td><input class="input14" ng-value='row.item_id' ng-model="row.item_id"/></td>
+                <tr ng-repeat="row in pakiet|filter:searchVechicelsInAadmin" >
+                    <td style="background:#cce3f0; width: 15px;" ng-drag="true" ng-drag-data="row" ng-drag-success="onDragComplete($data,$event)"> &#8630;&nbsp&nbsp</td>
+                    <td><input class="input14" ng-value='row.item_id' ng-model="row.item_id"/ ></td>
                     <td><input class="input14" ng-value='row.model' ng-model="row.model"/></td>
                     <td><input class="input14" ng-value='row.name' ng-model="row.name"/></td>
                     <td><input class="input14" ng-value='row.equ_group' ng-model="row.equ_group"/></td>
+                    <td>
+                        <div ng-click="removePackFreeItem(pakiet,$index)"
+                             class="btn btn-ui-default btn-primary"
+                             style=" padding: 0;"> &nbsp - &nbsp
+                        </div>
+
+                    </td>
                 </tr>
-                <tr>
-                    <th><input placeholder="item_id" ng-value='addingItem.item_id' ng-model="addingItem.item_id"
+                <tr >
+                    <th style=" width: 25px;"> </th>
+                    <th><input  placeholder="item_id" ng-value='addingItem.item_id' ng-model="addingItem.item_id"
                                style="width:100%"/></th>
                     <th><input placeholder="model" ng-value='addingItem.model' ng-model="addingItem.model"
                                style="width:100%"/></th>
@@ -159,8 +294,114 @@
                                style="width:100%"/></th>
                     <th><input placeholder="equ_group" ng-value='addingItem.equ_group' ng-model="addingItem.equ_group"
                                style="width:100%"/></th>
+                    <th>
+                        <div ng-click="addPackFreeItem2(pakiet,$index)" class="btn btn-ui-default btn-primary"
+                             style=" padding: 0;"> &nbsp + &nbsp
+                        </div>
+                    </th>
                 </tr>
             </table>
+            <table class="table table-striped" style="width:90%; display:inline-table;" st-table="color">
+                <thead>
+                <tr>
+                    <th style="width: 15px;" >drag</th>
+                    <th st-sort="id_color">id_color</th>
+                    <th st-sort="name">name</th>
+                    <th st-sort="hex">hex</th>
+                </tr>
+                </thead>
+                <tr ng-repeat="row in color">
+                    <td style="background:#ecf0b7; width: 15px;" ng-drag="true" ng-drag-data="row" ng-drag-success="onDragComplete($data,$event)"> &#8630;&nbsp&nbsp</td>
+                    <td><input class="input14" style="width:100%" ng-value='row.id_color' ng-model="row.id_color"/></td>
+                    <td><input class="input14" style="width:100%" ng-value='row.name' ng-model="row.name"/></td>
+                    <td><input class="input14" style="background:{{row.hex}} ;style=" width:100%" ng-value='row.hex'
+                        ng-model="row.hex"/>
+                    </td>
+                    <td>
+
+                        <div ng-click="removePackFreeItem(color,$index)"
+                             class="btn btn-ui-default btn-primary"
+                             style=" padding: 0;"> &nbsp - &nbsp
+                        </div>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <th style=" width: 25px;"> </th>
+                    <th><input placeholder="item_id" style="width:100%" ng-value='addingItem.id_color'
+                               ng-model="addingItem.id_color"/></th>
+                    <th><input placeholder="model" style="width:100%" ng-value='addingItem.name'
+                               ng-model="addingItem.name"/></th>
+                    <th><input placeholder="hex" style="background:{{row.hex}} ; style=" width:100%"
+                        ng-value='addingItem.hex' ng-model="addingItem.hex"/>
+                    </th>
+                    <th>
+
+                        <div ng-click="addColorItem(color,$index)"
+                             class="btn btn-ui-default btn-primary"
+                             style=" padding: 0;"> &nbsp + &nbsp
+                        </div>
+
+
+                    </th>
+                </tr>
+            </table>
+
+
+            <h4>Obręcze dla {{orderedCar.name}} z pakietem : {{search5}} ({{orderedCar.packs_id}})</h4>
+
+            <table class="table table-striped" style="width:90%;  display:inline-table;" st-table="color">
+                <thead>
+                <tr>
+                    <th style=" width: 25px;"> </th>
+                    <th> id</th>
+                    <th> Rozmiar</th>
+                    <th>nazwa</th>
+                    <th>Cena w pakiecie:</th>
+                    <th>pack id:</th>
+                </thead>
+                <tr ng-repeat="m2 in wheels|filter:orderedCar.packs_id">
+
+                    <td style="background:#f0d9d1; width: 15px;" ng-drag="true" ng-drag-data="m2" ng-drag-success="onDragComplete($data,$event)"> &#8630;&nbsp&nbsp</td>
+
+                    <td><input class="input14" placeholder="id" style="width:100%" ng-value='m2.id' ng-model="m2.id"/>
+                    </td>
+                    <td><input class="input14" placeholder="size" style="width:100%" ng-value='m2.size'
+                               ng-model="m2.size"/></td>
+                    <td><input class="input14" placeholder="name" style="width:100%" ng-value='m2.name'
+                               ng-model="m2.name"/></td>
+                    <td><input class="input14" placeholder="price" style="width:100%" ng-value='m2.price'
+                               ng-model="m2.price"/></td>
+                    <td><input class="input14" placeholder="name" style="width:100%" ng-value='m2.pack_id'
+                               ng-model="m2.pack_id"/></td>
+                    <td>
+
+                        <div ng-click="removePackFreeItem(wheels,$index)"
+                             class="btn btn-ui-default btn-primary"
+                             style=" padding: 0;"> &nbsp - &nbsp
+                        </div>
+
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <th><input placeholder="id" style="width:100%" ng-value='addingItem.id' ng-model="addingItem.id"/></th>
+                    <th><input placeholder="size" style="width:100%" ng-value='addingItem.size' ng-model="addingItem.size"/></th>
+                    <th><input placeholder="name" style="width:100%" ng-value='addingItem.name' ng-model="addingItem.name"/></th>
+                    <th><input placeholder="price" style="width:100%" ng-value='addingItem.price' ng-model="addingItem.price"/></th>
+                    <th><input placeholder="pack_id" style="width:100%" ng-value='addingItem.pack_id' ng-model="addingItem.pack_id"/></th>
+                    <th>
+                        <div ng-click="addWheelItem(wheels)" class="btn btn-ui-default btn-primary" style=" padding: 0;"> &nbsp + &nbsp</div>
+                    </th>
+
+                </tr>
+
+            </table>
+
+
         </div>
+    </div>
     </div>
 </div>

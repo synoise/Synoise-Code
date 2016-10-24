@@ -1,179 +1,206 @@
 {
-
-  "F31": [
+  "F30": [
     {
+      "id": 1,
       "size": "17",
       "name": " Obrecze kol ze stopow lekkich Multispoke",
       "price": "414 0.00 PLN",
       "pack_id": "337 338"
     },
     {
+      "id": 2,
       "size": "16",
       "name": " Obrecze kol ze stopow lekkich V Spoke",
       "price": "390 0.00 PLN",
       "pack_id": "337"
     },
     {
+      "id": 3,
       "size": "17",
       "name": " Obrecze kol ze stopow lekkich Double Spoke ",
       "price": "392 0.00 PLN",
       "pack_id": "337"
-    }],
-
-  "F30": [
- {
-   "size": "17",
-   "name": " Obrecze kol ze stopow lekkich Multispoke",
-   "price": "414 0.00 PLN",
-   "pack_id": "337 338"
- },
- {
-   "size": "16",
-   "name": " Obrecze kol ze stopow lekkich V Spoke",
-   "price": "390 0.00 PLN",
-   "pack_id": "337"
- },
- {
-   "size": "17",
-   "name": " Obrecze kol ze stopow lekkich Double Spoke ",
-   "price": "392 0.00 PLN",
-   "pack_id": "337"
- },
- {
-   "size": "17",
-   "name": " Obrecze kol ze stopow lekkich Star Spoke ",
-   "price": "393 0.00 PLN",
-   "pack_id": "337"
- },
- {
-   "size": "17",
-   "name": " Obrecze kol ze stopu lekkiego V Spoke ",
-   "price": "395 0.00 PLN" ,
-   "pack_id": "337"
- },
- {
-   "size": "16",
-   "name": " Obrecze kol ze stopu lekkiego V Spoke ",
-   "price": "656 0.00 PLN" ,
-   "pack_id": "338"
- },
- {
-   "size": "18",
-   "name": " Obrecze kol ze stopu lekkiego Star Spoke ",
-   "price": "400 M 0.00 PLN",
-   "pack_id": "338"
- },
- {
-   "size": "16",
-   "name": " Obrecze kol ze stopu lekiego Turbine 406 BMW EfficientDynamics ",
-   "price": "0.00 PLN",
-   "pack_id": "338"
- },
- {
-   "size": "17",
-   "name": " Obrecze kol ze stopow lekkich V Spoke ",
-   "price": "413 0.00 PLN",
-   "pack_id": "338"
- },
- {
-   "size": "18",
-   "name": " Obrecze kol ze stopu lekkiego Double Spoke 441 M. Ferric Grey",
-   "price": " 881.00 PLN lub 9.72 PLN mies. brutto",
-   "pack_id": ""
- },
- {
-   "size": "18",
-   "name": " Obrecze kol ze stopow lekkich Multi Spoke 416",
-   "price": " 2 865.00 PLN lub 31.61 PLN mies. brutto",
-   "pack_id": ""
- },
- {
-   "size": "18",
-   "name": " Obrecze kol ze stopow lekkich Turbine 415",
-   "price": " 2 865.00 PLN lub 31.61 PLN mies. brutto" ,
-   "pack_id": ""
- },
- {
-   "size": "",
-   "name": "Obrecze kol ze stopu lekkiego Double Spoke 397 z ogumieniem mieszanym. 18 cali",
-   "price": " 3 968.00 PLN lub 43.79 PLN mies. brutto",
-   "pack_id": "337"
- },
- {
-   "size": "",
-   "name": "Obrecze kol ze stopu lekkiego V Spoke 6 58. 18 cali z ogumieniem mieszanym",
-   "price": " 3 968.00 PLN lub 43.78 PLN mies. brutto",
-   "pack_id": "337"
- },
- {
-   "size": "18",
-   "name": "Obrecze kol ze stopow lekkich V Spoke 398 z ogumieniem mieszanym",
-   "price": "" ,
-   "pack_id": "337"
- },
- {
-   "size": "18",
-   "name": "Obrecze kol ze stopow lekkich V Spoke 398 z ogumieniem mieszanym",
-   "price": " 3 968.00 PLN lub 43.78 PLN mies. brutto" ,
-   "pack_id": "337"
- },
- {
-   "size": "19",
-   "name": "Obrecze kol ze stopu lekkiego Star Spoke 403 M",
-   "price": ""   ,
-   "pack_id": "337"
- },
- {
-   "size": "19",
-   "name": "Obrecze kol ze stopu lekkiego Star Spoke 403 M",
-   "price": " 4 186.00 PLN lub 46.19 PLN mies. brutto"  ,
-   "pack_id": "337"
- },
- {
-   "size": "19",
-   "name": "Obrecze ze stopu lekkigo Double Spoke 442 M. dwukolorowe Orbit Grey",
-   "price": ""    ,
-   "pack_id": "337"
- },
- {
-   "size": "19",
-   "name": "Obrecze ze stopu lekkigo Double Spoke 442 M. dwukolorowe Orbit Grey",
-   "price": " 5 071.00 PLN lub 55.96 PLN mies. brutto" ,
-   "pack_id": "337"
- },
- {
-   "size": "19",
-   "name": "Obrecze kol ze stopu lekkiego Star Spoke 407 z ogumieniem mieszanym",
-   "price": "",
-   "pack_id": "337"
- },
- {
-   "size": "19",
-   "name": "Obrecze kol ze stopu lekkiego Star Spoke 407 z ogumieniem mieszanym",
-   "price": " 7 051.00 PLN lub 77.81 PLN mies. brutto"
- },
- {
-   "size": "",
-   "name": "Obrecze kol ze stopu lekkiego V Spoke 6 26 I z ogumieniem mieszanym. 19 cali",
-   "price": "" ,
-   "pack_id": "338"
- },
- {
-   "size": "",
-   "name": "Obrecze kol ze stopu lekkiego V Spoke 6 26 I z ogumieniem mieszanym. 19 cali",
-   "price": " 7 495.00 PLN lub 82.70 PLN mies. brutto" ,
-   "pack_id": "338"
- },
- {
-   "size": "19",
-   "name": "Obrecze kol ze stopu lekkiego V Spoke 626 BMW Individual",
-   "price": "" ,
-   "pack_id": "338"
- },
- {
-   "size": "19",
-   "name": "Obrecze kol ze stopu lekkiego V Spoke 626 BMW Individual 7",
-   "price": " 495.00 PLN lub 82.70 PLN mies. brutto" ,
-   "pack_id": "338"
- }
-]}
+    },
+    {
+      "id": 4,
+      "size": "17",
+      "name": " Obrecze kol ze stopow lekkich Multispoke",
+      "price": "414 0.00 PLN",
+      "pack_id": "337 338"
+    },
+    {
+      "id": 5,
+      "size": "16",
+      "name": " Obrecze kol ze stopow lekkich V Spoke",
+      "price": "390 0.00 PLN",
+      "pack_id": "337"
+    },
+    {
+      "id": 6,
+      "size": "17",
+      "name": " Obrecze kol ze stopow lekkich Double Spoke ",
+      "price": "392 0.00 PLN",
+      "pack_id": "337"
+    },
+    {
+      "id": 7,
+      "size": "17",
+      "name": " Obrecze kol ze stopow lekkich Star Spoke ",
+      "price": "393 0.00 PLN",
+      "pack_id": "337"
+    },
+    {
+      "id": 8,
+      "size": "17",
+      "name": " Obrecze kol ze stopu lekkiego V Spoke ",
+      "price": "395 0.00 PLN",
+      "pack_id": "337"
+    },
+    {
+      "id": 9,
+      "size": "16",
+      "name": " Obrecze kol ze stopu lekkiego V Spoke ",
+      "price": "656 0.00 PLN",
+      "pack_id": "338"
+    },
+    {
+      "id": 10,
+      "size": "18",
+      "name": " Obrecze kol ze stopu lekkiego Star Spoke ",
+      "price": "400 M 0.00 PLN",
+      "pack_id": "338"
+    },
+    {
+      "id": 11,
+      "size": "16",
+      "name": " Obrecze kol ze stopu lekiego Turbine 406 BMW EfficientDynamics ",
+      "price": "0.00 PLN",
+      "pack_id": "338"
+    },
+    {
+      "id": 12,
+      "size": "17",
+      "name": " Obrecze kol ze stopow lekkich V Spoke ",
+      "price": "413 0.00 PLN",
+      "pack_id": "338"
+    },
+    {
+      "id": 13,
+      "size": "18",
+      "name": " Obrecze kol ze stopu lekkiego Double Spoke 441 M. Ferric Grey",
+      "price": " 881.00 PLN lub 9.72 PLN mies. brutto",
+      "pack_id": ""
+    },
+    {
+      "id": 14,
+      "size": "18",
+      "name": " Obrecze kol ze stopow lekkich Multi Spoke 416",
+      "price": " 2 865.00 PLN lub 31.61 PLN mies. brutto",
+      "pack_id": ""
+    },
+    {
+      "id":15,
+      "size": "18",
+      "name": " Obrecze kol ze stopow lekkich Turbine 415",
+      "price": " 2 865.00 PLN lub 31.61 PLN mies. brutto",
+      "pack_id": ""
+    },
+    {
+      "id": 16,
+      "size": "",
+      "name": "Obrecze kol ze stopu lekkiego Double Spoke 397 z ogumieniem mieszanym. 18 cali",
+      "price": " 3 968.00 PLN lub 43.79 PLN mies. brutto",
+      "pack_id": "337"
+    },
+    {
+      "id": 17,
+      "size": "",
+      "name": "Obrecze kol ze stopu lekkiego V Spoke 6 58. 18 cali z ogumieniem mieszanym",
+      "price": " 3 968.00 PLN lub 43.78 PLN mies. brutto",
+      "pack_id": "337"
+    },
+    {
+      "id": 18,
+      "size": "18",
+      "name": "Obrecze kol ze stopow lekkich V Spoke 398 z ogumieniem mieszanym",
+      "price": "",
+      "pack_id": "337"
+    },
+    {
+      "id": 19,
+      "size": "18",
+      "name": "Obrecze kol ze stopow lekkich V Spoke 398 z ogumieniem mieszanym",
+      "price": " 3 968.00 PLN lub 43.78 PLN mies. brutto",
+      "pack_id": "337"
+    },
+    {
+      "id": 20,
+      "size": "19",
+      "name": "Obrecze kol ze stopu lekkiego Star Spoke 403 M",
+      "price": "",
+      "pack_id": "337"
+    },
+    {
+      "id": 21,
+      "size": "19",
+      "name": "Obrecze kol ze stopu lekkiego Star Spoke 403 M",
+      "price": " 4 186.00 PLN lub 46.19 PLN mies. brutto",
+      "pack_id": "337"
+    },
+    {
+      "id": 22,
+      "size": "19",
+      "name": "Obrecze ze stopu lekkigo Double Spoke 442 M. dwukolorowe Orbit Grey",
+      "price": "",
+      "pack_id": "337"
+    },
+    {
+      "id": 23,
+      "size": "19",
+      "name": "Obrecze ze stopu lekkigo Double Spoke 442 M. dwukolorowe Orbit Grey",
+      "price": " 5 071.00 PLN lub 55.96 PLN mies. brutto",
+      "pack_id": "337"
+    },
+    {
+      "id": 24,
+      "size": "19",
+      "name": "Obrecze kol ze stopu lekkiego Star Spoke 407 z ogumieniem mieszanym",
+      "price": "",
+      "pack_id": "337"
+    },
+    {
+      "id": 25,
+      "size": "19",
+      "name": "Obrecze kol ze stopu lekkiego Star Spoke 407 z ogumieniem mieszanym",
+      "price": " 7 051.00 PLN lub 77.81 PLN mies. brutto"
+    },
+    {
+      "id": 26,
+      "size": "",
+      "name": "Obrecze kol ze stopu lekkiego V Spoke 6 26 I z ogumieniem mieszanym. 19 cali",
+      "price": "",
+      "pack_id": "338"
+    },
+    {
+      "id": 27,
+      "size": "",
+      "name": "Obrecze kol ze stopu lekkiego V Spoke 6 26 I z ogumieniem mieszanym. 19 cali",
+      "price": " 7 495.00 PLN lub 82.70 PLN mies. brutto",
+      "pack_id": "338"
+    },
+    {
+      "id": 28,
+      "size": "19",
+      "name": "Obrecze kol ze stopu lekkiego V Spoke 626 BMW Individual",
+      "price": "",
+      "pack_id": "338"
+    },
+    {
+      "id": 29,
+      "size": "19",
+      "name": "Obrecze kol ze stopu lekkiego V Spoke 626 BMW Individual 7",
+      "price": " 495.00 PLN lub 82.70 PLN mies. brutto",
+      "pack_id": "338"
+    }
+  ]
+}

@@ -3,6 +3,7 @@
     "model_id": "F31" ,
     "list": [{
         "pack_id": "337","model_id":"F30","name":"Pakiet M sport","price":"2099","price_rata":"2099",
+        "body_colors": "337","model_id":"F30","name":"Pakiet M sport","price":"2099","price_rata":"2099",
         "list": [["161","666"],["163","999"],["167","4567"],["169","888"]]
       },
       {
@@ -24,6 +25,7 @@
     "model_id": "F30" ,
     "list": [{
       "pack_id": "337","model_id":"F30","name":"Pakiet M sport","price":"2099","price_rata":"2099",
+      "body_colors": "337","model_id":"F30","name":"Pakiet M sport","price":"2099","price_rata":"2099",
       "list": [["161","666"],["163","999"],["167","4567"],["169","888"]]
     },
       {
