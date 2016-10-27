@@ -36,7 +36,7 @@
     +{{orderedCar.free_pack_price}} zł + {{orderedCar.wheelsPrice}} zł
 </h4>
 </span>
-<span>
+        <span>
 Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
  <input placeholder="wyszukaj silnik" class="form-control" aria-describedby="sizing-addon1"
         style=" height:25px;width:200px;margin-bottom:5px; display:inline-table" input ng-model="search2.$">
@@ -44,48 +44,60 @@ Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
     </div>
 
 
-    <div class="models_column">
+    <!--div class="models_column">
         <h4>Lusterka</h4>
         <h5>Pakiety wyposażenia </br> i pakiety stylistyczne</h5>
 
         <input type="radio"><strong class="h5vco-feature-description h5vco-user-selectable ng-binding">Lusterka
         zewnętrzne w kolorze czarnym</strong>
-    </div>
-    <div class="models_column">
-        <h4>Lakier nadwozia  dla {{orderedCar.name}} z pakietem : {{search5}} </h4>
+    </div-->
 
-        <div ng-repeat="m1 in color|filter:orderedCar.packs_id">
-            <!--label class="btn btn-default">
-                <input type="radio" name="Marka" ng-click="filtrujSilnik(m1,'typ')" > {{m1}} </input></label>
-                <input type="checkbox" ng-model='search2' ng-true-value='320' ng-false-value='' /> {{m1}}
-                <input type="checkbox" data-ng-model='search2' data-ng-true-value='benzyna' data-ng-false-value='' /> {{m1}}-->
-            <label class="btn btn-default" style="background:{{m1.hex}}; margin-bottom: -3px;">
+    <div class="models_column">
+        <h4>Lakier nadwozia dla {{orderedCar.name}} z pakietem : {{search5}} </h4>
+
+
+        <div ng-repeat="m1 in pakiety[selectedPakiet].body_colors">
+            <label class="btn btn-default" style="background:{{getColorHex(m1)}}; margin-bottom: -3px;">
                 <input type="radio" name="color" ng-click="includeColour(m1,'typ')"/>
 
-                <span style="background:{{m1.hex}}"> {{m1.name}}</span>
+                <span style="background:{{m1.hex}}"> {{getColorName(m1)}},{{m1}}</span>
 
             </label>
 
         </div>
 
-        <!--h4> Pozostałe Lakiey dla {{orderedCar.name}}</h4>
+    </div>
 
-        <div ng-repeat="m1 in color">
-            <!--label class="btn btn-default">
-                <input type="radio" name="Marka" ng-click="filtrujSilnik(m1,'typ')" > {{m1}} </input></label>
-                <input type="checkbox" ng-model='search2' ng-true-value='320' ng-false-value='' /> {{m1}}
-                <input type="checkbox" data-ng-model='search2' data-ng-true-value='benzyna' data-ng-false-value='' /> {{m1}}- ->
-            <label class="btn btn-default" style="background:{{m1.hex}}; margin-bottom: -3px;" ng-hide="m2.pack_id == orderedCar.packs_id" >
-                <input type="radio" name="color" ng-click="setColorBody(m1.hex,m1.name)"/>
 
-                <span style="background:{{m1.hex}}"> {{m1.name}}</span>
+    <div class="models_column" style="width:540px;">
+        <h4>Obręcze dla {{orderedCar.name}} z pakietem : {{selectedPakiet}} <!--{{search5}} ({{orderedCar.packs_id}})--></h4>
 
-            </label>
+        <table class="table table-striped">
 
-        </div-->
+            <thead>
+            <tr>
+                <th></th>
+                <th>Nazwa</th>
+                <th>Rozmiar</th>
+                <th>Cena bez pakietu :</th>
+            </thead>
+            <tr ng-repeat="m2 in pakiety[selectedPakiet].wheels">
+                <td>
+                    <input type="radio" name="felgi" ng-click="setWheelsPrice(0)" >  </input>
+                </td>
+                <td>{{ getWheelName( m2[0]) }}</td>
+                <td> {{getWheelSize( m2[0]) }}''</td>
+                <td>{{m2[1]}}</td>
+            </tr>
+
+
+        </table>
+
 
     </div>
-    <div class="models_column" style="width:540px;">
+
+
+    <!--div class="models_column" style="width:540px;">
         <h4>Obręcze dla {{orderedCar.name}} z pakietem : {{search5}} ({{orderedCar.packs_id}})</h4>
 
         <table class="table table-striped">
@@ -105,26 +117,7 @@ Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
         </table>
 
 
-        <!--h4>Pozostałę Obręcze dla modelu {{orderedCar.name}}</h4>
-
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th> Rozmiar</th>
-                <th>nazwa</th>
-                <th>Cena:</th>
-                <th>pack id:</th>
-            </thead>
-            <tr ng-repeat="m2 in wheels" ng-hide="m2.pack_id == '337'">
-                <td><input type="radio" name="felgi" ng-click="setWheelsPrice(m2.price)"> {{m2.size}}</input></td>
-                <td>{{m2.name}}</td>
-                <td>{{m2.price}}</td>
-                <td>{{m2.pack_id}}</td>
-            </tr>
-        </table-->
-
-
-    </div>
+    </div-->
 </div>
 
 

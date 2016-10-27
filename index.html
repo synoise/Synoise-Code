@@ -19,7 +19,7 @@
     <!--script data-require="angular.js@1.2.22" data-semver="1.2.22" src="https://code.angularjs.org/1.2.22/angular.js"></script-->
     <!--script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script-->
 
-</head>
+</head>p
 <body class="skin-black"  style="padding-bottom: 0px;">
 
 <menu>
@@ -44,32 +44,32 @@
                     <ul id="settingsTab" class="nav nav-tabs nav3" role="tablist" style="background: #ecf4ff;">
 
                         <li role="presentation" onclick="setStep(1)" class="active">
-                            <a data-target="#model_selecting" role="tab" data-toggle="tab" ><b>1</b> Model </a>
+                            <a data-target="#modelcar" role="tab" data-toggle="tab" ><b>1</b> Model </a>
                         </li>
 
                         <li role="presentation" onclick="setStep(2)" class="">
-                            <a data-target="#advanced-settings" role="tab" data-toggle="tab"><b>2</b> Silnik</a>
+                            <a data-target="#tab-enginescar" role="tab" data-toggle="tab"><b>2</b> Silnik</a>
                         </li>
 
 
                         <li role="presentation" onclick="setStep(3)" class="">
-                            <a data-target="#4inner" id="home-tab2" role="tab" data-toggle="tab" ><b>3</b> Wyposażenie </a>
+                            <a data-target="#tab-packcar" id="home-tab2" role="tab" data-toggle="tab" ><b>3</b> Wyposażenie </a>
                         </li>
 
-                        <li role="presentation" onclick="setStep(3)" class="">
-                            <a data-target="#4inner" id="home-tab2" role="tab" data-toggle="tab" ><b>3B</b> Opcje </a>
-                        </li>
+                        <!--li role="presentation" onclick="setStep(3)" class="">
+                            <a data-target="#tab-packcar" id="home-tab2" role="tab" data-toggle="tab" ><b>3B</b> Opcje </a>
+                        </li-->
 
                         <li role="presentation" onclick="setStep(4)" class="">
-                            <a data-target="#url-settings" role="tab" data-toggle="tab"> <b>4 </b> Nadwozie </a>
+                            <a data-target="#tab-bodycar" role="tab" data-toggle="tab"> <b>4 </b> Nadwozie </a>
                         </li>
 
                         <li role="presentation" onclick="setStep(5)" class="">
-                            <a data-target="#base-settings" id="home-tab" role="tab" data-toggle="tab" ><b>5</b> Wnętrze </a>
+                            <a data-target="#tab-innercar" id="home-tab" role="tab" data-toggle="tab" ><b>5</b> Wnętrze </a>
                         </li>
 
                         <li role="presentation" onclick="setStep(6)" class="">
-                            <a data-target="#5order" id="home-tab42" role="tab" data-toggle="tab"><b>6</b> Zamów </a>
+                            <a data-target="#tab-ordercar" id="home-tab42" role="tab" data-toggle="tab"><b>6</b> Zamów </a>
                         </li>
                         <li>
                         <div style=" padding:10px 0; width: 260px; float:right">
@@ -85,7 +85,7 @@
                 <div  data-ng-controller="TestController" class="">
                     <div id="settingsTabContent" class="tab-content">
 
-                    <div role="tabpanel" class="tab-pane fade" id="model_selecting">
+                    <div role="tabpanel" class="tab-pane fade" id="modelcar">
                        <div class="panel panel-default">
                              <div ng-include="'./subsites/model1.html'">Loading...</div>
                            <div ng-include="'./app/subsites_admin/model1.html'" >Loading...</div>
@@ -95,23 +95,23 @@
                     </div>
                     </div>
 
-                        <div role="tabpanel" class="tab-pane fade" id="advanced-settings">
+                        <div role="tabpanel" class="tab-pane fade" id="tab-enginescar">
                             <div class="panel panel-default">
                                <div ng-include='engineURL' >Loading...</div>
                                <div ng-include="'./app/subsites_admin/engine2.html'" >Loading...</div>
                             </div>
 							<button   onclick="javascript:event.preventDefault();" class="btnPrev btn btn-ui-default btn-primary" style="margin:15px;">Powrót do </button>
-                            <button  id="button2" ng-clic="reloadPakiety()"disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Konfiguruj Pakiety</button>
+                            <button  id="button2" ng-clic="reloadPakiety()" disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Konfiguruj Pakiety</button>
                         </div>
 
-                        <div role="tabpanel" class="tab-pane fade" id="url-settings" >
+                        <div role="tabpanel" class="tab-pane fade" id="tab-bodycar" >
                             <div class="panel panel-default">
                                 <div ng-include="'./subsites/body3.html'">Loading...</div>
                             </div>
                             <button   onclick="javascript:event.preventDefault();" class="btnPrev btn btn-ui-default btn-primary" style="margin:15px;">Powrót do Wyposażenia </button><button  id="button3" disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Konfiguruj Wnętrze</button>
                         </div>
 
-                        <div role="tabpanel" class="tab-pane fade  active in" id="4inner">
+                        <div role="tabpanel" class="tab-pane fade" id="tab-packcar">
                             <div class="panel panel-default">
                                 <div ng-include="pakiets">pakiets</div>
                                 <div ng-include="'./app/subsites_admin/pakiety5.html'">pakiets</div>
@@ -119,13 +119,14 @@
                             <button   onclick="javascript:event.preventDefault();" class="btnPrev btn btn-ui-default btn-primary" style="margin:15px;">Powrót do wyboru silnika </button><button  id="button4" disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style="float:right; margin:15px;">Konfiguruj Nadwozie</button>
                         </div>
 
-                        <div role="tabpanel" class="tab-pane fade" id="base-settings">
+                        <div role="tabpanel" class="tab-pane fade active in" id="tab-innercar">
                             <div class="panel panel-default">
-                                <div ng-include="'./subsites/tab2.html'">test4</div>
+                                <div ng-include="'./subsites/inner_car.html'">Loading...</div>
+                                <div ng-include="'./app/subsites_admin/pakiety5.html'">Loading...</div>
                             </div>
                         </div>
 
-                        <div role="tabpanel" class="tab-pane fade" id="5order">
+                        <div role="tabpanel" class="tab-pane fade" id="tab-ordercar">
                             <div class="panel panel-default">
                                 {{orderedCar}}
                                 <div > <button id="btnPO" disabled type="submit" class="btn btn-ui-default btn-primary">Wyśłij Zamówienie</button></div>

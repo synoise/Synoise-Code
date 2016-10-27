@@ -40,14 +40,10 @@
                             </li>
                             <li>
                                 <table>
-
                                     <thead>
-
                                     <tr>
                                         <th>bez pakietu</th>
-
                                         <th>cena</th>
-
                                         <th></th>
                                     </tr>
 
@@ -90,7 +86,7 @@
 
                                     <thead>
                                     <tr>
-                                        <th style="width:50px;">id koloru</th>
+                                        <th style="width:50px;">id koloru nadwozia</th>
                                         <!--th>nazwa</th-->
                                     </tr>
                                     </thead>
@@ -98,7 +94,7 @@
                                     <tr ng-repeat="m3 in row.body_colors" style="background:#ecf0b7; "  ng-drop="true"  ng-drop-success="onDropCompleted($data,$event,row.body_colors)" ><br/>
                                         <td> <div ng-click="removePackFreeItem(row.body_colors,$index)" class="btn btn-ui-default btn-primary" style=" padding: 0;"> &nbsp - &nbsp </div>
                                             <input class="input14" ng-value='m3' style=' width: 50px; background:{{getColorHex(m3)}}'  ng-model="m3" /> <br/>
-                                       {{getColorName(m3)}} <br/> <br/>
+                                            {{getColorName(m3)}} <br/> <br/>
                                         </td>
                                     </tr>
 
@@ -115,6 +111,39 @@
                                         </td>
                                     </tr>-->
                                 </table>
+
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th style="width:50px;">id koloru tapicerki </th>
+                                    </tr>
+                                    </thead>
+                                    <tr ng-repeat="m3 in row.body_colors1" style="background:#ecf0b7; "  ng-drop="true"  ng-drop-success="onDropCompleted($data,$event,row.body_colors1)" ><br/>
+                                        <td> <div ng-click="removePackFreeItem(row.body_colors1,$index)" class="btn btn-ui-default btn-primary" style=" padding: 0;"> &nbsp - &nbsp </div>
+                                            <input class="input14" ng-value='m3' style=' width: 50px; background:{{getColorHex(m3)}}'  ng-model="m3" /> <br/>
+                                            {{getColorName(m3)}} <br/> <br/>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+
+
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th style="width:50px;">id koloru Listw </th>
+                                    </tr>
+                                    </thead>
+                                    <tr ng-repeat="m3 in row.body_colors2" style="background:#ecf0b7; "  ng-drop="true"  ng-drop-success="onDropCompleted($data,$event,row.body_colors2)" ><br/>
+                                        <td> <div ng-click="removePackFreeItem(row.body_colors2,$index)" class="btn btn-ui-default btn-primary" style=" padding: 0;"> &nbsp - &nbsp </div>
+                                            <input class="input14" ng-value='m3' style=' width: 50px; background:{{getColorHex(m3)}}'  ng-model="m3" /> <br/>
+                                            {{getColorName(m3)}} <br/> <br/>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
 
                                 <br/>
 

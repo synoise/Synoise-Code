@@ -1,0 +1,86 @@
+<div >
+    <div style="border-bottom:1px solid #f3f3f3;">
+<span style=" width:45%;display:inline-table; text-align: left;">
+<h4 >
+    Cena modelu {{color.name}}:{{color.price}}  zł 2
+</h4>
+</span>
+<span>
+Wybierz silnik dla {{color.name}} aby kontynuować konfigurację
+ <input placeholder="wyszukaj silnik" class="form-control"  aria-describedby="sizing-addon1"  style=" height:25px;width:200px;margin-bottom:5px; display:inline-table" input ng-model="search2.$">
+</span>
+    </div>
+
+
+    <div class="models_column" >
+        <h4>Tapicerka</h4>
+
+        <div ng-repeat="m1 in pakiety[selectedPakiet].body_colors1">
+            <label class="btn btn-default" style="background:{{getColorHex(m1)}}; margin-bottom: -3px;">
+                <input type="radio" name="color" ng-click="includeColour(m1,'typ')"/>
+
+                <span style="background:{{m1.hex}}"> {{getColorName(m1)}},{{m1}}</span>
+
+            </label>
+
+        </div>
+
+    </div>
+    <div class="models_column"  style="width:540px;">
+        <h4>Listwy</h4>
+
+
+        <div ng-repeat="m1 in pakiety[selectedPakiet].body_colors2">
+            <label class="btn btn-default" style="background:{{getColorHex(m1)}}; margin-bottom: -3px;">
+                <input type="radio" name="color" ng-click="includeColour(m1,'typ')"/>
+
+                <span style="background:{{m1.hex}}"> {{getColorName(m1)}},{{m1}}</span>
+
+            </label>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<!--div class="models_column" style="width:calc( 100% - 250px );" >
+    <h4>Silniki</h4>
+<table class="table table-striped">
+<thead><tr><th> Name </th><th>Moc w kW (KM) </th><th> Rodzaj Napędu </th><th> Rodzaj Napędu </th><th> kee? </th><th> Cena </th></tr> </thead>
+<tr data-ng-repeat="engi in engines_all | orderBy:'silniki'|filter:search2">
+
+<td> <input type="radio" name="Markaee" ng-click="showButton1('button2')" ng-model="color.price" ng-value="engi.cena" > {{engi.silniki}}</input></td>
+<td>{{engi.kw}}</td>
+<td>{{engi.gear}}</td>
+<td>{{engi.naped}}</td>
+<td>{{engi.kee}}</td>
+<td>{{engi.cena}}</td>
+</tr>
+</table>
+
+        <!- -div data-ng-repeat="engi in engines_all | groupBy:'silniki'| orderBy:'silniki'" >
+              <label class="btn btn-default"><input type="radio" name="Grupa" ng-click=""> {{engi}} </input> </label>
+        </div- ->
+</div-->
+
+<!--div  class="models_column">
+    <h4>moc</h4>
+
+    <div data-ng-repeat="silnik in engines | groupBy:'kw'| orderBy:'kw'">
+          <label class="btn btn-default"><input type="radio" name="kw" ng-click="filterGrupaModelowa(silnik)"> {{silnik}} </input></label>
+    </div>
+</div-->
+
+<!--div  class="models_column" style="width:100%; font-size:8px;">
+    <h1>( Baza Danych )</h1>
+         <div data-ng-repeat="engines in engines|filter:search" >
+{{engines.mark}} , {{engines.typ}}, <b>silnik:</b> {{engines.silnik}} ,<b>moc:</b> {{engines.kw}} , {{engines.gear}} ,
+<b>naped:</b> {{engines.naped}} ,<b> cena: </b>{{engines.cena}}pln</b><br/>
+         </div>
+</div-->
+
+</div>

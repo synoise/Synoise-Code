@@ -273,9 +273,16 @@
                 $scope.orderedCar.free_pack_price = 0;
 
                 for (var i = 0; i < $scope.pakiety[$scope.selectedPakiet].pack_alt.length; i++) {
+
                     if (!comparePacks($scope.packElement, $scope.pakiety[$scope.selectedPakiet].pack_alt[i][0]))
-                        if ($scope.packElement, $scope.pakiety[$scope.selectedPakiet].pack_alt[i].waluta1 == "true")
-                            $scope.orderedCar.free_pack_price = Number($scope.pakiety[$scope.selectedPakiet].pack_alt[i][1]) + Number($scope.orderedCar.free_pack_price);
+
+
+                        if ($scope.packElement, $scope.pakiety[$scope.selectedPakiet].pack_alt[i].selectedItem == true)
+                        {
+                            console.log(">>>>",$scope.packElement, $scope.pakiety[$scope.selectedPakiet].pack_alt[i][0])
+                         $scope.orderedCar.free_pack_price = Number($scope.pakiety[$scope.selectedPakiet].pack_alt[i][1]) + Number($scope.orderedCar.free_pack_price);
+                        }
+
                 }
             };
 
@@ -298,27 +305,25 @@
                 $scope.packElement = list;
                 $scope.displayAddonPacks = "inline-table";
 
-                //$scope.countFreePacks();
+
 
                 for (var i = 0; i < $scope.pakiety[$scope.selectedPakiet].pack_alt.length; i++) {
-
-                    $scope.pakiety[$scope.selectedPakiet].pack_alt[i].waluta1 = "true";
+                    $scope.pakiety[$scope.selectedPakiet].pack_alt[i].selectedItem = true;
 
                     if (comparePacks($scope.packElement, $scope.pakiety[$scope.selectedPakiet].pack_alt[i][0]))
-                        $scope.pakiety[$scope.selectedPakiet].pack_alt[i].waluta1 = "true";
+                        $scope.pakiety[$scope.selectedPakiet].pack_alt[i].selectedItem = true;
                     else
-                        $scope.pakiety[$scope.selectedPakiet].pack_alt[i].waluta1 = "true";
+                        $scope.pakiety[$scope.selectedPakiet].pack_alt[i].selectedItem = false;
                 }
-
+                $scope.countFreePacks();
             };
 
-
-            $scope.setPacks = function (type, pack_price, packs_id) {
+        $scope.setPacks = function (type, pack_price, packs_id) {
                 $scope.orderedCar.pack_price = pack_price;
                 $scope.orderedCar.packs_id = packs_id;
 
                 for (var i = 0; i < $scope.packs.length; i++) {
-                    $scope.packs[i].waluta1 = ""; // $scope.packs[i].abadonAtSumming="yes"
+                    $scope.packs[i].selectedItem = ""; // $scope.packs[i].abadonAtSumming="yes"
                 }
                 ////// $scope.packs[0].waluta1="";
                 // $('input[type=checkbox]').attr('checked',false);

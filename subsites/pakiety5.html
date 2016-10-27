@@ -23,7 +23,7 @@
             <br/>
         </div>
 
-        <h5 style="display:{{displayAddonPacks}};">Opis Wybranego Pakietu</h5>
+        <h5 style="display:{{displayAddonPacks}};">Opis Wybranego Pakietu 56578</h5>
 
         <table ng-init="packElement" ng-show="1" class="table table-striped" style="display:{{displayAddonPacks}};" >
 
@@ -37,11 +37,14 @@
             </thead>
 
             <tr ng-repeat="m3 in packElement">
-                <td><input type="checkbox" ng-model="m3.waluta1" ng-init="( m3.waluta1 ='true')" value="m3.waluta1"
-                           ng-true-value="true" ng-false-value="" ></td>
+                <td>
+                    <input type="checkbox"  ng-model="m3.selectedItem" ng-init="(m3.selectedItem=true)" ng-true-value="true" ng-false-value="" />
+                </td>
                 <td>{{geModelPackElementAliasFromID(m3[0])}}</td>
-                <td>{{m3[1]}} {{m3.waluta1}}</td>
+                <td>{{m3[1]}} {{m3.selectedItem}}</td>
             </tr>
+
+
 
         </table>
 
@@ -58,10 +61,30 @@
                 <th>Cena w pakiecie</th>
             </thead>
 
+            <!--tr ng-repeat="m3 in pakiety[selectedPakiet].pack_alt">
+
+                <td><input type="checkbox" ng-init="(m3.selectedItem = true )"class="resetCheckbox" ng-model="m3.selectedItem" ng-change="countFreePacks()"
+                           value="m3.selectedItem" ng-true-value="true" ng-false-value=""></td>
+                <td>{{geModelPackElementAliasFromID(m3[0])}}  >>{{m3.selectedItem}}<<</td>
+                <td>{{m3[1]}}</td>
+            </tr-->
+
             <tr ng-repeat="m3 in pakiety[selectedPakiet].pack_alt">
 
-                <td><input type="checkbox" class="resetCheckbox" ng-model="m3.waluta1" ng-change="countFreePacks()"
-                           value="m3.waluta1" ng-true-value="true" ng-false-value=""></td>
+                <td><input
+                        type="checkbox"
+                        class="resetCheckbox"
+
+                        ng-model="m3.selectedItem"
+                        ng-change="countFreePacks()"
+                        ng-value='m3.selectedItem'
+                        ng-true-value="true"
+                        ng-false-value=""
+                        />
+
+                    >>{{m3.selectedItem}}
+
+                </td>
                 <td>{{geModelPackElementAliasFromID(m3[0])}}</td>
                 <td>{{m3[1]}}</td>
             </tr>
