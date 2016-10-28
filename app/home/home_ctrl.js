@@ -120,7 +120,7 @@
                     $scope.pakiets = "";
                     $scope.reloadPakiety(pack);
 
-                    $http({method: "GET", url: "./json/packs.json?" + pack}).then(function mySucces(response) {
+                    $http({method: "GET", url: "./json/pakiety2.json?" + pack}).then(function mySucces(response) {
 
                         $scope.packs = response.data[pack];
                         $http(
@@ -431,12 +431,17 @@
                 }
             };
 
-            $scope.removeItemEngines = function removeItem(row, row_0) {
-                var index = $scope.engines_all["F31"].indexOf(row);
-                if (index !== -1) {
-                    $scope.engines["F31"].splice(index, 1);
-                }
+            $scope.removeItemEngines = function removeItem(row, row_0,xxx) {
+
+                console.log(xxx)
+                console.log(row)
+                console.log(row_0)
+              //  var index = $scope.engines_all["F31"].indexOf(row);
+               // if (index !== -1) {
+               //     $scope.engines["F31"].splice(index, 1);
+              //  }
             };
+
 
             $scope.pakiety = ["pakiety"];
             $scope.pakiety5admin = "none";
@@ -604,6 +609,23 @@
 
                 $scope.addingItem = [];
             };
+
+        $scope.addEngine = function (row,id) {
+            console.log( row,id);
+            row.list.push({
+                    "name": $scope.addingItem.name,
+                    "gear": $scope.addingItem.gear,
+                    "power": $scope.addingItem.power,
+                    "naped": $scope.addingItem.naped,
+                    "burn": $scope.addingItem.burn,
+                    "cena": $scope.addingItem.cena,
+                    "boost": $scope.addingItem.boost,
+                    "co2": $scope.addingItem.co2,
+                    "rata": $scope.addingItem.rata,
+                    "typ": $scope.addingItem.typ
+                });
+            $scope.addingItem = [];
+        }
 
             $scope.addRecordEngines = function () {
                 $scope.engines.push({

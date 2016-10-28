@@ -15,7 +15,7 @@ body, section {
 }
 
 a {
-    cursor: crosshair;
+    cursor: pointer;
 }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1f1f1+0,f3f3f3+62,e1e1e1+100 */

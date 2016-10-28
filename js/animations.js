@@ -66,3 +66,10 @@ $('.btnNext').click(function () {
 $('.btnPrev').click(function () {
     $('.nav3 > .active').prev('li').find('a').trigger('click');
 });
+
+
+$('a[data-toggle="tab"]').on('click', function(){
+    if ($(this).parent('li').hasClass('disabled')) {
+        return false;
+    };
+})
