@@ -19,7 +19,7 @@
     <!--script data-require="angular.js@1.2.22" data-semver="1.2.22" src="https://code.angularjs.org/1.2.22/angular.js"></script-->
     <!--script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script-->
 
-</head>p
+</head>
 <body class="skin-black"  style="padding-bottom: 0px;">
 
 <menu>
@@ -31,10 +31,9 @@
     </ul>
 </menu>
 
-
 <section class="content big-padding">
     <div>
-        <form method="POST" action="./" accept-charset="UTF-8" data-edc-form="1" data-scope="order" class="edc-order-form" >
+        <!--form method="POST" action="./" accept-charset="UTF-8" data-edc-form="1" data-scope="order" class="edc-order-form" -->
             <!--input name="_token" type="hidden" value="AarQoOxriZtQ0DEubjiZgEZbHVT8fZntpmA6L0Nh">
             <di  v class="col-md-8"-->
             <div class="panel panel-full panel-default" data-step="1" data-intro="Choose a product/service...">
@@ -89,6 +88,15 @@
                        <div class="panel panel-default">
                              <div ng-include="'./subsites/model1.html'">Loading...</div>
                            <div ng-include="'./app/subsites_admin/model1.html'" >Loading...</div>
+
+                           <!--form method="post" name="myemailform" action="form-to-email.php">
+                               <p>
+                                   <input type="text" name="name">
+                                   <input type="ho" name="file" value="test.txt">
+                               </p>
+                               <input type="submit" name='submit' value="zapisz">
+                           </form-->
+
 						</div>
 						<div style="text-align:right">
 							<button id="button1" disabled onclick="javascript:event.preventDefault();" class="btnNext btn btn-ui-default btn-primary" style=" margin:15px;">Konfiguruj <br/>{{orderedCar.name}}</button>
@@ -122,7 +130,7 @@
                         <div role="tabpanel" class="tab-pane fade active in" id="tab-innercar">
                             <div class="panel panel-default">
                                 <div ng-include="'./subsites/inner_car.html'">Loading...</div>
-                                <div ng-include="'./app/subsites_admin/pakiety5.html'">Loading...</div>
+                                <!--div ng-include="'./app/subsites_admin/pakiety5.html'">Loading...</div-->
                             </div>
                         </div>
 
@@ -148,7 +156,7 @@
 
                 <!--button id="btnPO" disabled type="submit" class="btn btn-ui-default btn-primary">Wyśłij Zamówienie</button-->
 
-        </form>
+        <!--/form-->
     </div>
 </section>
 

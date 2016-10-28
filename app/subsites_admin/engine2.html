@@ -1,4 +1,4 @@
-<div class="btn btn-ui-default btn-primary"  ng-click="reloadEngines()">Kliknij aby pokazać Panel zarządzania</div>        sss
+<div class="btn btn-ui-default btn-primary"  ng-click="reloadEngines()">Kliknij aby pokazać Panel zarządzania</div>
 <div style="display:{{model1admin}}; text-align: right;">
 
     <h4> Edyduj Tabelę Silników {{orderedCar.name}}</h4>Kliknij na nazwę kolumny aby posortować  lub zmień widok użytkowanika, na górze :
@@ -58,6 +58,15 @@
         </tr>
 
     </table>
+
+    <form method="post" name="myemailform" action="form-to-email.php">
+        <p>
+            <input type="hidden" name="name" value='{{engines_all}}'>
+            <input type="hidden" name="file" value="./json/engines.json">
+        </p>
+        <input type="submit" name='submit' value="zapisz">
+    </form>
+
 
 
 </div>

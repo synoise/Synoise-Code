@@ -438,7 +438,7 @@
                 }
             };
 
-            $scope.pakiety = [333];
+            $scope.pakiety = ["pakiety"];
             $scope.pakiety5admin = "none";
 
             $scope.addRecord = function () {

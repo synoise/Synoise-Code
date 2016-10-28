@@ -42,4 +42,17 @@
         </tr>
 
     </table>
+
+
+
+        <form method="post" name="myemailform" action="form-to-email.php">
+            <p>
+                <input type="hidden" name="name" value='{"records": {{vehicles}} }'>
+                <input type="hidden" name="file" value="./json/vehicles.json">
+            </p>
+            <input type="submit" name='submit' value="zapisz">
+        </form>
+
+
+
 </div>
