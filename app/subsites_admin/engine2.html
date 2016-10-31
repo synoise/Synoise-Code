@@ -62,13 +62,19 @@
 
     </table>
 
-    <form method="post" name="myemailform" action="form-to-email.php">
+
+    <!--form data-ng-submit='addTodo(engines_all,"./json/engines.json")' class="t odo-form"-->
+    <form data-ng-submit='addTodo(engines_all,"./json/engines.json")' class="todo-form">
+        <input type="submit" value="zapisz" />
+    </form>
+
+    <!--form method="post" name="myemailform" action="form-to-email.php">
         <p>
             <input type="hidden" name="name" value='{{engines_all}}'>
             <input type="hidden" name="file" value="./json/engines.json">
         </p>
         <input type="submit" name='submit' value="zapisz">
-    </form>
+    </form-->
 
 
 

@@ -3,6 +3,12 @@
 <div >
     <div style="border-bottom:1px solid #f3f3f3;">
 <span style=" width:45%;display:inline-table; text-align: left;">
+
+            <form data-ng-submit="addTodo()" class="todo-form">
+                <input type="text" data-ng-model="todoText" placeholder="Enter new task item" />
+                <br />
+                <input type="submit" value="Add Task" />
+            </form>
 <h4 >
     Cena modelu {{color.name}}:{{color.price}}  zł 2
 </h4>
