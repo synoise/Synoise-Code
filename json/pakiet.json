@@ -1,249 +1,3580 @@
 {
   "records": [
- {
-   "item_id": "161",
-   "model":["F30"],"name": "EU5 exhaust emissions standard ",
-   "equ_group": "11. Internal control\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "163",
-   "model":["F30"],"name": "BMW diesel with BluePerformance ",
-   "equ_group": "11. Internal control\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "167",
-   "model":"F30","name": "EU4 exhaust emissions standard ",
-   "equ_group": "11. Internal control\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "169",
-   "model":"F30","name": "EU3 exhaust emissions standard ",
-   "equ_group": "11. Internal control\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "1AF",
-   "model":"F30","name": "Larger fuel filler neck ",
-   "equ_group": "11. Internal control\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "1AK",
-   "model":"F30","name": "External fuel filter ",
-   "equ_group": "11. Internal control\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "1CA",
-   "model":"F30","name": "Selection of COP relevant vehicles ",
-   "equ_group": "11. Internal control\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "1CB",
-   "model":"F30","name": "CO2 content",
-   "equ_group": "6. Technology",
-   "equ_sub_group": "6.2 Drive and transmission"
- },
- {
-   "item_id": "1CC",
-   "model":"F30","name": "Automatic Start/Stop function",
-   "equ_group": "6. Technology",
-   "equ_sub_group": "6.2 Drive and transmission"
- },
- {
-   "item_id": "1CD",
-   "model":"F30","name": "Brake Energy Regeneration",
-   "equ_group": "6. Technology",
-   "equ_sub_group": "6.2 Drive and transmission"
- },
- {
-   "item_id": "205",
-   "model":"F30","name": "Steptronic transmission",
-   "equ_group": "6. Technology",
-   "equ_sub_group": "6.2 Drive and transmission"
- },
- {
-   "item_id": "212",
-   "model":["F30","F31"],"name": "National brake system equipment ",
-   "equ_group": "11. Internal control\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "216",
-   "model":["F30","F31"],"name": "Servotronic",
-   "equ_group": "6. Technology",
-   "equ_sub_group": "6.1 Running gear"
- },
- {
-   "item_id": "217",
-   "model":"F30 F31","name": "Active Steering",
-   "equ_group": "6. Technology",
-   "equ_sub_group": "6.1 Running gear"
- },
- {
-   "item_id": "21B",
-   "model":"F30 F31","name": "18\" M light alloy wheels Double-spoke style\t\t",
-   "equ_group": "",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "441",
-   "model":"F30 F31","name": "M Ferric Grey metallic",
-   "equ_group": "4. Wheels/tyres\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "21C",
-   "model":"F30 F31","name": "19\" M light alloy wheels Double-spoke style \t\t",
-   "equ_group": "",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "442",
-   "model":"F30 F31","name": "M Bicolour Orbit Grey metallic",
-   "equ_group": "4. Wheels/tyres\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "21S",
-   "model":"F30 F31","name": "20\" M light alloy wheels Double-spoke style 680 M with mixed tyres",
-   "equ_group": "4. Wheels/tyres\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "223",
-   "model":"F30 F31","name": "Dynamic Damper Control",
-   "equ_group": "6. Technology",
-   "equ_sub_group": "6.1 Running gear"
- },
- {
-   "item_id": "225",
-   "model":"F30 F31","name": "Standard suspension",
-   "equ_group": "6. Technology",
-   "equ_sub_group": "6.1 Running gear"
- },
- {
-   "item_id": "226",
-   "model":"F30 F31","name": "Sport suspension settings",
-   "equ_group": "6. Technology",
-   "equ_sub_group": "6.1 Running gear"
- },
- {
-   "item_id": "233",
-   "model":"","name": "Increased towing capability",
-   "equ_group": "8. Exterior and interior functional equipment\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "23A",
-   "model":"","name": "16\" light alloy wheels V-spoke style 656",
-   "equ_group": "4. Wheels/tyres\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "23C",
-   "model":"","name": "18\" light alloy wheels V-spoke style 658 with mixed tyres",
-   "equ_group": "4. Wheels/tyres\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "23N",
-   "model":"","name": "18'' light alloy wheels V-spoke style 398 with performance tyres and mixed tyres",
-   "equ_group": "Orbit Grey",
-   "equ_sub_group": "4. Wheels/tyres"
- },
- {
-   "item_id": "23P",
-   "model":"","name": "18'' light alloy wheels V-spoke style 398 with performance tyres and mixed tyres",
-   "equ_group": "4. Wheels/tyres\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "240",
-   "model":"","name": "Leather steering wheel",
-   "equ_group": "7. Interior",
-   "equ_sub_group": "7.2 Steering wheels"
- },
- {
-   "item_id": "248",
-   "model":"F31","name": "Steering-wheel heating",
-   "equ_group": "7. Interior",
-   "equ_sub_group": "7.2 Steering wheels"
- },
- {
-   "item_id": "249",
-   "model":"F31","name": "Multifunction for steering wheel",
-   "equ_group": "7. Interior",
-   "equ_sub_group": "7.2 Steering wheels"
- },
- {
-   "item_id": "24B",
-   "model":"F31","name": "18\" light alloy wheels Double-spoke style 397 with mixed tyres",
-   "equ_group": "4. Wheels/tyres\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "255",
-   "model":"F31","name": "Sport leather steering wheel",
-   "equ_group": "7. Interior",
-   "equ_sub_group": "7.2 Steering wheels"
- },
- {
-   "item_id": "258",
-   "model":"F31","name": "Runflat tyres",
-   "equ_group": "4. Wheels/tyres\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "25C",
-   "model":"F31","name": "'19\" light alloy wheels Star-spoke style 606 with mixed tyres",
-   "equ_group": "black'",
-   "equ_sub_group": "4. Wheels/tyres"
- },
- {
-   "item_id": "27A",
-   "model":"F31","name": "16\" light alloy wheels turbine styling 406",
-   "equ_group": "BMW EfficientDynamics",
-   "equ_sub_group": "4. Wheels/tyres"
- },
- {
-   "item_id": "2A6",
-   "model":"F31","name": "17'' light alloy wheels Double-spoke style 392",
-   "equ_group": "4. Wheels/tyres\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "2AM",
-   "model":"F31","name": "17'' light alloy wheels Streamline style 306",
-   "equ_group": "4. Wheels/tyres\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "2AZ",
-   "model":"F31","name": "18'' light alloy wheels Double-spoke style 446",
-   "equ_group": "4. Wheels/tyres\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "2D4",
-   "model":"F31","name": "19'' light alloy wheels Star-spoke style 449",
-   "equ_group": "4. Wheels/tyres\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "2D9",
-   "model":"F31","name": "19\" light alloy wheels Star-spoke style 606 with mixed tyres",
-   "equ_group": "4. Wheels/tyres\t",
-   "equ_sub_group": ""
- },
- {
-   "item_id": "2DW",
-   "model":"F31","name": "17'' light alloy wheels Star-spoke style 393",
-   "equ_group": "4. Wheels/tyres\t",
-   "equ_sub_group": ""
- }
-]}
+    {
+      "item_id": "161",
+      "name": "EU5 exhaust emissions standard ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "163",
+      "name": " BMW diesel with BluePerformance ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "167",
+      "name": " EU4 exhaust emissions standard ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "169",
+      "name": " EU3 exhaust emissions standard ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "1AF",
+      "name": " Larger fuel filler neck ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "1AK",
+      "name": " External fuel filter ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "1CA",
+      "name": " Selection of COP relevant vehicles ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "1CB",
+      "name": " CO2 content ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.2 Drive and transmission",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "1CC",
+      "name": " Automatic Start/Stop function ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.2 Drive and transmission",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "1CD",
+      "name": " Brake Energy Regeneration ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.2 Drive and transmission",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "205",
+      "name": " Steptronic transmission ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.2 Drive and transmission",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "212",
+      "name": " National brake system equipment ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "216",
+      "name": " Servotronic ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.1 Running gear",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "217",
+      "name": " Active Steering ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.1 Running gear",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "21B",
+      "name": " 18\" M light alloy wheels Double-spoke style 441 M Ferric Grey metallic ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "21C",
+      "name": " 19\" M light alloy wheels Double-spoke style 442 M Bicolour Orbit Grey metallic ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "21S",
+      "name": " 20\" M light alloy wheels Double-spoke style 680 M with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "223",
+      "name": " Dynamic Damper Control ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.1 Running gear",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "225",
+      "name": " Standard suspension ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.1 Running gear",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "226",
+      "name": " Sport suspension settings ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.1 Running gear",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "233",
+      "name": " Increased towing capability ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "23A",
+      "name": " 16\" light alloy wheels V-spoke style 656 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "23C",
+      "name": " 18\" light alloy wheels V-spoke style 658 with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "23N",
+      "name": " 18'' light alloy wheels V-spoke style 398 with performance tyres and mixed tyres, Orbit Grey ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "23P",
+      "name": " 18'' light alloy wheels V-spoke style 398 with performance tyres and mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "240",
+      "name": " Leather steering wheel ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.2 Steering wheels",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "248",
+      "name": " Steering-wheel heating ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.2 Steering wheels",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "249",
+      "name": " Multifunction for steering wheel ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.2 Steering wheels",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "24B",
+      "name": " 18\" light alloy wheels Double-spoke style 397 with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "255",
+      "name": " Sport leather steering wheel ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.2 Steering wheels",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "258",
+      "name": " Runflat tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "25C",
+      "name": " '19\" light alloy wheels Star-spoke style 606 with mixed tyres, black'",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "27A",
+      "name": " 16\" light alloy wheels turbine styling 406, BMW EfficientDynamics ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2A6",
+      "name": " 17'' light alloy wheels Double-spoke style 392 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2AM",
+      "name": " 17'' light alloy wheels Streamline style 306 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2AZ",
+      "name": " 18'' light alloy wheels Double-spoke style 446 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2D4",
+      "name": " 19'' light alloy wheels Star-spoke style 449 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2D9",
+      "name": " 19\" light alloy wheels Star-spoke style 606 with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2DW",
+      "name": " 17'' light alloy wheels Star-spoke style 393 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2E1",
+      "name": " 18\" light alloy wheels Y-spoke style 607 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2E3",
+      "name": " 19\" light alloy wheels Y-spoke style 608 with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2EB",
+      "name": " 17'' light alloy wheels Y-spoke style 305 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2FH",
+      "name": " 16'' light alloy wheels V-spoke style 390 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2FK",
+      "name": " 17'' light alloy wheels V-spoke style 413 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2FM",
+      "name": " 18'' light alloy wheels V-spoke style 398 with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2H2",
+      "name": " 18'' light alloy wheels Multi-spoke style 416 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2H3",
+      "name": " 17'' light alloy wheels Multi-spoke style 414 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2H4",
+      "name": " 19'' light alloy wheels Multi-spoke style 448 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2H7",
+      "name": " 19'' light alloy wheels V-spoke style 450 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2K0",
+      "name": " 17'' light alloy wheels V-spoke style 304 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2K8",
+      "name": " 18'' light alloy wheels V-spoke style 307 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2L3",
+      "name": " 17'' light alloy wheels V-spoke style 395 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2L4",
+      "name": " 19\" light alloy wheels Y-spoke style 595 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2L6",
+      "name": " 20\" light alloy wheels V-spoke style 597 with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2LS",
+      "name": " 20'' light alloy wheels Y-spoke style 451 with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2LW",
+      "name": " 19\" light alloy wheels Y-spoke style 594 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2MQ",
+      "name": " 20\" M light alloy wheels Double-spoke style 611 M with mixed tyres, black ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2MS",
+      "name": " 18'' M light alloy wheels Star-spoke style 368 M ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2NH",
+      "name": " M Sport brake ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.1 Running gear",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2P5",
+      "name": " 18'' light alloy wheels turbine styling 415 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2PA",
+      "name": " Locking wheel bolts ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2PE",
+      "name": " 18'' M light alloy wheels Star-spoke style 400 M with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2PF",
+      "name": " 19'' M light alloy wheels Star-spoke style 403 M with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2PR",
+      "name": " 19'' BMW Individual light alloy wheels V-spoke style 439 I with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2PV",
+      "name": " 19'' M light alloy wheels Double-spoke style 467 M with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2PW",
+      "name": " 20'' M light alloy wheels Double-spoke style 469 M with mixed tyres",
+      "equ_group": "",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2T0",
+      "name": " 19\" BMW Individual light alloy wheels V-spoke style 626 I with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2T1",
+      "name": " 19'' light alloy wheels Star-spoke style 407 with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2T2",
+      "name": " 19'' light alloy wheels Star-spoke style 490, BMW EfficientDynamics ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2T5",
+      "name": " 18\" light alloy wheels Double-spoke style 605 ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2TB",
+      "name": " Steptronic Sport transmission ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.2 Drive and transmission",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2TE",
+      "name": " Steptronic transmission with gearshift paddles ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.2 Drive and transmission",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2TN",
+      "name": " 20\" M light alloy wheels Double-spoke style 611 M with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2TP",
+      "name": " 21\" M light alloy wheels Double-spoke style 612 M with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2TW",
+      "name": " 19'' M light alloy wheels Double-spoke style 623 M with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2TZ",
+      "name": " 20'' light alloy wheels Star-spoke style 491 with mixed tyres, black high-gloss ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2V0",
+      "name": " 20'' BMW Individual light alloy wheels V-spoke style 551 I with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2V2",
+      "name": " 19'' M light alloy wheels Double-spoke style 622 M with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2V9",
+      "name": " 20'' M light alloy wheels Double-spoke style 468 M with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2VB",
+      "name": " Tyre pressure indicator ",
+      "equ_group": "1. Safety",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2VC",
+      "name": " Tyre repair kit ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2VF",
+      "name": " Adaptive M suspension ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.1 Running gear",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2VG",
+      "name": " Performance Control ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.2 Drive and transmission",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2VL",
+      "name": " Variable sport steering ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.1 Running gear",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2VM",
+      "name": " Adaptive suspension package 'Comfort' ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.1 Running gear",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2VP",
+      "name": " Adaptive suspension package 'Dynamic' ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.1 Running gear",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2VX",
+      "name": " 20\" M light alloy wheels Double-spoke style 310 M with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2WF",
+      "name": " 19'' light alloy wheels W-spoke style 447 with mixed tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "2XE",
+      "name": " Sport leather steering wheel, black ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.2 Steering wheels",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "300",
+      "name": " Alpine White ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "300",
+      "name": " Emergency spare wheel ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "302",
+      "name": " Alarm system ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "316",
+      "name": " Automatic operation of tailgate ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "319",
+      "name": " Integrated universal remote control ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "320",
+      "name": " Model designation, deletion ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.2 Exterior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "322",
+      "name": " Comfort access system ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "323",
+      "name": " Soft-Close function for doors ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "328",
+      "name": " Aluminium running board ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.2 Exterior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "336",
+      "name": " Sport package ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "337",
+      "name": " M Sport package ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "346",
+      "name": " Chrome Line Exterior ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.2 Exterior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "358",
+      "name": " Climate comfort windscreen ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.3 Climate comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "3AA",
+      "name": " Roof rails black ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.2 Exterior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "3AC",
+      "name": " Trailer tow hitch ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "3AG",
+      "name": " Rear view camera ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.3 Driver assistance",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "3AP",
+      "name": " Windscreen with grey shade band ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.3 Climate comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "3AT",
+      "name": " Roof rails Aluminium satinated ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.2 Exterior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "3BE",
+      "name": " Mirror caps Black ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.2 Exterior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "3DZ",
+      "name": " Deletion of Lines designation outside ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.2 Exterior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "3E1",
+      "name": " Exterior design Pure Excellence ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.2 Exterior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "3E2",
+      "name": " Exterior design Pure Experience ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.2 Exterior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "3L8",
+      "name": " Exterior trim in satinised aluminium ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.2 Exterior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "3MB",
+      "name": " BMW Individual Exterieur Line Aluminium satinated ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.2 Exterior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "3MC",
+      "name": " BMW Individual roof rails high-gloss Shadow Line ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.2 Exterior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "402",
+      "name": " Panorama glass roof ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "403",
+      "name": " Glass roof, electrical ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "413",
+      "name": " Luggage-compartment separating net ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "415",
+      "name": " Roller sunblind for rear window ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.3 Climate comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "416",
+      "name": " Carbon Black metallic ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "417",
+      "name": " Roller sunblind, rear side windows ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.3 Climate comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "420",
+      "name": " Sun protection glazing ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.3 Climate comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "423",
+      "name": " Floor mats in velour ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "428",
+      "name": " Warning triangle ",
+      "equ_group": "1. Safety",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "430",
+      "name": " Interior and exterior mirrors with automatic anti-dazzle function ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "431",
+      "name": " Interior rear-view mirror with automatic anti-dazzle function ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "441",
+      "name": " Smoker's package ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "449",
+      "name": " Toll interior mirror for Japan ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "453",
+      "name": " Active seat ventilation in the front seats ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.1 Seats/seat comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "456",
+      "name": " Comfort seats front, electrically adjustable ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.1 Seats/seat comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "459",
+      "name": " Seat adjustment, electric, with memory ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.1 Seats/seat comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "465",
+      "name": " Through-loading system ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "475",
+      "name": " Black Sapphire ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "481",
+      "name": " Sport seats for driver and front passenger ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.1 Seats/seat comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "488 ",
+      "name": "Lumbar support for driver and front passenger ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.1 Seats/seat comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "493",
+      "name": " Storage compartment package ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "494",
+      "name": " Seat heating for driver and front passenger ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.1 Seats/seat comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "496",
+      "name": " Seat heating for rear seats ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.1 Seats/seat comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "497",
+      "name": " Centre armrest in rear ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.1 Seats/seat comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4AC",
+      "name": " Fine-wood trim poplar grain",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4AD",
+      "name": " Interior trim finishers Aluminium, finely brushed lengthwise",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4AE",
+      "name": " Armrest front, sliding ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4B9",
+      "name": " Interior trim finishers Aluminium fine cutting",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4CG",
+      "name": " Interior trim finishers Satin Silver matt",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4CV",
+      "name": " Fine-wood trim American Oak",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4D0",
+      "name": " Fine-wood trim 'Fineline' Stripe",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4DD",
+      "name": " Fine-wood trim 'Fineline Pure' textured",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4DY",
+      "name": " Interior trim finishers Oxide Silver dark matt",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4FF",
+      "name": " Comfort rear seats ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.1 Seats/seat comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4FT",
+      "name": " Interior trim finishers Aluminium, finely brushed lengthwise with highlight trim finisher Black high-gloss",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4FU",
+      "name": " Fine-wood trim 'Fineline' Anthracite with highlight trim finisher Pearl Chrome",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4FV",
+      "name": " Fine-wood trim 'Fineline' light with highlight trim finisher  Pearl Chrome",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4FW",
+      "name": " Fine-wood trim burled walnut with highlight trim finisher Pearl Chrome",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4GA",
+      "name": " Fine-wood trim ash grain with metal inlay and highlight trim finisher Pearl Chrome",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4L3",
+      "name": " Interior trim finishers Dark Copper high-gloss",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4L9",
+      "name": " Interior trim finishers aluminium 'Trace'",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4LS",
+      "name": " Interior trim finishers Aluminium, finely brushed lengthwise with highlight trim finishers Pearl Chrome",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4LU",
+      "name": " Interior trim finishers black high-gloss with highlight trim finishers Pearl Chrom",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4LV",
+      "name": " Interior trim finishers Black high-gloss with highlight trim finishers Coral Red matt",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4M5",
+      "name": " BMW Individual instrument panel finished in leather",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4MA",
+      "name": " M multifunctional seats for driver and front passenger ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.1 Seats/seat comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4MC",
+      "name": " Interior trim finishers 'Carbon Fibre'",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4ML",
+      "name": " BMW Individual interior trim finishers piano finish Black",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4MR",
+      "name": " Interior trim finishers Aluminium Hexagon",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4NB",
+      "name": " Automatic air conditioning with 4-zone control ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.3 Climate comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4NC",
+      "name": " Additional heating/ventilation ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.3 Climate comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4NG",
+      "name": " Embellishers for instrument panel Black high-gloss",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4U1",
+      "name": " Ceramic surround for controls",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4U2",
+      "name": " Driving Experience Control incl. ECO PRO ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.2 Drive and transmission",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4U9",
+      "name": " Acoustic protection for pedestrians ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.3 Driver assistance",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4UB",
+      "name": " 3rd row seats ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.1 Seats/seat comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4UY",
+      "name": " Ski and snowboard bag ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4UZ",
+      "name": " Ski and snowboard bag ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4WC",
+      "name": " BMW Individual fine-wood trim Ash Vulcano brown",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4WF",
+      "name": " Interior trim finishers Aluminium Hexagon with highlight trim finisher Blue matt",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "4WG",
+      "name": " Interior trim finishers Aluminium Hexagon with highlight trim finisher Black high-gloss",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "502",
+      "name": " Headlight washer system ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "507",
+      "name": " Park Distance Control (PDC) ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.3 Driver assistance",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "508",
+      "name": " Park Distance Control (PDC) ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.3 Driver assistance",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "520",
+      "name": " Fog lights ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "521",
+      "name": " Rain sensor ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "522",
+      "name": " Xenon light ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "524",
+      "name": " Adaptive headlights ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "534",
+      "name": " Automatic air conditioning ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.3 Climate comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "536",
+      "name": " Auxiliary heating ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.3 Climate comfort",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "544",
+      "name": " Dynamic Cruise Control ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.3 Driver assistance",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "548",
+      "name": " Speedometer with kilometer reading ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "552",
+      "name": " Adaptive LED headlights ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "563",
+      "name": " Lights package ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "571",
+      "name": " Uprated power supply Plus ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "575",
+      "name": " Additional 12V power socket ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5A1",
+      "name": " LED fog lights ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5A2",
+      "name": " LED headlights ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5A3",
+      "name": " BMW Night Vision with dynamic light spot ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5AC",
+      "name": " High-beam assistant ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5AG",
+      "name": " Lane Change Warning ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.3 Driver assistance",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5AL",
+      "name": " Active Protection ",
+      "equ_group": "1. Safety",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5AP",
+      "name": " Decoding for no-dazzle high-beam assistance ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5AR",
+      "name": " Traffic jam assistant ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.3 Driver assistance",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5AS",
+      "name": " Driving Assistant ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.3 Driver assistance",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5AT",
+      "name": " Driving Assistant Plus ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.3 Driver assistance",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5DA",
+      "name": " Front passenger airbag deactivation ",
+      "equ_group": "1. Safety",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5DC",
+      "name": " Rear-seat headrests, folding ",
+      "equ_group": "1. Safety",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5DF",
+      "name": " Active cruise control with Stop&Go function ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.3 Driver assistance",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5DL",
+      "name": " Surround View ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.3 Driver assistance",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5DP",
+      "name": " Parking assistant ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.3 Driver assistance",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "5GC",
+      "name": " Preparation for Flexible Car Use ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "601",
+      "name": " TV function ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.3 HiFi systems and entertainment",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "602",
+      "name": " On-board monitor with TV ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.3 HiFi systems and entertainment",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "606",
+      "name": " Navigation system Business ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.1 Radio/navigation",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "609",
+      "name": " Navigation system Professional ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.1 Radio/navigation",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "610",
+      "name": " BMW Head-Up Display ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "614",
+      "name": " Internet preparation ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "645",
+      "name": " Radio control US ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.1 Radio/navigation",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "654",
+      "name": " DAB tuner ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.1 Radio/navigation",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "663",
+      "name": " Radio BMW Professional ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.1 Radio/navigation",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "668",
+      "name": " Black ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "676",
+      "name": " HiFi loudspeaker system ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.3 HiFi systems and entertainment",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "688",
+      "name": " Harman Kardon surround sound system ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.3 HiFi systems and entertainment",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "697",
+      "name": " Area code 1 for DVD ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "698",
+      "name": " Area code 2 for DVD ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "699",
+      "name": " Area code 3 for DVD ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6AA",
+      "name": " BMW Teleservices ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6AB",
+      "name": " Control BMW TeleServices ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6AC",
+      "name": " Intelligent Emergency Call ",
+      "equ_group": "1. Safety",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6AE",
+      "name": " Teleservices ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6AG",
+      "name": " eDrive services ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6AK",
+      "name": " ConnectedDrive Services ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6AL",
+      "name": " BMW Live ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6AM",
+      "name": " Real Time Traffic Information ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6AN",
+      "name": " Concierge service ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6AP",
+      "name": " Remote Services ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6AR",
+      "name": " Internet ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6F2",
+      "name": " Bang & Olufsen high-end surround sound system ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.3 HiFi systems and entertainment",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6FH",
+      "name": " Rear-seat entertainment Professional ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.3 HiFi systems and entertainment",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6FK",
+      "name": " Audio operation at rear ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.3 HiFi systems and entertainment",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6FS",
+      "name": "TV function, analog ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.3 HiFi systems and entertainment",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6FV",
+      "name": " Online Entertainment ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6NH",
+      "name": " Hands-free facility with USB interface ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6NR",
+      "name": " Apps ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6NS",
+      "name": " Enhanced telephony with extended smartphone connectivity ",
+      "equ_group": "9.Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6NW",
+      "name": " Telephony with wireless charging ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6S1",
+      "name": " Language version Turkish ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6S2",
+      "name": " Language version Greek ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6S3",
+      "name": " Language version Portuguese ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6S4",
+      "name": " Language version Swedish ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6S5",
+      "name": " Language version Bahasa Indonesia ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6UD",
+      "name": " Language version Russian ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6UH",
+      "name": " Traffic Information ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6UK",
+      "name": " BMW Night Vision with person recognition ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.4 Sight and lights",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6WA",
+      "name": " Instrument cluster with extended contents ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6WB",
+      "name": " Multifunctional instrument display ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "6WD",
+      "name": " WiFi hotspot ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "700",
+      "name": " Area code 4 for DVD ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "701",
+      "name": " Area code 5 for DVD ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "702",
+      "name": " Area code 6 for DVD ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "704",
+      "name": " M Sport suspension ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.1 Running gear",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "710",
+      "name": " M Leather steering wheel ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.2 Steering wheels",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "715",
+      "name": " M Aerodynamics package ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.2 Exterior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "760",
+      "name": " BMW Individual high-gloss Shadow Line ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.2 Exterior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "775",
+      "name": " BMW Individual headliner anthracite",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "776",
+      "name": " BMW Individual headliner Alcantara anthracite",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "778",
+      "name": " Door sill finishers with BMW Individual designation",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "791",
+      "name": " BMW Individual cool box ",
+      "equ_group": "8. Exterior and interior functional equipment",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7AC",
+      "name": " Sport Line ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7AQ",
+      "name": " Battery certificate ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.2 Drive and transmission",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7CG",
+      "name": " BMW Repair Inclusive, JP - 3 years/200,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7CH",
+      "name": " Repair Inclusive - 4 years/200,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7CK",
+      "name": " Repair Inclusive - 5 years/200,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7D7",
+      "name": " Service Inclusive Plus - 3 years/40,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7DA",
+      "name": " Service Inclusive - 3 years/100,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7DB",
+      "name": " Service Inclusive Plus - 3 years/100,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7DD",
+      "name": " Service Inclusive - 4 years/60,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7DE",
+      "name": " Service Inclusive Plus - 4 years/60,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7DS",
+      "name": " Service Inclusive - 2 years/200,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7DT",
+      "name": " Service Inclusive - 3 years/200,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7DU",
+      "name": " Service Inclusive - 4 years/200,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7DX",
+      "name": " Service Inclusive Plus - 2 years/200,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7DY",
+      "name": " Service Inclusive Plus - 3 years/200,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7DZ",
+      "name": " Service Inclusive Plus - 4 years/200,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7HW",
+      "name": " xLine ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7KG",
+      "name": " Exterior design Pure Extravagance ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7KL",
+      "name": " Exterior design Pure Extravagance excluding wheels ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7KU",
+      "name": " Interior Design Pure Extravagance Ivory White/Black ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7KV",
+      "name": " Interior Design Pure Extravagance Cognac/Black ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7LA",
+      "name": " Interior Design Pure Extravagance Ivory White/Black in combination with M Sport package ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7LB",
+      "name": " Interior Design Pure Extravagance Cognac/Black in combination with M Sport package ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7LC",
+      "name": " Model Advantage ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7LF",
+      "name": " M Sport model ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7LM",
+      "name": " Model xLine ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7ME",
+      "name": " M Driver's Package ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.2 Drive and transmission",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7N0",
+      "name": " Deletion of Repair Inclusive ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7N1",
+      "name": " Service Inclusive - 4 years/100,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7N2",
+      "name": " Service Inclusive Plus - 4 years/100,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7N4",
+      "name": " Service Inclusive - 4 years/120,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7N5",
+      "name": " BMW Service Inclusive - 4 years/120,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7N7",
+      "name": " Service Inclusive - 5 years/80,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7N8",
+      "name": " Service Inclusive Plus - 5 years/80,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7NA",
+      "name": " Service Inclusive Plus - 5 years/100,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7NG",
+      "name": " Service Inclusive - 3 years/60,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7NH",
+      "name": " Service Inclusive - 5 years/100,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7NK",
+      "name": " Service Inclusive Plus - 5 years/60,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7NM",
+      "name": " Service Inclusive Plus - 3 years/60,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7NW",
+      "name": " Service Inclusive - 5 years/60,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7NX",
+      "name": " Service Inclusive - 4 years/80,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7NY",
+      "name": " Service Inclusive Plus - 4 years/80,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7S2",
+      "name": " Luxury Line ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7S5",
+      "name": " Interior design Pure Excellence ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7S6",
+      "name": " Interior design Pure Experience ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7S7",
+      "name": " Interior design Pure Excellence in combination with M Sport package ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7S8",
+      "name": " Interior design Pure Experience in combination with M Sport package ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7S9",
+      "name": " ConnectedDrive services package ",
+      "equ_group": "9. Entertainment and communication ",
+      "equ_sub_group": "9.2 Communication and information",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7SZ",
+      "name": " Adaptive suspension package Professional ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.1 Running gear",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7T4",
+      "name": " Service Inclusive - 10 years/200,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7T5",
+      "name": " Service Inclusive Plus - 10 years/200,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7U2",
+      "name": " Repair Inclusive - 6 years/200,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7U3",
+      "name": " Oil Inclusive - 10 years/200,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7U9",
+      "name": " Deletion of Service Inclusive ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7UA",
+      "name": " Service Inclusive - 6 years/120,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7UB",
+      "name": " Service Inclusive Plus - 6 years/120,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7UF",
+      "name": " Service Inclusive - 8 years/160,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7UG",
+      "name": " Service Inclusive Plus - 8 years/160,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "7US",
+      "name": " Service Inclusive - 3 years/40,000 km ",
+      "equ_group": "10. Service",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "801",
+      "name": " German version ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "802",
+      "name": " Korean version ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "807",
+      "name": " Japanese version ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "810",
+      "name": " Australian version ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "812",
+      "name": " Great Britain/Ireland version ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "815",
+      "name": " Bad-road package ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "822",
+      "name": " Gulf version ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "823",
+      "name": " Hot-climate version ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "825",
+      "name": " Radio control Oceania ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "840",
+      "name": " High-speed setup ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "842",
+      "name": " Cold-climate version ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "843",
+      "name": " Engine design ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "845",
+      "name": " Acoustic seat-belt warning ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "850",
+      "name": " Additional tank filling, export ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "851",
+      "name": " Language version German ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "852",
+      "name": " Language version Japanese ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "853",
+      "name": " Language version English ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "854",
+      "name": " Language version French ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "855",
+      "name": " Language version Italian ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "856",
+      "name": " Language version Spanish ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "858",
+      "name": " Engine design for poor-quality fuel ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "861",
+      "name": " Modification of coding data set ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "866",
+      "name": " Language version simplified Chinese ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "867",
+      "name": " Language version Korean ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "868",
+      "name": " Language version Dutch ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "874",
+      "name": " Radio frequency 434 MHz ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "876",
+      "name": " Radio frequency 315 MHz ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "879",
+      "name": " German / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "880",
+      "name": " English / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "881",
+      "name": " French / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "883",
+      "name": " Spanish / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "884",
+      "name": " Italian / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "885",
+      "name": " Swedish / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "886",
+      "name": " Dutch / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "887",
+      "name": " Arabic / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "888",
+      "name": " Danish / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "889",
+      "name": " Portuguese / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "891",
+      "name": " Russian / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "892",
+      "name": " Chinese simplified / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8A1",
+      "name": " Language version Polish ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8A2",
+      "name": " Language version Hungarian ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8A3",
+      "name": " Language version Arabic ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8A4",
+      "name": " Language version Czech ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8A5",
+      "name": " Language version Slovakian ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8A6",
+      "name": " Language version Slovenian ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8A7",
+      "name": " Language version Norwegian ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8A8",
+      "name": " Language version Danish ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8A9",
+      "name": " Language version Finnish ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AA",
+      "name": " Chinese version ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AE",
+      "name": " Greek / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AF",
+      "name": " Korean / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AH",
+      "name": " Turkish / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AK",
+      "name": " Slovakian / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AL",
+      "name": " Czech / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AR",
+      "name": " Romanian / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AS",
+      "name": " Chinese traditional / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AT",
+      "name": " Polish / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AU",
+      "name": " Hungarian / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AV",
+      "name": " Slovenian / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AW",
+      "name": " Norwegian / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AX",
+      "name": " Finnish / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AY",
+      "name": " Bahasa Indonesia / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8AZ",
+      "name": " Brazilian Portuguese / on-board documentation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8BA",
+      "name": " Power reduction ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8BL",
+      "name": " charger cable, deleted ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8KA",
+      "name": " Oil service interval - 24 months/30,000 km ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8KB",
+      "name": " Oil service interval - 24 months/25,000 km ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8KC",
+      "name": " Oil service interval - 24 months/24,000 km ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8KE",
+      "name": " Oil service interval - 24 months/12,000 km ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8KH",
+      "name": " Oil service interval - 18 months/20,000 km ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8KK",
+      "name": " Oil service interval - 18 months/15,000 km ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8KL",
+      "name": " Oil service interval - 12 months/15,000 km ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8KM",
+      "name": " Oil service interval - 12 months/12,000 km ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8KP",
+      "name": " Oil-maintenance interval - 12 months/8,000 km ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8LA",
+      "name": " India version ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8R9",
+      "name": " Refrigerant ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8S1",
+      "name": " Daytime driving lights decoding ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8S2",
+      "name": " Coding of alarm signal ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8S3",
+      "name": " Automatic lock when driving away ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8SC",
+      "name": " Country-specific regulations for TeleService activation ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8SX",
+      "name": " Provider assignation for Telematic and Online Services ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8TH",
+      "name": " Speed Limit Info ",
+      "equ_group": "6. Technology ",
+      "equ_sub_group": "6.3 Driver assistance",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8TL",
+      "name": " Daytime driving lights front and rear active ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8TM",
+      "name": " Daytime driving lights on engine start inactive ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8TN",
+      "name": " Daytime driving lights selectable by Lights menu ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "8V1",
+      "name": " NCAP label ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "927",
+      "name": " All-season tyres ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "931",
+      "name": " Winter wheels instead of summer wheels ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "962",
+      "name": " Number-plate carrier, front, deletion ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "992",
+      "name": " Control of number-plate attachment ",
+      "equ_group": "1",
+      "equ_sub_group": "1. Internal control",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "9WR",
+      "name": " Winter wheels for dispatch, BMW World ",
+      "equ_group": "4. Wheels/tyres",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "A14",
+      "name": " Mineral Silver ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "A29",
+      "name": " Silverstone ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "A52",
+      "name": " Space Grey ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "A75",
+      "name": " Melbourne Red ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "A76",
+      "name": " Deep Sea Blue ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "A83",
+      "name": " Glacier Silver ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "A89",
+      "name": " Imperial Blue Brilliant Effect ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "A90",
+      "name": " Sophisto Grey Brilliant Effect ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "A96",
+      "name": " Mineral White ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "AVAT",
+      "name": " Cloth 'Twill' | Anthracite",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "AYAT",
+      "name": " Cloth 'Ribbon' | Anthracite",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "AYB4",
+      "name": " Cloth 'Ribbon' | Savannah Beige",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "B39",
+      "name": " Mineral Grey ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "B45",
+      "name": " Estoril Blue ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "B53",
+      "name": " Sparkling Brown ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "B65",
+      "name": " Jatoba ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "BDAT",
+      "name": " Cloth 'Move' | Anthracite",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "C06",
+      "name": " Urladung ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "C07",
+      "name": " Urladung ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "C08",
+      "name": " Platinum Silver ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "C10",
+      "name": " Mediterranean Blue ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "C16",
+      "name": " Long Beach Blue ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "C28",
+      "name": " Donington Grey ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "C29",
+      "name": " Chestnut Bronze ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "CBAT",
+      "name": " Cloth/leather combination 'Breeze' | Anthracite",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "CBOP",
+      "name": " Cloth/leather combination 'Breeze' | Oyster",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "CCL1",
+      "name": " 'Corner' cloth | Anthracite/Grey highlight",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "CCL2",
+      "name": " 'Corner' cloth | Anthracite/Red highlight",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "CVLN",
+      "name": " Cloth/leather combination 'Carve' | Amber/Black",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "FHAT",
+      "name": " Cloth/leather combination 'Pearlpoint' | Anthracite",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "GMAT",
+      "name": " Alcantara/leather combination | Anthracite",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "HAAT",
+      "name": " Cloth 'Hexagon'/Alcantara | Anthracite",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "KCB4",
+      "name": " Sensatec | Savannah Beige",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "KCDF",
+      "name": " Sensatec | Veneto Beige",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "KCL3",
+      "name": " Sensatec | Black/Red highlight",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "KCSW",
+      "name": " Sensatec | Black",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCB8",
+      "name": " Leather 'Dakota' | Terra",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCCY",
+      "name": " Leather 'Dakota' | Canberra Beige",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCD1",
+      "name": " Leather 'Dakota' | Coral Red",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCDF",
+      "name": " Leather 'Dakota' | Veneto Beige",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCDJ",
+      "name": " Leather 'Dakota' | Saddle Brown/Brown highlight",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCDY",
+      "name": " Leather 'Dakota' | Saddle Brown / Brown highlight with bicolour instrument panel",
+      "equ_group": "5. Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCEW",
+      "name": " Leather 'Dakota' | Ivory White",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCEX",
+      "name": " Leather 'Dakota' | Ivory White",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCFJ",
+      "name": " Leather 'Dakota' | Veneto Beige/Oyster dark highlight",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCL3",
+      "name": " Leather 'Dakota' | Black/Red highlight",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCL5",
+      "name": " Leather 'Dakota' | Coral Red/Black highlight",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCL8",
+      "name": " Leather 'Dakota' | Black/Oyster highlight dark",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCMY",
+      "name": " Leather 'Dakota' | Mocha",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCOM",
+      "name": " Leather 'Dakota' | Oyster/Oyster highlight",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCRI",
+      "name": " Leather 'Dakota' | Cognac",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LCSW",
+      "name": " Leather 'Dakota' | Black",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LKA9",
+      "name": " Leather 'Merino', with extended contents | Silverstone",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LKJR",
+      "name": " Leather 'Merino', with extended contents | Urladung",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LKSW",
+      "name": " Leather 'Merino', with extended contents | Black",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LUB4",
+      "name": " Leather 'Nevada' | Savannah Beige",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LUCX",
+      "name": " Leather 'Nevada' | Oyster",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LUD3",
+      "name": " Leather 'Nevada' | Saddle Brown",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LUNE",
+      "name": " Leather 'Nevada' | Ivory White / application and stamping",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LUNF",
+      "name": " Leather 'Nevada' | Mocha / application and stamping",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LUSQ",
+      "name": " Leather 'Nevada' | Black / application and stamping",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "LUSW",
+      "name": " Leather 'Nevada' | Black",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "NAEN",
+      "name": " Exclusive leather 'Nappa' with extended contents | Urladung",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "NAEX",
+      "name": " Exclusive leather 'Nappa' with extended contents | Ivory White",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "NAMY",
+      "name": " Exclusive leather 'Nappa' with extended contents | Mocha",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "NARQ",
+      "name": " Exclusive leather 'Nappa' with extended contents | Cognac / black",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "S34",
+      "name": " Azurite Black metallic ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "X01",
+      "name": " Pearl Silver metallic ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "X02",
+      "name": " Citrin Black metallic ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "X03",
+      "name": " Ruby Black metallic ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "X08",
+      "name": " Champagne Quartz metallic ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "X10",
+      "name": " Tanzanite Blue metallic ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "X12",
+      "name": " Smoked topaz metallic ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "X13",
+      "name": " Pyrite Brown metallic ",
+      "equ_group": "2. Paintwork and exterior design ",
+      "equ_sub_group": "2.1 Paintwork",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "X3A9",
+      "name": " Full leather 'Merino' | Silverstone",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "X3D8",
+      "name": " Full leather 'Merino' | Aragon Brown",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "X3JR",
+      "name": " Full leather 'Merino' | Urladung",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "X3MR",
+      "name": " Full leather 'Merino' | Mugello Red",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "X3SW",
+      "name": " Full leather 'Merino' | Black",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "XC4",
+      "name": " BMW Individual Composition ",
+      "equ_group": "3. Equipment packages",
+      "equ_sub_group": "",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "XD5",
+      "name": " BMW Individual headliner Alcantara",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "XE5",
+      "name": " BMW Individual fine-wood trim sycamore, red brown, dark",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "XE7",
+      "name": " BMW Individual interior trim finishers piano finish Black",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "XEW",
+      "name": " BMW Individual fine-wood trim Sen light brown",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "XEX",
+      "name": " BMW Individual fine-wood trim Ash Grain White",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "XL3",
+      "name": " BMW Individual leather steering wheel ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.2 Steering wheels",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "XL4",
+      "name": " BMW Individual leather steering wheel with fine wood ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.2 Steering wheels",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "XL5",
+      "name": " BMW Individual leather steering wheel with piano finish ",
+      "equ_group": "7. Interior ",
+      "equ_sub_group": "7.2 Steering wheels",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "XT1",
+      "name": " BMW Individual instrument panel finished in leather",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.2 Interior design",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "ZAFU",
+      "name": " BMW Individual extended leather trim | Smoke White",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "ZAKS",
+      "name": " BMW Individual extended leather trim | Kashmir Beige",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "ZAML",
+      "name": " BMW Individual extended leather trim | Nutmeg",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "ZAN3",
+      "name": " BMW Individual extended leather trim | Taupe",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "ZAOW",
+      "name": " BMW Individual extended leather trim | Opal White",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "ZAP3",
+      "name": " BMW Individual extended leather trim | Criollo Brown",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "ZAP5",
+      "name": " BMW Individual extended leather trim | Amaro Brown",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "ZASW",
+      "name": " BMW Individual extended leather trim | Black",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    },
+    {
+      "item_id": "ZAWT",
+      "name": " BMW Individual extended leather trim | Cohiba Brown",
+      "equ_group": "5.Upholstery and interior design ",
+      "equ_sub_group": "5.1 Upholstery",
+      "model":["F30,F31"]
+    }
+  ]}
