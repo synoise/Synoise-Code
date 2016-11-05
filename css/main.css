@@ -144,3 +144,13 @@ td {
     position: fixed;
     top: 10px;
 }
+
+
+
+md-radio-button.md-default-theme.md-checked .md-off, md-radio-button.md-checked .md-off {
+    border-color: rgb(254, 189, 1);
+}
+
+md-radio-button.md-default-theme .md-on, md-radio-button .md-on {
+    background-color: rgb(254, 189, 1);
+}

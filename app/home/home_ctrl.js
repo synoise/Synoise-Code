@@ -17,7 +17,7 @@
     };
 
 
-    angular.module("iApp", ['smart-table', 'ngDraggable'])
+    angular.module("iApp", ['smart-table', 'ngDraggable', 'ngAria','ngMaterial'])
        /* .factory('myhttpserv', function ($http) {
 
             return $http.get('storage.txt').error(function (status) {
