@@ -3,29 +3,54 @@
  <input placeholder="wyszukaj" class="form-control"  aria-describedby="sizing-addon1"  style=" height:25px;width:200px;margin-bottom:5px; display:inline-table" input ng-model="search.$">
 </div>
 
-    <div class="models_column" >
+    <div class="models_column" style="float:left" >
         <h4>Marka</h4>
         <!--div ng-init="group1 = ( vehicles | groupBy:'mark'| orderBy:'mark')"-->
         <div >
             <!--div ng-repeat="row in group1 |filter:'mark'| orderBy:'mark'"-->
-            <div ng-repeat="row in vehicles |  groupBy:'mark'| orderBy:'mark'">
+            <!--div ng-repeat="row in vehicles |  groupBy:'mark'| orderBy:'mark'">
                 <label class="btn btn-default"><input type="radio" name="Marka"  ng-click="filtrujModele(row);"> {{row}} </input> </label>
-            </div>
+            </div-->
+                <md-radio-group >
+                    <md-radio-button   value="{{row}}" ng-repeat="row in vehicles |  groupBy:'mark'| orderBy:'mark'"  ng-click="filtrujModele(row);" >{{row}}</md-radio-button>
+                </md-radio-group>
+
+                <!--md-button type="submit" class="md-raised">Submit</md-button>
+
+
+
+
+
+                    <md-button type="submit" class="md-raised">Submit</md-button-->
+
+
+
+
         </div>
     </div>
 
-    <div class="models_column" id="g_mod0" style="display:none">
+    <div class="models_column"  style="float:left"  id="g_mod0" style="display:none">
         <h4>Nadwozie</h4>
-        <div ng-repeat="row in vehicles | filter:filtrCarType |  unique:'body_typ' ">
+        <!--div ng-repeat="row in vehicles | filter:filtrCarType |  unique:'body_typ' ">
             <label class="btn btn-default"><input type="radio" name="Grupa" ng-click="filterNadwozie(row.body_typ)"> {{row.body_typ}} </input> </label>
-		</div>
+		</div-->
+
+        <md-radio-group >
+            <md-radio-button  ng-repeat="row in vehicles | filter:filtrCarType |  unique:'body_typ' "   value="{{row.body_typ}}" ng-click="filterNadwozie(row.body_typ)"  >{{row.body_typ}}</md-radio-button>
+        </md-radio-group>
+
     </div>
 
-    <div  class="models_column" id="g_mod1">
+    <div  class="models_column"   style="float:left" id="g_mod1">
         <h4>Grupa modelowa</h4>
-        <div ng-repeat="row in vehicles | filter:filtrCarType|filter:searchBodyTyp| filter:filtrCarType | unique:'car_type'">
+        <!--div ng-repeat="row in vehicles | filter:filtrCarType|filter:searchBodyTyp| filter:filtrCarType | unique:'car_type'">
             <label ng4-hide="displayGM(vehicle.length)"  ng-init="displayGM(!$index)"  class="btn btn-default"><input type="radio" name="body_typ"  ng-click="filterGrupaModelowa(row.car_type)"> {{row.car_type}} </input></label>
-		</div>
+		</div-->
+
+        <md-radio-group >
+            <md-radio-button  ng-repeat="row in vehicles | filter:filtrCarType|filter:searchBodyTyp| filter:filtrCarType | unique:'car_type'"   ng-init="displayGM(!$index)"  value="{{row.car_type}}" ng-click="filterGrupaModelowa(row.car_type)">{{row.car_type}}</md-radio-button>
+        </md-radio-group>
+
     </div>
 
     <!--div  class="models_column" style=" width:calc( 100% - 610px ); border-left:1px solid #f3f3f3; padding:0px 10px"-->
