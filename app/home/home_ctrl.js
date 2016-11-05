@@ -628,6 +628,12 @@
             row.push([$scope.addingItem.item_id, $scope.addingItem.price]);
             $scope.addingItem = [];
         }
+
+        $scope.addPackFreeItemColor = function (row, id) {
+            row.push($scope.addingItem.color_id);
+            $scope.addingItem = [];
+        }
+
         $scope.removePackFreeItem = function (row, id) {
             console.log(row, id);
             row.splice(id, 1);
